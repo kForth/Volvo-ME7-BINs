@@ -1,0 +1,699 @@
+<ECUParameters xmlns="http://www.volvotuners.com" xmlns:i="http://www.w3.org/2001/XMLSchema-instance">
+  <ECUVariables>
+    <ECUVariable>
+      <address>0x30190C</address>
+      <desc>Pedal Position</desc>
+      <factor>0.001526</factor>
+      <name>wped_w</name>
+      <offset>0</offset>
+      <precision>4</precision>
+      <signed>false</signed>
+      <units>%</units>
+      <word>true</word>
+    </ECUVariable>
+    <ECUVariable>
+      <address>0xF410</address>
+      <desc>Engine Speed</desc>
+      <factor>0.25</factor>
+      <name>nmot_w</name>
+      <offset>0</offset>
+      <precision>1</precision>
+      <signed>false</signed>
+      <units>RPM</units>
+      <word>true</word>
+    </ECUVariable>
+    <ECUVariable>
+      <address>0x3029D2</address>
+      <desc>Vehicle Speed</desc>
+      <factor>0.004854460938</factor>
+      <name>vfzg_w</name>
+      <offset>0</offset>
+      <precision>1</precision>
+      <signed>false</signed>
+      <units>MPH</units>
+      <word>true</word>
+    </ECUVariable>
+    <ECUVariable>
+      <address>0x3014E2</address>
+      <desc>Engaged Gear</desc>
+      <factor>1</factor>
+      <name>gangi</name>
+      <offset>0</offset>
+      <precision>1</precision>
+      <signed>false</signed>
+      <units>Gear</units>
+      <word>false</word>
+    </ECUVariable>
+	<ECUVariable>
+      <address>0x302D78</address>
+      <desc>Sensor Boost Pressure</desc>
+      <factor>0.05026536202</factor>
+      <name>upvdm_w</name>
+      <offset>-31.7582</offset>
+      <precision>2</precision>
+      <signed>false</signed>
+      <units>mBar</units>
+      <word>true</word>
+    </ECUVariable>
+    <ECUVariable>
+      <address>0xF462</address>
+      <desc>Actual Boost Pressure</desc>
+      <factor>0.0390625</factor>
+      <name>pvdkds_w</name>
+      <offset>0</offset>
+      <precision>1</precision>
+      <signed>false</signed>
+      <units>mBar</units>
+      <word>true</word>
+    </ECUVariable>
+    <ECUVariable>
+      <address>0x302C48</address>
+      <desc>Desired Boost Pressure</desc>
+      <factor>0.0390625</factor>
+      <name>plsol_w</name>
+      <offset>0</offset>
+      <precision>1</precision>
+      <signed>false</signed>
+      <units>mBar</units>
+      <word>true</word>
+    </ECUVariable>
+    <ECUVariable>
+      <address>0xF474</address>
+      <desc>Actual Intake Manifold Boost Pressure</desc>
+      <factor>0.0390625</factor>
+      <name>ps_w</name>
+      <offset>0</offset>
+      <precision>2</precision>
+      <signed>false</signed>
+      <units>mBar</units>
+      <word>true</word>
+    </ECUVariable>
+    <ECUVariable>
+      <address>0x302C4C</address>
+      <desc>Desired Intake Manifold Boost Pressure</desc>
+      <factor>0.0390625</factor>
+      <name>pssol_w</name>
+      <offset>0</offset>
+      <precision>2</precision>
+      <signed>false</signed>
+      <units>mBar</units>
+      <word>true</word>
+    </ECUVariable>
+    <ECUVariable>
+      <address>0xF388</address>
+      <desc>Mass Air Flow</desc>
+      <factor>0.1</factor>
+      <name>mshfm_w</name>
+      <offset>0</offset>
+      <precision>2</precision>
+      <signed>false</signed>
+      <units>kg/h</units>
+      <word>true</word>
+    </ECUVariable>
+    <ECUVariable>
+      <address>0xF2DE</address>
+      <desc>Mass Air Flow Voltage</desc>
+      <factor>0.0048828125</factor>
+      <name>uhfm_w</name>
+      <offset>0</offset>
+      <precision>2</precision>
+      <signed>false</signed>
+      <units>V</units>
+      <word>true</word>
+    </ECUVariable>
+    <ECUVariable>
+      <address>0x30186C</address>
+      <desc>Boost Controller Duty Cycle</desc>
+      <factor>0.390625</factor>
+      <name>ldtvm</name>
+      <offset>0</offset>
+      <precision>4</precision>
+      <signed>false</signed>
+      <units>%</units>
+      <word>false</word>
+    </ECUVariable>
+    <ECUVariable>
+      <address>0xF478</address>
+      <desc>Actual Load</desc>
+      <factor>0.0234375</factor>
+      <name>rl_w</name>
+      <offset>0</offset>
+      <precision>2</precision>
+      <signed>false</signed>
+      <units>%</units>
+      <word>true</word>
+    </ECUVariable>
+    <ECUVariable>
+      <address>0x3024A6</address>
+      <desc>Requested Load</desc>
+      <factor>0.0234375</factor>
+      <name>rlsol_w</name>
+      <offset>0</offset>
+      <precision>2</precision>
+      <signed>false</signed>
+      <units>%</units>
+      <word>true</word>
+    </ECUVariable>
+    <ECUVariable>
+      <address>0x3057CC</address>
+      <desc>Max Load</desc>
+      <factor>0.0234375</factor>
+      <name>rlmax_w</name>
+      <offset>0</offset>
+      <precision>2</precision>
+      <signed>false</signed>
+      <units>%</units>
+      <word>true</word>
+    </ECUVariable>
+    <ECUVariable>
+      <address>0x3057AA</address>
+      <desc>Corrected Max Load</desc>
+      <factor>0.0234375</factor>
+      <name>rlmx_w</name>
+      <offset>0</offset>
+      <precision>2</precision>
+      <signed>false</signed>
+      <units>%</units>
+      <word>true</word>
+    </ECUVariable>
+    <ECUVariable>
+      <address>0x301AF8</address>
+      <desc>Optimum Indicated Torque</desc>
+      <factor>0.00152587890625</factor>
+      <name>miopt_w</name>
+      <offset>0</offset>
+      <precision>2</precision>
+      <signed>false</signed>
+      <units>%</units>
+      <word>true</word>
+    </ECUVariable>
+    <ECUVariable>
+      <address>0x301AF8</address>
+      <desc>Desired Engine Torque</desc>
+      <factor>0.00152587890625</factor>
+      <name>mifa_w</name>
+      <offset>0</offset>
+      <precision>2</precision>
+      <signed>false</signed>
+      <units>%</units>
+      <word>true</word>
+    </ECUVariable>
+    <ECUVariable>
+      <address>0x302958</address>
+      <desc>Lambda Target Value</desc>
+      <factor>0.000244140625</factor>
+      <name>lamsons_w</name>
+      <offset>0</offset>
+      <precision>4</precision>
+      <signed>false</signed>
+      <units>Lambda</units>
+      <word>true</word>
+    </ECUVariable>
+    <ECUVariable>
+      <address>0x302740</address>
+      <desc>Lambda Actual Value</desc>
+      <factor>0.000244140625</factor>
+      <name>lamsoni_w</name>
+      <offset>0</offset>
+      <precision>4</precision>
+      <signed>false</signed>
+      <units>Lambda</units>
+      <word>true</word>
+    </ECUVariable>
+    <ECUVariable>
+      <address>0x30522C</address>
+      <desc>Lambda BTS Value</desc>
+      <factor>0.000244140625</factor>
+      <name>lambts_w</name>
+      <offset>0</offset>
+      <precision>4</precision>
+      <signed>false</signed>
+      <units>Lambda</units>
+      <word>true</word>
+    </ECUVariable>
+    <ECUVariable>
+      <address>0x305262</address>
+      <desc>Lambda LAMFAW Value</desc>
+      <factor>0.000244140625</factor>
+      <name>lamfa_w</name>
+      <offset>0</offset>
+      <precision>4</precision>
+      <signed>false</signed>
+      <units>Lambda</units>
+      <word>true</word>
+    </ECUVariable>
+    <ECUVariable>
+      <address>0x3028EE</address>
+      <desc>Lambda Catalyst Value</desc>
+      <factor>0.000244140625</factor>
+      <name>lamkh_w</name>
+      <offset>0</offset>
+      <precision>4</precision>
+      <signed>false</signed>
+      <units>Lambda</units>
+      <word>true</word>
+    </ECUVariable>
+    <ECUVariable>
+      <address>0x302956</address>
+      <desc>Lambda Catalyst Value</desc>
+      <factor>0.000244140625</factor>
+      <name>lamsbg_w</name>
+      <offset>0</offset>
+      <precision>4</precision>
+      <signed>false</signed>
+      <units>Lambda</units>
+      <word>true</word>
+    </ECUVariable>
+    <ECUVariable>
+      <address>0x305010</address>
+      <desc>Lambda ATR Delta Value</desc>
+      <factor>0.000244140625</factor>
+      <name>dlamatr_w</name>
+      <offset>0</offset>
+      <precision>4</precision>
+      <signed>false</signed>
+      <units>Lambda</units>
+      <word>true</word>
+    </ECUVariable>
+    <ECUVariable>
+      <address>0x302824</address>
+      <desc>Lambda Control (Fuel Trim)</desc>
+      <factor>3.05176E-05</factor>
+      <name>fr_w</name>
+      <offset>0</offset>
+      <precision>4</precision>
+      <signed>false</signed>
+      <units>%</units>
+      <word>true</word>
+    </ECUVariable>
+    <ECUVariable>
+      <address>0xF3BE</address>
+      <desc>Injection Time Bank 1</desc>
+      <factor>0.0032</factor>
+      <name>tii_b1</name>
+      <offset>0</offset>
+      <precision>4</precision>
+      <signed>false</signed>
+      <units>ms</units>
+      <word>true</word>
+    </ECUVariable>
+    <ECUVariable>
+      <address>0x302986</address>
+      <desc>Effective Injection Time Bank 1</desc>
+      <factor>0.0032</factor>
+      <name>te_w</name>
+      <offset>0</offset>
+      <precision>4</precision>
+      <signed>false</signed>
+      <units>ms</units>
+      <word>true</word>
+    </ECUVariable>
+    <ECUVariable>
+      <address>0x302992</address>
+      <desc>FKKVS Axis Injection Time Bank 1</desc>
+      <factor>0.0032</factor>
+      <name>tevfakge_w</name>
+      <offset>0</offset>
+      <precision>4</precision>
+      <signed>false</signed>
+      <units>ms</units>
+      <word>true</word>
+    </ECUVariable>
+    <ECUVariable>
+      <address>0xF33A</address>
+      <desc>Ignition Angle Output</desc>
+      <factor>0.75</factor>
+      <name>zwout</name>
+      <offset>0</offset>
+      <precision>2</precision>
+      <signed>true</signed>
+      <units>Deg BTDC</units>
+      <word>false</word>
+    </ECUVariable>
+    <ECUVariable>
+      <address>0xF338</address>
+      <desc>Actual Ignition Angle</desc>
+      <factor>0.75</factor>
+      <name>zwist</name>
+      <offset>0</offset>
+      <precision>2</precision>
+      <signed>true</signed>
+      <units>Deg BTDC</units>
+      <word>false</word>
+    </ECUVariable>
+    <ECUVariable>
+      <address>0x301308</address>
+      <desc>Optimum Ignition Angle</desc>
+      <factor>0.75</factor>
+      <name>zwopt</name>
+      <offset>0</offset>
+      <precision>2</precision>
+      <signed>true</signed>
+      <units>Deg BTDC</units>
+      <word>false</word>
+    </ECUVariable>
+    <ECUVariable>
+      <address>0x301325</address>
+      <desc>Setpoint Ignition Angle</desc>
+      <factor>0.75</factor>
+      <name>zwsol</name>
+      <offset>0</offset>
+      <precision>2</precision>
+      <signed>true</signed>
+      <units>Deg BTDC</units>
+      <word>false</word>
+    </ECUVariable>
+    <ECUVariable>
+      <address>0x305230</address>
+      <desc>EGT</desc>
+      <factor>0.01953125</factor>
+      <name>tabgbts_w</name>
+      <offset>-50</offset>
+      <precision>2</precision>
+      <signed>false</signed>
+      <units>Deg C</units>
+      <word>true</word>
+    </ECUVariable>
+    <ECUVariable>
+      <address>0x304F78</address>
+      <desc>EGT Catalyst</desc>
+      <factor>0.01953125</factor>
+      <name>tikatm_w</name>
+      <offset>-50</offset>
+      <precision>2</precision>
+      <signed>false</signed>
+      <units>Deg C</units>
+      <word>true</word>
+    </ECUVariable>
+    <ECUVariable>
+      <address>0xF45C</address>
+      <desc>Throttle Angle</desc>
+      <factor>0.0244140625</factor>
+      <name>wdkba_w</name>
+      <offset>0</offset>
+      <precision>1</precision>
+      <signed>false</signed>
+      <units>%</units>
+      <word>true</word>
+    </ECUVariable>
+    <ECUVariable>
+      <address>0x301845</address>
+      <desc>Battery Voltage</desc>
+      <factor>0.0704</factor>
+      <name>ub</name>
+      <offset>0</offset>
+      <precision>2</precision>
+      <signed>false</signed>
+      <units>V</units>
+      <word>false</word>
+    </ECUVariable>
+    <ECUVariable>
+      <address>0x30162D</address>
+      <desc>Intake Air Temperature</desc>
+      <factor>0.75</factor>
+      <name>tans</name>
+      <offset>-48</offset>
+      <precision>2</precision>
+      <signed>false</signed>
+      <units>Deg C</units>
+      <word>false</word>
+    </ECUVariable>
+    <ECUVariable>
+      <address>0x304975</address>
+      <desc>Coolant Temperature</desc>
+      <factor>0.75</factor>
+      <name>tmotlin</name>
+      <offset>-48</offset>
+      <precision>2</precision>
+      <signed>false</signed>
+      <units>Deg C</units>
+      <word>false</word>
+    </ECUVariable>
+    <ECUVariable>
+      <address>0x304DA0</address>
+      <desc>Ambient Air Pressure</desc>
+      <factor>5</factor>
+      <name>pu</name>
+      <offset>0</offset>
+      <precision>1</precision>
+      <signed>false</signed>
+      <units>mBar</units>
+      <word>false</word>
+    </ECUVariable>
+    <ECUVariable>
+      <address>0x304DCC</address>
+      <desc>Oil Temperature</desc>
+      <factor>0.784</factor>
+      <name>toel</name>
+      <offset>-40</offset>
+      <precision>2</precision>
+      <signed>false</signed>
+      <units>Deg C</units>
+      <word>false</word>
+    </ECUVariable>
+    <ECUVariable>
+      <address>0x30479E</address>
+      <desc>% Ignition Degredation (Knock Retard) for Component Protection</desc>
+      <factor>0.5</factor>
+      <name>detazwbs</name>
+      <offset>0</offset>
+      <precision>2</precision>
+      <signed>false</signed>
+      <units>%</units>
+      <word>false</word>
+    </ECUVariable>
+    <ECUVariable>
+      <address>0xF3F8</address>
+      <desc>Average Knock Retard</desc>
+      <factor>0.75</factor>
+      <name>wkrm</name>
+      <offset>0</offset>
+      <precision>2</precision>
+      <signed>true</signed>
+      <units>Deg BTDC</units>
+      <word>false</word>
+    </ECUVariable>
+    <ECUVariable>
+      <address>0x30154A</address>
+      <desc>Cylinder 1 Knock Retard</desc>
+      <factor>0.75</factor>
+      <name>dwkrz_0</name>
+      <offset>0</offset>
+      <precision>2</precision>
+      <signed>true</signed>
+      <units>Deg BTDC</units>
+      <word>false</word>
+    </ECUVariable>
+    <ECUVariable>
+      <address>0x30154B</address>
+      <desc>Cylinder 2 Knock Retard</desc>
+      <factor>0.75</factor>
+      <name>dwkrz_1</name>
+      <offset>0</offset>
+      <precision>2</precision>
+      <signed>true</signed>
+      <units>Deg BTDC</units>
+      <word>false</word>
+    </ECUVariable>
+    <ECUVariable>
+      <address>0x30154C</address>
+      <desc>Cylinder 3 Knock Retard</desc>
+      <factor>0.75</factor>
+      <name>dwkrz_2</name>
+      <offset>0</offset>
+      <precision>2</precision>
+      <signed>true</signed>
+      <units>Deg BTDC</units>
+      <word>false</word>
+    </ECUVariable>
+    <ECUVariable>
+      <address>0x30154D</address>
+      <desc>Cylinder 4 Knock Retard</desc>
+      <factor>0.75</factor>
+      <name>dwkrz_3</name>
+      <offset>0</offset>
+      <precision>2</precision>
+      <signed>true</signed>
+      <units>Deg BTDC</units>
+      <word>false</word>
+    </ECUVariable>
+    <ECUVariable>
+      <address>0x30154E</address>
+      <desc>Cylinder 5 Knock Retard</desc>
+      <factor>0.75</factor>
+      <name>dwkrz_4</name>
+      <offset>0</offset>
+      <precision>2</precision>
+      <signed>true</signed>
+      <units>Deg BTDC</units>
+      <word>false</word>
+    </ECUVariable>
+    <ECUVariable>
+      <address>0x3057BA</address>
+      <desc>BoostPID-I-Result</desc>
+      <factor>0.005</factor>
+      <name>lditv_w</name>
+      <offset>0</offset>
+      <precision>4</precision>
+      <signed>false</signed>
+      <units>%</units>
+      <word>true</word>
+    </ECUVariable>
+    <ECUVariable>
+      <address>0x3057B0</address>
+      <desc>BoostPID-I-Min</desc>
+      <factor>0.005</factor>
+      <name>ldimn_w</name>
+      <offset>0</offset>
+      <precision>4</precision>
+      <signed>false</signed>
+      <units>%</units>
+      <word>true</word>
+    </ECUVariable>
+    <ECUVariable>
+      <address>0x3057B8</address>
+      <desc>BoostPID-I-Max</desc>
+      <factor>0.005</factor>
+      <name>ldimx_w</name>
+      <offset>0</offset>
+      <precision>4</precision>
+      <signed>false</signed>
+      <units>%</units>
+      <word>true</word>
+    </ECUVariable>
+    <ECUVariable>
+      <address>0x3057C0</address>
+      <desc>BoostPID-D-Portion</desc>
+      <factor>0.005</factor>
+      <name>ldrkd_w</name>
+      <offset>0</offset>
+      <precision>4</precision>
+      <signed>false</signed>
+      <units>%</units>
+      <word>true</word>
+    </ECUVariable>
+    <ECUVariable>
+      <address>0x3057C2</address>
+      <desc>BoostPID-I-Portion</desc>
+      <factor>0.005</factor>
+      <name>ldrki_w</name>
+      <offset>0</offset>
+      <precision>4</precision>
+      <signed>false</signed>
+      <units>%</units>
+      <word>true</word>
+    </ECUVariable>
+    <ECUVariable>
+      <address>0x304E08</address>
+      <desc>BoostPID-P-Portion</desc>
+      <factor>0.005</factor>
+      <name>ldrkp_w</name>
+      <offset>0</offset>
+      <precision>4</precision>
+      <signed>false</signed>
+      <units>%</units>
+      <word>true</word>
+    </ECUVariable>
+    <ECUVariable>
+      <address>0x3018F2</address>
+      <desc>CPU-Load</desc>
+      <factor>0.025</factor>
+      <name>perffilt_w</name>
+      <offset>0</offset>
+      <precision>2</precision>
+      <signed>false</signed>
+      <units>%</units>
+      <word>true</word>
+    </ECUVariable>
+    <ECUVariable>
+      <address>0x302E4A</address>
+      <desc>Desired Fuel Pressure</desc>
+      <factor>0.1</factor>
+      <name>psollnd_w</name>
+      <offset>0</offset>
+      <precision>2</precision>
+      <signed>false</signed>
+      <units>kPA</units>
+      <word>true</word>
+    </ECUVariable>
+    <ECUVariable>
+      <address>0x302E44</address>
+      <desc>Actual Fuel Pressure</desc>
+      <factor>0.1</factor>
+      <name>pistnd_w</name>
+      <offset>0</offset>
+      <precision>2</precision>
+      <signed>false</signed>
+      <units>kPA</units>
+      <word>true</word>
+    </ECUVariable>
+   <ECUVariable>
+      <address>0x302E8A</address>
+      <desc>PCM Duty Cycle</desc>
+      <factor>0.001526</factor>
+      <name>tapcm_w</name>
+      <offset>0</offset>
+      <precision>2</precision>
+      <signed>false</signed>
+      <units>%</units>
+      <word>true</word>
+    </ECUVariable>
+    <ECUVariable>
+      <address>0x301A18</address>
+      <desc>Actual Angle for Exhaust Camshaft</desc>
+      <factor>0.00390625</factor>
+      <name>wnwisa_w</name>
+      <offset>0</offset>
+      <precision>2</precision>
+      <signed>true</signed>
+      <units>Deg BTDC</units>
+      <word>true</word>
+    </ECUVariable>
+    <ECUVariable>
+      <address>0x301AA0</address>
+      <desc>Target Angle Exhaust Camshaft Closes</desc>
+      <factor>0.0078125</factor>
+      <name>wnwsa_w</name>
+      <offset>0</offset>
+      <precision>2</precision>
+      <signed>false</signed>
+      <units>Deg BTDC</units>
+      <word>true</word>
+    </ECUVariable>
+    <ECUVariable>
+      <address>0x301A1A</address>
+      <desc>Actual Angle for Inlet Camshaft</desc>
+      <factor>0.00390625</factor>
+      <name>wnwise_w</name>
+      <offset>0</offset>
+      <precision>2</precision>
+      <signed>true</signed>
+      <units>Deg BTDC</units>
+      <word>true</word>
+    </ECUVariable>
+    <ECUVariable>
+      <address>0x301A80</address>
+      <desc>Target Angle Inlet Camshaft Opens</desc>
+      <factor>0.0078125</factor>
+      <name>wnwse_w</name>
+      <offset>0</offset>
+      <precision>2</precision>
+      <signed>false</signed>
+      <units>Deg BTDC</units>
+      <word>true</word>
+    </ECUVariable>
+	<ECUVariable>
+      <address>0xFD24</address>
+      <desc>Acc Pedal Mode</desc>
+      <factor>1</factor>
+      <name>B_ACPMODE.11</name>
+      <offset>0</offset>
+      <precision>0</precision>
+      <signed>false</signed>
+      <units>hex</units>
+      <word>true</word>
+    </ECUVariable>
+  </ECUVariables>
+  <displayTime>true</displayTime>
+  <swNumber>30771149AA</swNumber>
+</ECUParameters>
