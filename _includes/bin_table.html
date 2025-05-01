@@ -1,0 +1,23 @@
+<div class="w-100 h-100 overflow-auto p-3 m-0">
+    <table class="table table-sm table-striped table-hover">
+        <thead>
+        <tr>
+            {% for header in include.headers %}
+            <th>{{ header.title }}</th>
+            {% endfor %}
+            <th></th>
+        </tr>
+        </thead>
+        <tbody>
+        {%- for file in include.files %}
+        {%- assign meta = include.meta[file.name] %}
+        <tr>
+            {% for header in include.headers %}
+            <td>{{ meta[header.id] }}</td>
+            {% endfor %}
+            <td><a title="Download" href="{{ site.baseurl}}{{ file.path }}" download><i class="bi bi-cloud-download"></i></a></td>
+        </tr>
+        {%- endfor %}
+        </tbody>
+    </table>
+</div>

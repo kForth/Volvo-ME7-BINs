@@ -4,30 +4,7 @@ title: BIN Files
 permalink: /bins
 ---
 <div class="h3 py-2">Stock Firmware Files</div>
-<div class="alert alert-warning" role="alert">
-  <strong>Warning:</strong> These files have been shared by the community and are not guaranteed to be safe or functional. Use at your own risk.
-</div>
-<div class="w-100 h-100 scrollarea p-3">
-  <table class="table table-striped table-condensed">
-    <thead>
-      <tr>
-        {% for header in site.data.bin_headers %}
-        <th>{{ header.title }}</th>
-        {% endfor %}
-        <th></th>
-      </tr>
-    </thead>
-    <tbody>
-      {% assign files = site.static_files | where_exp: "item", "item.path contains '/assets/bins/stock'" %}
-      {%- for file in files %}
-      {%- assign meta = site.data.bins_meta_stock[file.name] %}
-      <tr>
-        {% for header in site.data.bin_headers %}
-          <td>{{ meta[header.id] }}</td>
-        {% endfor %}
-        <td><a title="Download" href="{{ site.baseurl}}{{ file.path }}" download><i class="bi bi-cloud-download"></i></a></td>
-      </tr>
-      {%- endfor %}
-    </tbody>
-  </table>
-</div>
+{% include community_warning.html %}
+{% assign files = site.static_files | where_exp: "item", "item.path contains '/assets/bins/stock'" %}
+{% include bin_table.html headers=site.data.bin_headers files=files meta=site.data.bins_meta_stock %}
+
