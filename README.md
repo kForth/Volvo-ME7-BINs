@@ -17,7 +17,7 @@ Contributions are welcome! Please submit a pull request or open and issue to dis
 
 ### Credits
 
-Some of the files in this repository have come from multiple sources across the internet, most of them do not have a verifiable original source.
+Some of the files in this repository have come from multiple sources across the internet, most or all of them do not have a verifiable original source.
 
 ### License
 
