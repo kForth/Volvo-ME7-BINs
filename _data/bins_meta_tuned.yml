@@ -1,0 +1,100 @@
+50GPHJ-21GPPVD0-MAN-AWD-EU - Hilton Stage 1.bin:
+  build_date: 2005-05-13 07:54
+  chassis_group: P2X
+  drivetrain: AWD
+  ecu_variant: 31219133AA
+  engine_group: B52X4XT
+  engine_model: B5254RT
+  epk_version: 45/1/ME701/19///70195G8/70195G8/090505151134/
+  file_checksum: 2e9eafb899d26a2be4f3c506256442a7ce40ac514a9b78095150ca41e5715920
+  file_name: 50GPHJ-21GPPVD0-MAN-AWD-EU - Hilton Stage 1.bin
+  file_size: 1048576
+  header_position: 100169
+  header_version: '1.0'
+  is_valid: true
+  me_version: '7.5'
+  region: EU
+  software_version: 30771149AA
+  sub_variant: 21GPPVD0
+  transmission: MAN
+  variant: 50GPHJ
+50GPHJ-23GPPVD0-MAN-AWD-US - Contrast Stage 2+.bin:
+  build_date: 2005-05-13 07:54
+  chassis_group: P2X
+  drivetrain: AWD
+  ecu_variant: 30668566 A
+  engine_group: B52X4XT
+  engine_model: B5254RT
+  epk_version: 45/1/ME701/19///70195G8/70195G8/090505151134/
+  file_checksum: 20c5f6cac197e648be3d143379bbfebb12e1ea183b9e0e9be7463502c2faf6f3
+  file_name: 50GPHJ-23GPPVD0-MAN-AWD-US - Contrast Stage 2+.bin
+  file_size: 1048576
+  header_position: 100169
+  header_version: '1.0'
+  is_valid: true
+  me_version: '7.5'
+  region: US
+  software_version: ''
+  sub_variant: 23GPPVD0
+  transmission: MAN
+  variant: 50GPHJ
+50GPHJ-23GPPVD0-MAN-AWD-US - Speed Density.bin:
+  build_date: 2005-05-13 07:54
+  chassis_group: P2X
+  drivetrain: AWD
+  ecu_variant: 30668566 A
+  engine_group: B52X4XT
+  engine_model: B5254RT
+  epk_version: 45/1/ME701/19///70195G8/70195G8/090505151134/
+  file_checksum: 7133140fa834b58d574cbc39259fb38bad419ad9f9214205ca43deb879cd1865
+  file_name: 50GPHJ-23GPPVD0-MAN-AWD-US - Speed Density.bin
+  file_size: 1048576
+  header_position: 100169
+  header_version: '1.0'
+  is_valid: true
+  me_version: '7.5'
+  region: US
+  software_version: ''
+  sub_variant: 23GPPVD0
+  transmission: MAN
+  variant: 50GPHJ
+50QKHJ-E2QKG-AUT-FWD-US - Hilton Stage 3.bin:
+  build_date: 2007-11-01 07:26
+  chassis_group: P2X
+  drivetrain: FWD
+  ecu_variant: 31219528AA
+  engine_group: B5254RT
+  engine_model: B5254LT
+  epk_version: 47/1/ME701/19///70195Q8Z/70195Q8Z/291007141745/
+  file_checksum: 7b8c712c5e999fe0028db1c45ccd3baa7ca043caffd249dd887e9fa9068a41f7
+  file_name: 50QKHJ-E2QKG-AUT-FWD-US - Hilton Stage 3.bin
+  file_size: 1048576
+  header_position: 100513
+  header_version: '1.0'
+  is_valid: true
+  me_version: 7.0.1
+  region: US
+  software_version: ''
+  sub_variant: E2QKG
+  transmission: AUT
+  variant: 50QKHJ
+50WRHJ-51WRA - Stage2.bin:
+  build_date: 2004-10-22 15:03
+  chassis_group: P2X
+  drivetrain: ''
+  ecu_variant: 30771311AA
+  engine_group: B52X4XT
+  engine_model: ''
+  epk_version: 45/1/ME701/19///70195Z6/70195Z6/020506154051/
+  file_checksum: e09f4e7780d4e055a17820ad0e2c43b892e8cd57ef9f078f5b497d4101410a69
+  file_name: 50WRHJ-51WRA - Stage2.bin
+  file_size: 1048576
+  header_position: 100201
+  header_version: '1.0'
+  is_valid: true
+  me_version: '7.5'
+  region: ''
+  software_version: 30684626A
+  sub_variant: 51WRA
+  transmission: ''
+  variant: 50WRHJ
