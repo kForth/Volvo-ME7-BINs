@@ -1,0 +1,241 @@
+<!-- Created by WinOLS-Plugin OLS526 -->
+<XDFFORMAT version="1.60">
+  <XDFHEADER>
+    <description></description>
+    <BASEOFFSET offset="0" subtract="0" />
+    <DEFAULTS datasizeinbits="8" sigdigits="2" outputtype="1" signed="0" lsbfirst="0" float="0" />
+    <REGION type="0xFFFFFFFF" startaddress="0x0" size="0x100000" regionflags="0x0" name="Binary File" desc="This region describes the bin file edited by this XDF" />
+  </XDFHEADER>
+
+  <XDFTABLE uniqueid="0x2" flags="0x0">
+    <title>[KFLDRX] - Maximum cylinder charge (charge pressure control)</title>
+    <description>-</description>
+    <XDFAXIS id="x" uniqueid="0x0">
+      <EMBEDDEDDATA mmedtypeflags="0x2" mmedaddress="0x26720" mmedelementsizebits="16" mmedcolcount="16" mmedmajorstridebits="0" mmedminorstridebits="0" />
+      <indexcount>16</indexcount>
+      <units>-</units>
+      <outputtype>4</outputtype>
+      <decimalpl>4</decimalpl>
+      <datatype>0</datatype>
+      <DALINK index="0" />
+    </XDFAXIS>
+    <XDFAXIS id="y" uniqueid="0x0">
+      <EMBEDDEDDATA mmedtypeflags="0x2" mmedaddress="0x26740" mmedelementsizebits="16" mmedcolcount="6" mmedmajorstridebits="0" mmedminorstridebits="0" />
+      <indexcount>6</indexcount>
+      <units>-</units>
+      <outputtype>4</outputtype>
+      <decimalpl>2</decimalpl>
+      <datatype>0</datatype>
+      <DALINK index="0" />
+    </XDFAXIS>
+    <XDFAXIS id="z">
+      <EMBEDDEDDATA mmedtypeflags="0x6" mmedaddress="0x2674C" mmedelementsizebits="16" mmedrowcount="6" mmedcolcount="16" mmedmajorstridebits="0" mmedminorstridebits="0" />
+      <units>-</units>
+      <decimalpl>4</decimalpl>
+      <outputtype>1</outputtype>
+      <MATH equation="X*0.0234380000">
+        <VAR id="X" />
+      </MATH>
+    </XDFAXIS>
+  </XDFTABLE>
+
+  <XDFTABLE uniqueid="0x3" flags="0x0">
+    <title>[KFMIRL] - Corrected Specified Engine Load Max Limit</title>
+    <description>-</description>
+    <XDFAXIS id="x" uniqueid="0x0">
+      <EMBEDDEDDATA mmedtypeflags="0x2" mmedaddress="0x12598" mmedelementsizebits="16" mmedcolcount="16" mmedmajorstridebits="0" mmedminorstridebits="0" />
+      <indexcount>16</indexcount>
+      <units>-</units>
+      <outputtype>2</outputtype>
+      <decimalpl>0</decimalpl>
+      <datatype>0</datatype>
+      <DALINK index="0" />
+      <embedinfo type="1" />
+      <MATH equation="X">
+        <VAR id="X" />
+      </MATH>
+    </XDFAXIS>
+    <XDFAXIS id="y" uniqueid="0x0">
+      <EMBEDDEDDATA mmedtypeflags="0x2" mmedaddress="0x12578" mmedelementsizebits="16" mmedcolcount="16" mmedmajorstridebits="0" mmedminorstridebits="0" />
+      <indexcount>16</indexcount>
+      <units>-</units>
+      <outputtype>2</outputtype>
+      <decimalpl>0</decimalpl>
+      <datatype>0</datatype>
+      <DALINK index="0" />
+      <embedinfo type="1" />
+      <MATH equation="X">
+        <VAR id="X" />
+      </MATH>
+    </XDFAXIS>
+    <XDFAXIS id="z">
+      <EMBEDDEDDATA mmedtypeflags="0x2" mmedaddress="0x125B8" mmedelementsizebits="16" mmedrowcount="16" mmedcolcount="16" mmedmajorstridebits="0" mmedminorstridebits="0" />
+      <units>-</units>
+      <decimalpl>4</decimalpl>
+      <outputtype>1</outputtype>
+      <MATH equation="X*0.0234380000">
+        <VAR id="X" />
+      </MATH>
+    </XDFAXIS>
+  </XDFTABLE>
+
+  <XDFTABLE uniqueid="0x4" flags="0x0">
+    <title>[KFMIOP] - Optimal engine torque map</title>
+    <description>-</description>
+    <XDFAXIS id="x" uniqueid="0x0">
+      <EMBEDDEDDATA mmedtypeflags="0x1" mmedaddress="0x0" mmedelementsizebits="8" mmedcolcount="11" mmedmajorstridebits="0" mmedminorstridebits="0" />
+      <indexcount>11</indexcount>
+      <units>-</units>
+      <outputtype>4</outputtype>
+      <decimalpl>0</decimalpl>
+      <datatype>0</datatype>
+      <DALINK index="0" />
+    </XDFAXIS>
+    <XDFAXIS id="y" uniqueid="0x0">
+      <EMBEDDEDDATA mmedtypeflags="0x0" mmedaddress="0x0" mmedelementsizebits="8" mmedcolcount="16" mmedmajorstridebits="0" mmedminorstridebits="0" />
+      <indexcount>16</indexcount>
+      <units>-</units>
+      <outputtype>4</outputtype>
+      <decimalpl>0</decimalpl>
+      <datatype>0</datatype>
+      <DALINK index="0" />
+    </XDFAXIS>
+    <XDFAXIS id="z">
+      <EMBEDDEDDATA mmedtypeflags="0x2" mmedaddress="0x123E0" mmedelementsizebits="16" mmedrowcount="16" mmedcolcount="11" mmedmajorstridebits="0" mmedminorstridebits="0" />
+      <units>-</units>
+      <decimalpl>4</decimalpl>
+      <outputtype>1</outputtype>
+      <MATH equation="X*0.0015260000">
+        <VAR id="X" />
+      </MATH>
+    </XDFAXIS>
+  </XDFTABLE>
+
+  <XDFTABLE uniqueid="0x5" flags="0x0">
+    <title>[LAMFA] - Driver requested Lambda</title>
+    <description>-</description>
+    <XDFAXIS id="x" uniqueid="0x0">
+      <EMBEDDEDDATA mmedtypeflags="0x1" mmedaddress="0x0" mmedelementsizebits="8" mmedcolcount="10" mmedmajorstridebits="0" mmedminorstridebits="0" />
+      <indexcount>10</indexcount>
+      <units>-</units>
+      <outputtype>4</outputtype>
+      <decimalpl>0</decimalpl>
+      <datatype>0</datatype>
+      <DALINK index="0" />
+    </XDFAXIS>
+    <XDFAXIS id="y" uniqueid="0x0">
+      <EMBEDDEDDATA mmedtypeflags="0x0" mmedaddress="0x0" mmedelementsizebits="8" mmedcolcount="9" mmedmajorstridebits="0" mmedminorstridebits="0" />
+      <indexcount>9</indexcount>
+      <units>-</units>
+      <outputtype>4</outputtype>
+      <decimalpl>0</decimalpl>
+      <datatype>0</datatype>
+      <DALINK index="0" />
+    </XDFAXIS>
+    <XDFAXIS id="z">
+      <EMBEDDEDDATA mmedtypeflags="0x0" mmedaddress="0x22500" mmedelementsizebits="8" mmedrowcount="9" mmedcolcount="10" mmedmajorstridebits="0" mmedminorstridebits="0" />
+      <units>-</units>
+      <decimalpl>4</decimalpl>
+      <outputtype>1</outputtype>
+      <MATH equation="X*0.1148500000">
+        <VAR id="X" />
+      </MATH>
+    </XDFAXIS>
+  </XDFTABLE>
+
+  <XDFTABLE uniqueid="0x6" flags="0x0">
+    <title>[KFLBTS] - Lambda target value for component protection</title>
+    <description>-</description>
+    <XDFAXIS id="x" uniqueid="0x0">
+      <EMBEDDEDDATA mmedtypeflags="0x1" mmedaddress="0x0" mmedelementsizebits="8" mmedcolcount="16" mmedmajorstridebits="0" mmedminorstridebits="0" />
+      <indexcount>16</indexcount>
+      <units>-</units>
+      <outputtype>4</outputtype>
+      <decimalpl>0</decimalpl>
+      <datatype>0</datatype>
+      <DALINK index="0" />
+    </XDFAXIS>
+    <XDFAXIS id="y" uniqueid="0x0">
+      <EMBEDDEDDATA mmedtypeflags="0x0" mmedaddress="0x0" mmedelementsizebits="8" mmedcolcount="12" mmedmajorstridebits="0" mmedminorstridebits="0" />
+      <indexcount>12</indexcount>
+      <units>-</units>
+      <outputtype>4</outputtype>
+      <decimalpl>0</decimalpl>
+      <datatype>0</datatype>
+      <DALINK index="0" />
+    </XDFAXIS>
+    <XDFAXIS id="z">
+      <EMBEDDEDDATA mmedtypeflags="0x0" mmedaddress="0x19BDD" mmedelementsizebits="8" mmedrowcount="12" mmedcolcount="16" mmedmajorstridebits="0" mmedminorstridebits="0" />
+      <units>-</units>
+      <decimalpl>4</decimalpl>
+      <outputtype>1</outputtype>
+      <MATH equation="X*0.0078130000">
+        <VAR id="X" />
+      </MATH>
+    </XDFAXIS>
+  </XDFTABLE>
+
+  <XDFTABLE uniqueid="0x7" flags="0x0">
+    <title>[KFLDRL] - Map for linearising charge pressure as a function of duty cycle</title>
+    <description>-</description>
+    <XDFAXIS id="x" uniqueid="0x0">
+      <EMBEDDEDDATA mmedtypeflags="0x1" mmedaddress="0x0" mmedelementsizebits="8" mmedcolcount="10" mmedmajorstridebits="0" mmedminorstridebits="0" />
+      <indexcount>10</indexcount>
+      <units>-</units>
+      <outputtype>4</outputtype>
+      <decimalpl>0</decimalpl>
+      <datatype>0</datatype>
+      <DALINK index="0" />
+    </XDFAXIS>
+    <XDFAXIS id="y" uniqueid="0x0">
+      <EMBEDDEDDATA mmedtypeflags="0x0" mmedaddress="0x0" mmedelementsizebits="8" mmedcolcount="16" mmedmajorstridebits="0" mmedminorstridebits="0" />
+      <indexcount>16</indexcount>
+      <units>-</units>
+      <outputtype>4</outputtype>
+      <decimalpl>0</decimalpl>
+      <datatype>0</datatype>
+      <DALINK index="0" />
+    </XDFAXIS>
+    <XDFAXIS id="z">
+      <EMBEDDEDDATA mmedtypeflags="0x2" mmedaddress="0x2699E" mmedelementsizebits="16" mmedrowcount="16" mmedcolcount="10" mmedmajorstridebits="0" mmedminorstridebits="0" />
+      <units>-</units>
+      <decimalpl>4</decimalpl>
+      <outputtype>1</outputtype>
+      <MATH equation="X*0.0050000000">
+        <VAR id="X" />
+      </MATH>
+    </XDFAXIS>
+  </XDFTABLE>
+
+  <XDFTABLE uniqueid="0x8" flags="0x0">
+    <title>[KFLDIMX] - LDR I-Regulator Limit (Controls Wastegate Duty Cycle)</title>
+    <description>-</description>
+    <XDFAXIS id="x" uniqueid="0x0">
+      <EMBEDDEDDATA mmedtypeflags="0x1" mmedaddress="0x0" mmedelementsizebits="8" mmedcolcount="8" mmedmajorstridebits="0" mmedminorstridebits="0" />
+      <indexcount>8</indexcount>
+      <units>-</units>
+      <outputtype>4</outputtype>
+      <decimalpl>0</decimalpl>
+      <datatype>0</datatype>
+      <DALINK index="0" />
+    </XDFAXIS>
+    <XDFAXIS id="y" uniqueid="0x0">
+      <EMBEDDEDDATA mmedtypeflags="0x0" mmedaddress="0x0" mmedelementsizebits="8" mmedcolcount="16" mmedmajorstridebits="0" mmedminorstridebits="0" />
+      <indexcount>16</indexcount>
+      <units>-</units>
+      <outputtype>4</outputtype>
+      <decimalpl>0</decimalpl>
+      <datatype>0</datatype>
+      <DALINK index="0" />
+    </XDFAXIS>
+    <XDFAXIS id="z">
+      <EMBEDDEDDATA mmedtypeflags="0x2" mmedaddress="0x2684C" mmedelementsizebits="16" mmedrowcount="16" mmedcolcount="8" mmedmajorstridebits="0" mmedminorstridebits="0" />
+      <units>-</units>
+      <decimalpl>4</decimalpl>
+      <outputtype>1</outputtype>
+      <MATH equation="X*0.0050000000">
+        <VAR id="X" />
+      </MATH>
+    </XDFAXIS>
+  </XDFTABLE>
+</XDFFORMAT>

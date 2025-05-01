@@ -1,0 +1,1842 @@
+<!-- Written 05/10/2020 23:37:35 -->
+<XDFFORMAT version="1.60">
+  <XDFHEADER>
+    <flags>0x1</flags>
+    <fileversion>Version 0</fileversion>
+    <deftitle>[8E0909518AK] - 0261208230 368072</deftitle>
+    <description>AUDI A4 B6 1.8T Engine Code AWM/AMB ; 1.8L R4/5V**0261208230         (SSECUHN)         **1037368072         (SSECUSN)         **8E0909518AL       (VAG part number) **0005                     (VAG sw number)   **1.8L R4/5VT         (engine id)**</description>
+    <BASEOFFSET offset="0" subtract="0" />
+    <DEFAULTS datasizeinbits="8" sigdigits="2" outputtype="1" signed="0" lsbfirst="0" float="0" />
+    <REGION type="0xFFFFFFFF" startaddress="0x0" size="0x100000" regionflags="0x0" name="Binary File" desc="This region describes the bin file edited by this XDF" />
+    <CATEGORY index="0x0" name="[BBBO]" />
+    <CATEGORY index="0x1" name="[BBKHZ]" />
+    <CATEGORY index="0x2" name="[BGMSZS]" />
+    <CATEGORY index="0x3" name="[BGRSM]" />
+    <CATEGORY index="0x4" name="[BGTEV]" />
+    <CATEGORY index="0x5" name="[DLDUV]" />
+    <CATEGORY index="0x6" name="[DLDR]" />
+    <CATEGORY index="0x7" name="[FUEDK]" />
+    <CATEGORY index="0x8" name="[GGDSAS]" />
+    <CATEGORY index="0x9" name="[GGLSU]" />
+    <CATEGORY index="0xA" name="[GGPBKV]" />
+    <CATEGORY index="0xB" name="[LDRPID]" />
+    <CATEGORY index="0xC" name="[LDUVST]" />
+    <CATEGORY index="0xD" name="[RKTI]" />
+    <CATEGORY index="0xE" name="[1013]" />
+    <CATEGORY index="0xF" name="[VCDS]" />
+    <CATEGORY index="0x10" name="[USER]" />
+    <CATEGORY index="0x11" name="[PATCH]" />
+  </XDFHEADER>
+  <XDFCONSTANT uniqueid="0x4BD0">
+    <title>[KVLAD]</title>
+    <description>Boost to flow constant**For 5120 Hack:**- Multiply by 2 </description>
+    <CATEGORYMEM index="0" category="3" />
+    <EMBEDDEDDATA mmedaddress="0x10EFD" mmedelementsizebits="8" mmedmajorstridebits="0" mmedminorstridebits="0" />
+    <units>hPA</units>
+    <decimalpl>4</decimalpl>
+    <datatype>0</datatype>
+    <unittype>0</unittype>
+    <DALINK index="0" />
+    <MATH equation="X*0.0078125">
+      <VAR id="X" />
+    </MATH>
+  </XDFCONSTANT>
+  <XDFTABLE uniqueid="0x3BB6" flags="0x0">
+    <title>[KFLDRQ1]</title>
+    <description>PID Integral**For 5120 Hack:**- See Axis</description>
+    <CATEGORYMEM index="0" category="12" />
+    <XDFAXIS id="x" uniqueid="0x0">
+      <EMBEDDEDDATA mmedtypeflags="0x02" mmedaddress="0x100BD" mmedelementsizebits="8" mmedcolcount="16" mmedmajorstridebits="0" mmedminorstridebits="0" />
+      <indexcount>16</indexcount>
+      <decimalpl>0</decimalpl>
+      <embedinfo type="1" />
+      <datatype>0</datatype>
+      <unittype>4</unittype>
+      <DALINK index="0" />
+      <MATH equation="X*40">
+        <VAR id="X" />
+      </MATH>
+    </XDFAXIS>
+    <XDFAXIS id="y" uniqueid="0x0">
+      <EMBEDDEDDATA mmedtypeflags="0x02" mmedaddress="0x10071" mmedelementsizebits="8" mmedcolcount="4" mmedmajorstridebits="0" mmedminorstridebits="0" />
+      <units>hPa</units>
+      <indexcount>4</indexcount>
+      <decimalpl>0</decimalpl>
+      <embedinfo type="3" linkobjid="0x4B22" />
+      <datatype>0</datatype>
+      <unittype>0</unittype>
+      <DALINK index="0" />
+      <MATH equation="X*10">
+        <VAR id="X" />
+      </MATH>
+    </XDFAXIS>
+    <XDFAXIS id="z">
+      <EMBEDDEDDATA mmedtypeflags="0x02" mmedaddress="0x29566" mmedelementsizebits="16" mmedrowcount="4" mmedcolcount="16" mmedmajorstridebits="0" mmedminorstridebits="0" />
+      <units>%/100hPa</units>
+      <decimalpl>2</decimalpl>
+      <min>0.000000</min>
+      <max>255.000000</max>
+      <outputtype>1</outputtype>
+      <MATH equation="X*0.05">
+        <VAR id="X" />
+      </MATH>
+    </XDFAXIS>
+  </XDFTABLE>
+  <XDFCONSTANT uniqueid="0x24D4">
+    <title>[DPUPS]</title>
+    <description>Differential pressure switch for reference pressure**For 5120 Hack:**- Divide by 2  </description>
+    <CATEGORYMEM index="0" category="8" />
+    <EMBEDDEDDATA mmedaddress="0x10F07" mmedelementsizebits="8" mmedmajorstridebits="0" mmedminorstridebits="0" />
+    <units>hPa</units>
+    <decimalpl>0</decimalpl>
+    <datatype>0</datatype>
+    <unittype>0</unittype>
+    <DALINK index="0" />
+    <MATH equation="X*10">
+      <VAR id="X" />
+    </MATH>
+  </XDFCONSTANT>
+  <XDFTABLE uniqueid="0x2702" flags="0x0">
+    <title>[FLAMPA]</title>
+    <description> Pressure correction for B1S1**For 5120 Hack:**-See Axis</description>
+    <CATEGORYMEM index="0" category="10" />
+    <XDFAXIS id="x" uniqueid="0x0">
+      <EMBEDDEDDATA mmedtypeflags="0x02" mmedaddress="0x13E7A" mmedelementsizebits="16" mmedcolcount="10" mmedmajorstridebits="16" mmedminorstridebits="0" />
+      <units>hPa</units>
+      <indexcount>10</indexcount>
+      <decimalpl>0</decimalpl>
+      <embedinfo type="3" linkobjid="0x75A7" />
+      <datatype>0</datatype>
+      <unittype>0</unittype>
+      <DALINK index="0" />
+      <MATH equation="X*0.039063">
+        <VAR id="X" />
+      </MATH>
+    </XDFAXIS>
+    <XDFAXIS id="y" uniqueid="0x0">
+      <EMBEDDEDDATA mmedelementsizebits="16" mmedmajorstridebits="-32" mmedminorstridebits="0" />
+      <indexcount>1</indexcount>
+      <decimalpl>0</decimalpl>
+      <datatype>0</datatype>
+      <unittype>0</unittype>
+      <DALINK index="0" />
+      <LABEL index="0" value="0" />
+      <MATH equation="0.039063*X">
+        <VAR id="X" />
+      </MATH>
+    </XDFAXIS>
+    <XDFAXIS id="z">
+      <EMBEDDEDDATA mmedtypeflags="0x02" mmedaddress="0x13E94" mmedelementsizebits="16" mmedrowcount="1" mmedcolcount="10" mmedmajorstridebits="0" mmedminorstridebits="0" />
+      <decimalpl>4</decimalpl>
+      <min>0.000000</min>
+      <max>255.000000</max>
+      <outputtype>1</outputtype>
+      <MATH equation="X*0.000030517578">
+        <VAR id="X" />
+      </MATH>
+    </XDFAXIS>
+  </XDFTABLE>
+  <XDFCONSTANT uniqueid="0x1AFB">
+    <title>[KISRM]</title>
+    <description>Integrator speed constant**For 5120 Hack:**- Divide by 2</description>
+    <CATEGORYMEM index="0" category="4" />
+    <EMBEDDEDDATA mmedtypeflags="0x02" mmedaddress="0x147E8" mmedelementsizebits="16" mmedmajorstridebits="0" mmedminorstridebits="0" />
+    <units>-</units>
+    <decimalpl>6</decimalpl>
+    <datatype>0</datatype>
+    <unittype>0</unittype>
+    <DALINK index="0" />
+    <MATH equation="X*0.000015258789">
+      <VAR id="X" />
+    </MATH>
+  </XDFCONSTANT>
+  <XDFCONSTANT uniqueid="0x2029">
+    <title>[PSSOLNGRD]</title>
+    <description>Negative limit for pssol gradient**For 5120 Hack:**- Divide by 2</description>
+    <CATEGORYMEM index="0" category="3" />
+    <EMBEDDEDDATA mmedtypeflags="0x03" mmedaddress="0x14C02" mmedelementsizebits="16" mmedmajorstridebits="0" mmedminorstridebits="0" />
+    <units>hPa/s</units>
+    <decimalpl>0</decimalpl>
+    <datatype>0</datatype>
+    <unittype>0</unittype>
+    <DALINK index="0" />
+    <MATH equation="X*0.78125">
+      <VAR id="X" />
+    </MATH>
+  </XDFCONSTANT>
+  <XDFCONSTANT uniqueid="0x4646">
+    <title>[PSSOLPF]</title>
+    <description>Positive limit for pssol filter**For 5120 Hack:**- Divide by 2</description>
+    <CATEGORYMEM index="0" category="3" />
+    <EMBEDDEDDATA mmedtypeflags="0x03" mmedaddress="0x14C04" mmedelementsizebits="16" mmedmajorstridebits="0" mmedminorstridebits="0" />
+    <units>hPa/s</units>
+    <decimalpl>0</decimalpl>
+    <datatype>0</datatype>
+    <unittype>0</unittype>
+    <DALINK index="0" />
+    <MATH equation="X*0.78125">
+      <VAR id="X" />
+    </MATH>
+  </XDFCONSTANT>
+  <XDFCONSTANT uniqueid="0x7E4D">
+    <title>[PSSOLPGRD]</title>
+    <description>Positive limit for pssol gradient **For 5120 Hack:**- Divide by 2</description>
+    <CATEGORYMEM index="0" category="3" />
+    <EMBEDDEDDATA mmedtypeflags="0x03" mmedaddress="0x14C06" mmedelementsizebits="16" mmedmajorstridebits="0" mmedminorstridebits="0" />
+    <units>hPa/s</units>
+    <decimalpl>0</decimalpl>
+    <datatype>0</datatype>
+    <unittype>0</unittype>
+    <DALINK index="0" />
+    <MATH equation="X*0.78125">
+      <VAR id="X" />
+    </MATH>
+  </XDFCONSTANT>
+  <XDFCONSTANT uniqueid="0x6824">
+    <title>[DSLGRAD]</title>
+    <description>MAP sensor linearization**For 5120 Hack:**- Divide by 2</description>
+    <CATEGORYMEM index="0" category="9" />
+    <CATEGORYMEM index="1" category="17" />
+    <EMBEDDEDDATA mmedtypeflags="0x02" mmedaddress="0x14C24" mmedelementsizebits="16" mmedmajorstridebits="0" mmedminorstridebits="0" />
+    <units>V/hPa</units>
+    <datatype>0</datatype>
+    <unittype>0</unittype>
+    <DALINK index="0" />
+    <MATH equation="X*0.015625">
+      <VAR id="X" />
+    </MATH>
+  </XDFCONSTANT>
+  <XDFCONSTANT uniqueid="0x3EAE">
+    <title>[DSLOFS]</title>
+    <description>MAP sensor offset**For 5120 Hack:**- Divide by 2</description>
+    <CATEGORYMEM index="0" category="9" />
+    <CATEGORYMEM index="1" category="17" />
+    <EMBEDDEDDATA mmedtypeflags="0x03" mmedaddress="0x14C26" mmedelementsizebits="16" mmedmajorstridebits="0" mmedminorstridebits="0" />
+    <datatype>0</datatype>
+    <unittype>0</unittype>
+    <DALINK index="0" />
+    <MATH equation="X*0.0390625">
+      <VAR id="X" />
+    </MATH>
+  </XDFCONSTANT>
+  <XDFTABLE uniqueid="0x6851" flags="0x0">
+    <title>[KLDLUL]</title>
+    <description>Delta Druck f*r *berladeschutzdiagnose**For 5120 Hack:**- Divide table by 2</description>
+    <CATEGORYMEM index="0" category="7" />
+    <XDFAXIS id="x" uniqueid="0x0">
+      <EMBEDDEDDATA mmedtypeflags="0x01" mmedaddress="0x27F3F" mmedelementsizebits="8" mmedcolcount="8" mmedmajorstridebits="0" mmedminorstridebits="0" />
+      <units>hPa</units>
+      <indexcount>8</indexcount>
+      <embedinfo type="3" linkobjid="0x4AC8" />
+      <datatype>0</datatype>
+      <unittype>0</unittype>
+      <DALINK index="0" />
+      <MATH equation="10*X">
+        <VAR id="X" />
+      </MATH>
+    </XDFAXIS>
+    <XDFAXIS id="y" uniqueid="0x0">
+      <EMBEDDEDDATA mmedelementsizebits="8" mmedcolcount="8" mmedmajorstridebits="0" mmedminorstridebits="0" />
+      <indexcount>1</indexcount>
+      <decimalpl>1</decimalpl>
+      <datatype>0</datatype>
+      <unittype>0</unittype>
+      <DALINK index="0" />
+      <LABEL index="0" value="0.0" />
+      <MATH equation="X">
+        <VAR id="X" />
+      </MATH>
+    </XDFAXIS>
+    <XDFAXIS id="z">
+      <EMBEDDEDDATA mmedtypeflags="0x04" mmedaddress="0x27E91" mmedelementsizebits="8" mmedrowcount="1" mmedcolcount="8" mmedmajorstridebits="0" mmedminorstridebits="0" />
+      <units>hPa</units>
+      <decimalpl>2</decimalpl>
+      <min>0.000000</min>
+      <max>255.000000</max>
+      <outputtype>1</outputtype>
+      <MATH equation="5*X">
+        <VAR id="X" />
+      </MATH>
+    </XDFAXIS>
+  </XDFTABLE>
+  <XDFTABLE uniqueid="0x4AC8" flags="0x0">
+    <title>[KFDLUL] - [hpa Axis]</title>
+    <description>KFDLUL hPa Axis**For 5120 Hack:**- Divide axis by 2</description>
+    <CATEGORYMEM index="0" category="7" />
+    <XDFAXIS id="x" uniqueid="0x0">
+      <EMBEDDEDDATA mmedelementsizebits="8" mmedmajorstridebits="-32" mmedminorstridebits="0" />
+      <indexcount>8</indexcount>
+      <datatype>0</datatype>
+      <unittype>0</unittype>
+      <DALINK index="0" />
+      <LABEL index="0" value="1.00" />
+      <LABEL index="1" value="2.00" />
+      <LABEL index="2" value="3.00" />
+      <LABEL index="3" value="4.00" />
+      <LABEL index="4" value="5.00" />
+      <LABEL index="5" value="6.00" />
+      <LABEL index="6" value="7.00" />
+      <LABEL index="7" value="8.00" />
+      <MATH equation="X">
+        <VAR id="X" />
+      </MATH>
+    </XDFAXIS>
+    <XDFAXIS id="y" uniqueid="0x0">
+      <EMBEDDEDDATA mmedelementsizebits="8" mmedmajorstridebits="-32" mmedminorstridebits="0" />
+      <indexcount>1</indexcount>
+      <datatype>0</datatype>
+      <unittype>0</unittype>
+      <DALINK index="0" />
+      <LABEL index="0" value="0.00" />
+      <MATH equation="X">
+        <VAR id="X" />
+      </MATH>
+    </XDFAXIS>
+    <XDFAXIS id="z">
+      <EMBEDDEDDATA mmedtypeflags="0x01" mmedaddress="0x27E89" mmedelementsizebits="8" mmedrowcount="1" mmedcolcount="8" mmedmajorstridebits="0" mmedminorstridebits="0" />
+      <units>hPa</units>
+      <decimalpl>2</decimalpl>
+      <min>0.000000</min>
+      <max>255.000000</max>
+      <outputtype>1</outputtype>
+      <MATH equation="10*X">
+        <VAR id="X" />
+      </MATH>
+    </XDFAXIS>
+  </XDFTABLE>
+  <XDFCONSTANT uniqueid="0x3603">
+    <title>[ZDSU]</title>
+    <description>Time constant lowpass pu/fho **For 5120 Hack:**- None</description>
+    <CATEGORYMEM index="0" category="9" />
+    <EMBEDDEDDATA mmedaddress="0x18C28" mmedelementsizebits="8" mmedmajorstridebits="0" mmedminorstridebits="0" />
+    <decimalpl>3</decimalpl>
+    <datatype>0</datatype>
+    <unittype>84</unittype>
+    <DALINK index="0" />
+    <MATH equation="X">
+      <VAR id="X" />
+    </MATH>
+  </XDFCONSTANT>
+  <XDFTABLE uniqueid="0x3572" flags="0x0">
+    <title>[KFLDIOPU]</title>
+    <description>I limit altitude correction**For 5120 Hack:**- See Axis**X-Axis: engine speed (nmot)**Y-Axis: ambient pressure (pu)</description>
+    <CATEGORYMEM index="0" category="12" />
+    <XDFAXIS id="x" uniqueid="0x0">
+      <EMBEDDEDDATA mmedaddress="0x10086" mmedelementsizebits="8" mmedcolcount="8" mmedmajorstridebits="8" mmedminorstridebits="0" />
+      <units>RPM</units>
+      <indexcount>8</indexcount>
+      <decimalpl>0</decimalpl>
+      <embedinfo type="1" />
+      <datatype>0</datatype>
+      <unittype>0</unittype>
+      <DALINK index="0" />
+      <MATH equation="X*40">
+        <VAR id="X" />
+      </MATH>
+    </XDFAXIS>
+    <XDFAXIS id="y" uniqueid="0x0">
+      <EMBEDDEDDATA mmedaddress="0x100CE" mmedelementsizebits="8" mmedcolcount="8" mmedmajorstridebits="8" mmedminorstridebits="0" />
+      <units>hPa</units>
+      <indexcount>8</indexcount>
+      <decimalpl>0</decimalpl>
+      <embedinfo type="3" linkobjid="0x6B22" />
+      <datatype>0</datatype>
+      <unittype>0</unittype>
+      <DALINK index="0" />
+      <MATH equation="X*5">
+        <VAR id="X" />
+      </MATH>
+    </XDFAXIS>
+    <XDFAXIS id="z">
+      <EMBEDDEDDATA mmedtypeflags="0x04" mmedaddress="0x1A2D2" mmedelementsizebits="8" mmedrowcount="8" mmedcolcount="8" mmedmajorstridebits="0" mmedminorstridebits="0" />
+      <decimalpl>2</decimalpl>
+      <min>0.000000</min>
+      <max>255.000000</max>
+      <outputtype>1</outputtype>
+      <MATH equation="X*0.64">
+        <VAR id="X" />
+      </MATH>
+    </XDFAXIS>
+  </XDFTABLE>
+  <XDFTABLE uniqueid="0x6B22" flags="0x0">
+    <title>[KFLDIOPU] - [hPa Axis]</title>
+    <description>hPa Axis**For 5120 Hack:**- Divide axis by 2 </description>
+    <CATEGORYMEM index="0" category="12" />
+    <XDFAXIS id="x" uniqueid="0x0">
+      <EMBEDDEDDATA mmedelementsizebits="8" mmedmajorstridebits="-32" mmedminorstridebits="0" />
+      <indexcount>8</indexcount>
+      <datatype>0</datatype>
+      <unittype>0</unittype>
+      <DALINK index="0" />
+      <LABEL index="0" value="1.00" />
+      <LABEL index="1" value="2.00" />
+      <LABEL index="2" value="3.00" />
+      <LABEL index="3" value="4.00" />
+      <LABEL index="4" value="5.00" />
+      <LABEL index="5" value="6.00" />
+      <LABEL index="6" value="7.00" />
+      <LABEL index="7" value="8.00" />
+      <MATH equation="X">
+        <VAR id="X" />
+      </MATH>
+    </XDFAXIS>
+    <XDFAXIS id="y" uniqueid="0x0">
+      <EMBEDDEDDATA mmedelementsizebits="8" mmedmajorstridebits="-32" mmedminorstridebits="0" />
+      <indexcount>1</indexcount>
+      <datatype>0</datatype>
+      <unittype>0</unittype>
+      <DALINK index="0" />
+      <LABEL index="0" value="0.00" />
+      <MATH equation="X">
+        <VAR id="X" />
+      </MATH>
+    </XDFAXIS>
+    <XDFAXIS id="z">
+      <EMBEDDEDDATA mmedaddress="0x100CE" mmedelementsizebits="8" mmedrowcount="1" mmedcolcount="8" mmedmajorstridebits="0" mmedminorstridebits="0" />
+      <decimalpl>2</decimalpl>
+      <min>0.000000</min>
+      <max>255.000000</max>
+      <outputtype>1</outputtype>
+      <MATH equation="5*X">
+        <VAR id="X" />
+      </MATH>
+    </XDFAXIS>
+  </XDFTABLE>
+  <XDFCONSTANT uniqueid="0xDBA">
+    <title>[LDEIAPS] - Charge Pressure PID - Control error threshold for fast positive tracking</title>
+    <description>Deviation threshold for positive I adaption**For 5120 Hack:**- Divide by 2</description>
+    <CATEGORYMEM index="0" category="12" />
+    <EMBEDDEDDATA mmedtypeflags="0x01" mmedaddress="0x1A313" mmedelementsizebits="8" mmedmajorstridebits="0" mmedminorstridebits="0" />
+    <units>hPa</units>
+    <decimalpl>0</decimalpl>
+    <datatype>0</datatype>
+    <unittype>0</unittype>
+    <DALINK index="0" />
+    <MATH equation="X*10">
+      <VAR id="X" />
+    </MATH>
+  </XDFCONSTANT>
+  <XDFCONSTANT uniqueid="0x2F3B">
+    <title>[LDEIAO] - Charge Pressure PID - Upper control error threshold for negative adjustment</title>
+    <description>Upper adaption limit for negative adaption**For 5120 Hack:**- Divide by 2</description>
+    <CATEGORYMEM index="0" category="12" />
+    <EMBEDDEDDATA mmedtypeflags="0x01" mmedaddress="0x1A312" mmedelementsizebits="8" mmedmajorstridebits="0" mmedminorstridebits="0" />
+    <units>hPa</units>
+    <decimalpl>0</decimalpl>
+    <datatype>0</datatype>
+    <unittype>0</unittype>
+    <DALINK index="0" />
+    <MATH equation="X*10">
+      <VAR id="X" />
+    </MATH>
+  </XDFCONSTANT>
+  <XDFCONSTANT uniqueid="0x6028">
+    <title>[LDEIAPS] - Charge Pressure PID - Control error threshold for fast positive tracking</title>
+    <description>Deviation threshold for fast positive I adaption**For 5120 Hack:**- Divide by 2</description>
+    <CATEGORYMEM index="0" category="12" />
+    <EMBEDDEDDATA mmedtypeflags="0x01" mmedaddress="0x1A314" mmedelementsizebits="8" mmedmajorstridebits="0" mmedminorstridebits="0" />
+    <units>hPa</units>
+    <decimalpl>0</decimalpl>
+    <datatype>0</datatype>
+    <unittype>0</unittype>
+    <DALINK index="0" />
+    <MATH equation="X*10">
+      <VAR id="X" />
+    </MATH>
+  </XDFCONSTANT>
+  <XDFCONSTANT uniqueid="0x76A0">
+    <title>[LDEIAU] - Charge Pressure PID - Lower control error threshold for negative adjustment</title>
+    <description>Lower adaption limit for negative adaption**For 5120 Hack:**- Divide by 2</description>
+    <CATEGORYMEM index="0" category="12" />
+    <EMBEDDEDDATA mmedtypeflags="0x01" mmedaddress="0x1A315" mmedelementsizebits="8" mmedmajorstridebits="0" mmedminorstridebits="0" />
+    <units>hPa</units>
+    <decimalpl>0</decimalpl>
+    <datatype>0</datatype>
+    <unittype>0</unittype>
+    <DALINK index="0" />
+    <MATH equation="X*10">
+      <VAR id="X" />
+    </MATH>
+  </XDFCONSTANT>
+  <XDFTABLE uniqueid="0x10DA" flags="0x0">
+    <title>[PADMSA]</title>
+    <description> Exhaust back pressure at B1S1**For 5120 Hack:**- Divide curve by 2  </description>
+    <CATEGORYMEM index="0" category="10" />
+    <XDFAXIS id="x" uniqueid="0x0">
+      <EMBEDDEDDATA mmedtypeflags="0x02" mmedaddress="0x1DA46" mmedelementsizebits="16" mmedcolcount="6" mmedmajorstridebits="16" mmedminorstridebits="0" />
+      <units>kg/hr</units>
+      <indexcount>6</indexcount>
+      <decimalpl>0</decimalpl>
+      <embedinfo type="1" />
+      <datatype>0</datatype>
+      <unittype>0</unittype>
+      <DALINK index="0" />
+      <MATH equation="X*0.1">
+        <VAR id="X" />
+      </MATH>
+    </XDFAXIS>
+    <XDFAXIS id="y" uniqueid="0x0">
+      <EMBEDDEDDATA mmedelementsizebits="8" mmedmajorstridebits="-32" mmedminorstridebits="0" />
+      <indexcount>1</indexcount>
+      <datatype>0</datatype>
+      <unittype>0</unittype>
+      <DALINK index="0" />
+      <LABEL index="0" value="0.00" />
+      <MATH equation="X">
+        <VAR id="X" />
+      </MATH>
+    </XDFAXIS>
+    <XDFAXIS id="z">
+      <EMBEDDEDDATA mmedtypeflags="0x02" mmedaddress="0x1DA52" mmedelementsizebits="16" mmedrowcount="1" mmedcolcount="6" mmedmajorstridebits="0" mmedminorstridebits="0" />
+      <units>hPa</units>
+      <decimalpl>0</decimalpl>
+      <min>0.000000</min>
+      <max>255.000000</max>
+      <outputtype>1</outputtype>
+      <MATH equation="X*0.0390625">
+        <VAR id="X" />
+      </MATH>
+    </XDFAXIS>
+  </XDFTABLE>
+  <XDFCONSTANT uniqueid="0x3980">
+    <title>[PUELSU]</title>
+    <description>Substitute LSU pressure for pu**For 5120 Hack:**- Divide by 2 </description>
+    <CATEGORYMEM index="0" category="10" />
+    <EMBEDDEDDATA mmedtypeflags="0x02" mmedaddress="0x1DA5E" mmedelementsizebits="16" mmedmajorstridebits="0" mmedminorstridebits="0" />
+    <units>hPa</units>
+    <datatype>0</datatype>
+    <unittype>0</unittype>
+    <DALINK index="0" />
+    <MATH equation="X*0.0390625">
+      <VAR id="X" />
+    </MATH>
+  </XDFCONSTANT>
+  <XDFTABLE uniqueid="0x4027" flags="0x0">
+    <title>[KFPRG] - Internal partial exhaust gas pressure dependent on camshaft adjustment sumode=0</title>
+    <description>Internal exhuast reversion backpressure**For 5120 Hack:**- Divide by 2 **X-Axis: Auswahl zwischen wnwue und wnwisa zur Adressierung der KF f*r pirg und fupsrl**Y-Axis: Motordrehzahl</description>
+    <CATEGORYMEM index="0" category="4" />
+    <XDFAXIS id="x" uniqueid="0x0">
+      <EMBEDDEDDATA mmedtypeflags="0x02" mmedaddress="0x1E880" mmedelementsizebits="16" mmedcolcount="6" mmedmajorstridebits="16" mmedminorstridebits="0" />
+      <units>*KW</units>
+      <indexcount>6</indexcount>
+      <embedinfo type="1" />
+      <datatype>0</datatype>
+      <unittype>0</unittype>
+      <DALINK index="0" />
+      <MATH equation="X*0.001953125">
+        <VAR id="X" />
+      </MATH>
+    </XDFAXIS>
+    <XDFAXIS id="y" uniqueid="0x0">
+      <EMBEDDEDDATA mmedtypeflags="0x02" mmedaddress="0x1E88C" mmedelementsizebits="16" mmedcolcount="10" mmedmajorstridebits="16" mmedminorstridebits="0" />
+      <units>U/min</units>
+      <indexcount>10</indexcount>
+      <decimalpl>0</decimalpl>
+      <embedinfo type="1" />
+      <datatype>0</datatype>
+      <unittype>0</unittype>
+      <DALINK index="0" />
+      <MATH equation="X*0.25">
+        <VAR id="X" />
+      </MATH>
+    </XDFAXIS>
+    <XDFAXIS id="z">
+      <EMBEDDEDDATA mmedtypeflags="0x06" mmedaddress="0x1E8A0" mmedelementsizebits="16" mmedrowcount="10" mmedcolcount="6" mmedmajorstridebits="0" mmedminorstridebits="0" />
+      <units>hPa</units>
+      <decimalpl>4</decimalpl>
+      <min>0.000000</min>
+      <max>255.000000</max>
+      <outputtype>1</outputtype>
+      <MATH equation="X*0.0390625">
+        <VAR id="X" />
+      </MATH>
+    </XDFAXIS>
+  </XDFTABLE>
+  <XDFTABLE uniqueid="0x37BD" flags="0x0">
+    <title>[KFURL] - Conversion factor from ps to rl dependent on adjustable camshaft when sumode = 0</title>
+    <description>Conversion factor ps_w -&gt; rl_w**For 5120 Hack:**- Multiply by 2  **X-Axis: Auswahl zwischen wnwue und wnwisa zur Adressierung der KF f*r pirg und fupsrl**Y-Axis: Motordrehzahl</description>
+    <CATEGORYMEM index="0" category="4" />
+    <XDFAXIS id="x" uniqueid="0x0">
+      <EMBEDDEDDATA mmedtypeflags="0x02" mmedaddress="0x1E91C" mmedelementsizebits="16" mmedcolcount="6" mmedmajorstridebits="16" mmedminorstridebits="0" />
+      <units>*KW</units>
+      <indexcount>6</indexcount>
+      <embedinfo type="1" />
+      <datatype>0</datatype>
+      <unittype>0</unittype>
+      <DALINK index="0" />
+      <MATH equation="X*0.001953125">
+        <VAR id="X" />
+      </MATH>
+    </XDFAXIS>
+    <XDFAXIS id="y" uniqueid="0x0">
+      <EMBEDDEDDATA mmedtypeflags="0x02" mmedaddress="0x1E928" mmedelementsizebits="16" mmedcolcount="10" mmedmajorstridebits="16" mmedminorstridebits="0" />
+      <units>U/min</units>
+      <indexcount>10</indexcount>
+      <decimalpl>0</decimalpl>
+      <embedinfo type="1" />
+      <datatype>0</datatype>
+      <unittype>0</unittype>
+      <DALINK index="0" />
+      <MATH equation="X*0.25">
+        <VAR id="X" />
+      </MATH>
+    </XDFAXIS>
+    <XDFAXIS id="z">
+      <EMBEDDEDDATA mmedtypeflags="0x06" mmedaddress="0x1E93C" mmedelementsizebits="16" mmedrowcount="10" mmedcolcount="6" mmedmajorstridebits="0" mmedminorstridebits="0" />
+      <units>%/hPa</units>
+      <decimalpl>5</decimalpl>
+      <min>0.000000</min>
+      <max>255.000000</max>
+      <outputtype>1</outputtype>
+      <MATH equation="X*0.000004577637">
+        <VAR id="X" />
+      </MATH>
+    </XDFAXIS>
+  </XDFTABLE>
+  <XDFCONSTANT uniqueid="0x64FC">
+    <title>[DPDSVLU]</title>
+    <description>Delta pressure between pu_w and boost**For 5120 Hack:**- Divide by 2</description>
+    <CATEGORYMEM index="0" category="9" />
+    <EMBEDDEDDATA mmedtypeflags="0x02" mmedaddress="0x1EB0C" mmedelementsizebits="16" mmedmajorstridebits="0" mmedminorstridebits="0" />
+    <units>hPa</units>
+    <datatype>0</datatype>
+    <unittype>0</unittype>
+    <DALINK index="0" />
+    <MATH equation="X*0.0390625">
+      <VAR id="X" />
+    </MATH>
+  </XDFCONSTANT>
+  <XDFCONSTANT uniqueid="0x200F">
+    <title>[DSUGRAD]</title>
+    <description>MAP ambient linearization**For 5120 Hack**- Divide by 2</description>
+    <CATEGORYMEM index="0" category="9" />
+    <EMBEDDEDDATA mmedtypeflags="0x02" mmedaddress="0x1EB30" mmedelementsizebits="16" mmedmajorstridebits="0" mmedminorstridebits="0" />
+    <units>V/hPa</units>
+    <datatype>0</datatype>
+    <unittype>0</unittype>
+    <DALINK index="0" />
+    <MATH equation="X*0.015625">
+      <VAR id="X" />
+    </MATH>
+  </XDFCONSTANT>
+  <XDFCONSTANT uniqueid="0x173E">
+    <title>[PUE]</title>
+    <description>Substitute value for pu_w**For 5120 Hack:**- Divide by 2</description>
+    <CATEGORYMEM index="0" category="9" />
+    <EMBEDDEDDATA mmedtypeflags="0x02" mmedaddress="0x1EB34" mmedelementsizebits="16" mmedmajorstridebits="0" mmedminorstridebits="0" />
+    <units>hPa</units>
+    <datatype>0</datatype>
+    <unittype>0</unittype>
+    <DALINK index="0" />
+    <MATH equation="X*0.0390625">
+      <VAR id="X" />
+    </MATH>
+  </XDFCONSTANT>
+  <XDFCONSTANT uniqueid="0x1A1A">
+    <title>[PUMN]</title>
+    <description>Minimum pu_w**For 5120 Hack:**- Divide by 2</description>
+    <CATEGORYMEM index="0" category="9" />
+    <EMBEDDEDDATA mmedtypeflags="0x02" mmedaddress="0x1EB36" mmedelementsizebits="16" mmedmajorstridebits="0" mmedminorstridebits="0" />
+    <units>hPa</units>
+    <datatype>0</datatype>
+    <unittype>0</unittype>
+    <DALINK index="0" />
+    <MATH equation="X*0.0390625">
+      <VAR id="X" />
+    </MATH>
+  </XDFCONSTANT>
+  <XDFCONSTANT uniqueid="0x886">
+    <title>[PUMX]</title>
+    <description>Maximum pu_w**FOr 5120 Hack:**- Divide by 2</description>
+    <CATEGORYMEM index="0" category="9" />
+    <EMBEDDEDDATA mmedtypeflags="0x02" mmedaddress="0x1EB38" mmedelementsizebits="16" mmedmajorstridebits="0" mmedminorstridebits="0" />
+    <units>hPa</units>
+    <datatype>0</datatype>
+    <unittype>0</unittype>
+    <DALINK index="0" />
+    <MATH equation="X*0.0390625">
+      <VAR id="X" />
+    </MATH>
+  </XDFCONSTANT>
+  <XDFTABLE uniqueid="0x2B63" flags="0x0">
+    <title>[MSNPCV]</title>
+    <description>Massenstrom *ber PCV Ventil**Mass flow through the PCV valve</description>
+    <CATEGORYMEM index="0" category="1" />
+    <XDFAXIS id="x" uniqueid="0x0">
+      <EMBEDDEDDATA mmedaddress="0x19BBC" mmedelementsizebits="8" mmedcolcount="14" mmedmajorstridebits="0" mmedminorstridebits="0" />
+      <units>hPa</units>
+      <indexcount>14</indexcount>
+      <decimalpl>0</decimalpl>
+      <embedinfo type="1" />
+      <datatype>0</datatype>
+      <unittype>0</unittype>
+      <DALINK index="0" />
+      <MATH equation="10*X">
+        <VAR id="X" />
+      </MATH>
+    </XDFAXIS>
+    <XDFAXIS id="y" uniqueid="0x0">
+      <EMBEDDEDDATA mmedelementsizebits="8" mmedmajorstridebits="-32" mmedminorstridebits="0" />
+      <indexcount>1</indexcount>
+      <datatype>0</datatype>
+      <unittype>0</unittype>
+      <DALINK index="0" />
+      <LABEL index="0" value="0.00" />
+      <MATH equation="X">
+        <VAR id="X" />
+      </MATH>
+    </XDFAXIS>
+    <XDFAXIS id="z">
+      <EMBEDDEDDATA mmedaddress="0x19BCA" mmedelementsizebits="8" mmedrowcount="1" mmedcolcount="14" mmedmajorstridebits="0" mmedminorstridebits="0" />
+      <decimalpl>2</decimalpl>
+      <min>0.000000</min>
+      <max>255.000000</max>
+      <outputtype>1</outputtype>
+      <MATH equation="0.1*X">
+        <VAR id="X" />
+      </MATH>
+    </XDFAXIS>
+  </XDFTABLE>
+  <XDFTABLE uniqueid="0x74F" flags="0x0">
+    <title>[MSNPCV] - [hPa Axis]</title>
+    <description>For 5120 Hack:**- Divide axis by 2</description>
+    <CATEGORYMEM index="0" category="1" />
+    <XDFAXIS id="x" uniqueid="0x0">
+      <EMBEDDEDDATA mmedelementsizebits="8" mmedmajorstridebits="-32" mmedminorstridebits="0" />
+      <indexcount>14</indexcount>
+      <datatype>0</datatype>
+      <unittype>0</unittype>
+      <DALINK index="0" />
+      <LABEL index="0" value="1.00" />
+      <LABEL index="1" value="2.00" />
+      <LABEL index="2" value="3.00" />
+      <LABEL index="3" value="4.00" />
+      <LABEL index="4" value="5.00" />
+      <LABEL index="5" value="6.00" />
+      <LABEL index="6" value="7.00" />
+      <LABEL index="7" value="8.00" />
+      <LABEL index="8" value="9.00" />
+      <LABEL index="9" value="10.00" />
+      <LABEL index="10" value="11.00" />
+      <LABEL index="11" value="12.00" />
+      <LABEL index="12" value="13.00" />
+      <LABEL index="13" value="14.00" />
+      <MATH equation="X">
+        <VAR id="X" />
+      </MATH>
+    </XDFAXIS>
+    <XDFAXIS id="y" uniqueid="0x0">
+      <EMBEDDEDDATA mmedelementsizebits="8" mmedmajorstridebits="-32" mmedminorstridebits="0" />
+      <indexcount>1</indexcount>
+      <datatype>0</datatype>
+      <unittype>0</unittype>
+      <DALINK index="0" />
+      <LABEL index="0" value="0.00" />
+      <MATH equation="X">
+        <VAR id="X" />
+      </MATH>
+    </XDFAXIS>
+    <XDFAXIS id="z">
+      <EMBEDDEDDATA mmedaddress="0x19BBC" mmedelementsizebits="8" mmedrowcount="1" mmedcolcount="14" mmedmajorstridebits="0" mmedminorstridebits="0" />
+      <decimalpl>0</decimalpl>
+      <min>0.000000</min>
+      <max>255.000000</max>
+      <outputtype>1</outputtype>
+      <MATH equation="10*X">
+        <VAR id="X" />
+      </MATH>
+    </XDFAXIS>
+  </XDFTABLE>
+  <XDFCONSTANT uniqueid="0x49D">
+    <title>[DLDUVES]</title>
+    <description>Einschaltschwelle f(pspvds_w) f*r Schubumluftventildiagnose beim Turbo**Switch-on threshold f (pspvds_w) for diverter valve diagnosis in turbo**For 5120 Hack:**- Divide by 2 </description>
+    <CATEGORYMEM index="0" category="6" />
+    <EMBEDDEDDATA mmedtypeflags="0x02" mmedaddress="0x13FF8" mmedelementsizebits="16" mmedmajorstridebits="0" mmedminorstridebits="0" />
+    <datatype>0</datatype>
+    <unittype>0</unittype>
+    <DALINK index="0" />
+    <MATH equation="X*0.0390625">
+      <VAR id="X" />
+    </MATH>
+  </XDFCONSTANT>
+  <XDFTABLE uniqueid="0x2C91" flags="0x0">
+    <title>[PBKVVSTGPV]</title>
+    <description>Unterdruckverst*rkung durch Saugstrahleffekt**For 5120 Hack:**- Divide curve by 2**- See Axis </description>
+    <CATEGORYMEM index="0" category="11" />
+    <XDFAXIS id="x" uniqueid="0x0">
+      <EMBEDDEDDATA mmedtypeflags="0x02" mmedaddress="0x2D800" mmedelementsizebits="16" mmedcolcount="6" mmedmajorstridebits="16" mmedminorstridebits="0" />
+      <units>hPa</units>
+      <indexcount>6</indexcount>
+      <embedinfo type="3" linkobjid="0x38AC" />
+      <datatype>0</datatype>
+      <unittype>0</unittype>
+      <DALINK index="0" />
+      <MATH equation="0.039063*X">
+        <VAR id="X" />
+      </MATH>
+    </XDFAXIS>
+    <XDFAXIS id="y" uniqueid="0x0">
+      <EMBEDDEDDATA mmedelementsizebits="8" mmedmajorstridebits="-32" mmedminorstridebits="0" />
+      <indexcount>1</indexcount>
+      <datatype>0</datatype>
+      <unittype>0</unittype>
+      <DALINK index="0" />
+      <LABEL index="0" value="0.00" />
+      <MATH equation="X">
+        <VAR id="X" />
+      </MATH>
+    </XDFAXIS>
+    <XDFAXIS id="z">
+      <EMBEDDEDDATA mmedtypeflags="0x02" mmedaddress="0x2DCC6" mmedelementsizebits="16" mmedrowcount="1" mmedcolcount="6" mmedmajorstridebits="0" mmedminorstridebits="0" />
+      <units>hPa</units>
+      <decimalpl>2</decimalpl>
+      <min>0.000000</min>
+      <max>255.000000</max>
+      <outputtype>1</outputtype>
+      <MATH equation="X*0.0390625">
+        <VAR id="X" />
+      </MATH>
+    </XDFAXIS>
+  </XDFTABLE>
+  <XDFCONSTANT uniqueid="0x6A65">
+    <title>[PUEBKV]</title>
+    <description>Ersatzwert f*r Umgebungsdruck f*r BKV**For 5120 Hack:**- Divide by 2</description>
+    <CATEGORYMEM index="0" category="11" />
+    <EMBEDDEDDATA mmedtypeflags="0x02" mmedaddress="0x2DCD2" mmedelementsizebits="16" mmedmajorstridebits="0" mmedminorstridebits="0" />
+    <decimalpl>4</decimalpl>
+    <datatype>0</datatype>
+    <unittype>0</unittype>
+    <DALINK index="0" />
+    <MATH equation="X*0.0390625">
+      <VAR id="X" />
+    </MATH>
+  </XDFCONSTANT>
+  <XDFCONSTANT uniqueid="0x24B3">
+    <title>[CWGGPBKV_0_A]</title>
+    <description>CWGGPBKVCodewort f*r Bremskraftverst*rker Funktion GGPBKV**For 5120 Hack:**- Verify the value is equal to 6 which means that the brake amplifier function is turned off.</description>
+    <CATEGORYMEM index="0" category="11" />
+    <EMBEDDEDDATA mmedaddress="0x12B7B" mmedelementsizebits="8" mmedmajorstridebits="0" mmedminorstridebits="0" />
+    <datatype>0</datatype>
+    <unittype>0</unittype>
+    <DALINK index="0" />
+    <MATH equation="X">
+      <VAR id="X" />
+    </MATH>
+  </XDFCONSTANT>
+  <XDFCONSTANT uniqueid="0x252B">
+    <title>[HSLDSUA]</title>
+    <description>Hysterese f*r station*re Schubumluftventilansteuerung**For 5120 Hack:**- Divide by 2</description>
+    <CATEGORYMEM index="0" category="13" />
+    <EMBEDDEDDATA mmedtypeflags="0x02" mmedaddress="0x1563A" mmedelementsizebits="16" mmedmajorstridebits="0" mmedminorstridebits="0" />
+    <units>hPa</units>
+    <decimalpl>1</decimalpl>
+    <datatype>0</datatype>
+    <unittype>0</unittype>
+    <DALINK index="0" />
+    <MATH equation="X*0.0390625">
+      <VAR id="X" />
+    </MATH>
+  </XDFCONSTANT>
+  <XDFCONSTANT uniqueid="0x3C67">
+    <title>[LDUVRS]</title>
+    <description>LDR Umluftventilsteuerung Reset vom Sollwert**For 5120 Hack:**- Divide by 2</description>
+    <CATEGORYMEM index="0" category="13" />
+    <EMBEDDEDDATA mmedtypeflags="0x02" mmedaddress="0x1563C" mmedelementsizebits="16" mmedmajorstridebits="0" mmedminorstridebits="0" />
+    <decimalpl>1</decimalpl>
+    <datatype>0</datatype>
+    <unittype>0</unittype>
+    <DALINK index="0" />
+    <MATH equation="X*0.0390625">
+      <VAR id="X" />
+    </MATH>
+  </XDFCONSTANT>
+  <XDFCONSTANT uniqueid="0x5B">
+    <title>[PVDKMN]</title>
+    <description>Min threshold for boost error diag**For 5120 Hack:**- Divide by 2</description>
+    <CATEGORYMEM index="0" category="9" />
+    <EMBEDDEDDATA mmedtypeflags="0x02" mmedaddress="0x1EB3C" mmedelementsizebits="16" mmedmajorstridebits="0" mmedminorstridebits="0" />
+    <units>hPa</units>
+    <datatype>0</datatype>
+    <unittype>0</unittype>
+    <DALINK index="0" />
+    <MATH equation="X*0.0390625">
+      <VAR id="X" />
+    </MATH>
+  </XDFCONSTANT>
+  <XDFTABLE uniqueid="0x599A" flags="0x0">
+    <title>[FRLFSDP]</title>
+    <description>Intake pressure correction**For 5120 Hack:**- See Axis</description>
+    <CATEGORYMEM index="0" category="14" />
+    <XDFAXIS id="x" uniqueid="0x0">
+      <EMBEDDEDDATA mmedtypeflags="0x03" mmedaddress="0x1F7F0" mmedelementsizebits="16" mmedcolcount="11" mmedmajorstridebits="16" mmedminorstridebits="0" />
+      <units>hPa</units>
+      <indexcount>11</indexcount>
+      <decimalpl>0</decimalpl>
+      <embedinfo type="3" linkobjid="0xFA9" />
+      <datatype>0</datatype>
+      <unittype>0</unittype>
+      <DALINK index="0" />
+      <MATH equation="X*0.3125">
+        <VAR id="X" />
+      </MATH>
+    </XDFAXIS>
+    <XDFAXIS id="y" uniqueid="0x0">
+      <EMBEDDEDDATA mmedelementsizebits="8" mmedmajorstridebits="-32" mmedminorstridebits="0" />
+      <indexcount>1</indexcount>
+      <datatype>0</datatype>
+      <unittype>0</unittype>
+      <DALINK index="0" />
+      <LABEL index="0" value="0.00" />
+      <MATH equation="X">
+        <VAR id="X" />
+      </MATH>
+    </XDFAXIS>
+    <XDFAXIS id="z">
+      <EMBEDDEDDATA mmedtypeflags="0x06" mmedaddress="0x1F9F6" mmedelementsizebits="16" mmedrowcount="1" mmedcolcount="11" mmedmajorstridebits="0" mmedminorstridebits="0" />
+      <units>-</units>
+      <decimalpl>4</decimalpl>
+      <min>0.000000</min>
+      <max>255.000000</max>
+      <outputtype>1</outputtype>
+      <MATH equation="X*0.000030517578">
+        <VAR id="X" />
+      </MATH>
+    </XDFAXIS>
+  </XDFTABLE>
+  <XDFTABLE uniqueid="0xFA9" flags="0x0">
+    <title>[FRLFSDP] - [hPa Axis]</title>
+    <description>FRLFSDP - hPa Axis**For 5120 Hack**- Divide axis by 2 </description>
+    <CATEGORYMEM index="0" category="14" />
+    <XDFAXIS id="x" uniqueid="0x0">
+      <EMBEDDEDDATA mmedelementsizebits="8" mmedmajorstridebits="-32" mmedminorstridebits="0" />
+      <indexcount>11</indexcount>
+      <datatype>0</datatype>
+      <unittype>0</unittype>
+      <DALINK index="0" />
+      <LABEL index="0" value="1.00" />
+      <LABEL index="1" value="2.00" />
+      <LABEL index="2" value="3.00" />
+      <LABEL index="3" value="4.00" />
+      <LABEL index="4" value="5.00" />
+      <LABEL index="5" value="6.00" />
+      <LABEL index="6" value="7.00" />
+      <LABEL index="7" value="8.00" />
+      <LABEL index="8" value="9.00" />
+      <LABEL index="9" value="10.00" />
+      <LABEL index="10" value="11.00" />
+      <MATH equation="X">
+        <VAR id="X" />
+      </MATH>
+    </XDFAXIS>
+    <XDFAXIS id="y" uniqueid="0x0">
+      <EMBEDDEDDATA mmedelementsizebits="8" mmedmajorstridebits="-32" mmedminorstridebits="0" />
+      <indexcount>1</indexcount>
+      <datatype>0</datatype>
+      <unittype>0</unittype>
+      <DALINK index="0" />
+      <LABEL index="0" value="0.00" />
+      <MATH equation="X">
+        <VAR id="X" />
+      </MATH>
+    </XDFAXIS>
+    <XDFAXIS id="z">
+      <EMBEDDEDDATA mmedtypeflags="0x03" mmedaddress="0x1F9E0" mmedelementsizebits="16" mmedrowcount="1" mmedcolcount="11" mmedmajorstridebits="0" mmedminorstridebits="0" />
+      <decimalpl>2</decimalpl>
+      <min>0.000000</min>
+      <max>255.000000</max>
+      <outputtype>1</outputtype>
+      <MATH equation="X*0.3125">
+        <VAR id="X" />
+      </MATH>
+    </XDFAXIS>
+  </XDFTABLE>
+  <XDFCONSTANT uniqueid="0x3D32">
+    <title>[FHOKH]</title>
+    <description>minimaler H*henfaktor f*r Katheizen**Altitude threshold for KH**For 5120 Hack:**- Set to 0 (in addition to fho_w ASM division)****</description>
+    <CATEGORYMEM index="0" category="2" />
+    <EMBEDDEDDATA mmedtypeflags="0x02" mmedaddress="0x2753E" mmedelementsizebits="16" mmedmajorstridebits="0" mmedminorstridebits="0" />
+    <units>-</units>
+    <decimalpl>6</decimalpl>
+    <datatype>0</datatype>
+    <unittype>0</unittype>
+    <DALINK index="0" />
+    <MATH equation="0.000061035156*X">
+      <VAR id="X" />
+    </MATH>
+  </XDFCONSTANT>
+  <XDFTABLE uniqueid="0x4724" flags="0x0">
+    <title>[KFLDIMX] - LDR I-Regulator Limit (Controls Wastegate Duty Cycle)</title>
+    <description>PID I limit**For 5120 Hack:**- See Axis**X-Axis: relative solladedruck LDR (plsolr_w)**Y-Axis: engine speed (nmot_w)</description>
+    <CATEGORYMEM index="0" category="12" />
+    <CATEGORYMEM index="1" category="17" />
+    <XDFAXIS id="x" uniqueid="0x0">
+      <EMBEDDEDDATA mmedtypeflags="0x02" mmedaddress="0x138A0" mmedelementsizebits="16" mmedcolcount="16" mmedmajorstridebits="16" mmedminorstridebits="0" />
+      <units>U/min</units>
+      <indexcount>16</indexcount>
+      <decimalpl>0</decimalpl>
+      <embedinfo type="1" linkobjid="0x633B" />
+      <datatype>0</datatype>
+      <unittype>0</unittype>
+      <DALINK index="0" />
+      <MATH equation="X*0.25">
+        <VAR id="X" />
+      </MATH>
+    </XDFAXIS>
+    <XDFAXIS id="y" uniqueid="0x0">
+      <EMBEDDEDDATA mmedtypeflags="0x02" mmedaddress="0x1389A" mmedelementsizebits="16" mmedcolcount="16" mmedmajorstridebits="16" mmedminorstridebits="0" />
+      <units>hPa</units>
+      <indexcount>8</indexcount>
+      <decimalpl>0</decimalpl>
+      <embedinfo type="3" linkobjid="0x633B" />
+      <datatype>0</datatype>
+      <unittype>4</unittype>
+      <DALINK index="0" />
+      <MATH equation="X*0.25">
+        <VAR id="X" />
+      </MATH>
+    </XDFAXIS>
+    <XDFAXIS id="z">
+      <EMBEDDEDDATA mmedtypeflags="0x02" mmedaddress="0x29254" mmedelementsizebits="16" mmedrowcount="8" mmedcolcount="16" mmedmajorstridebits="0" mmedminorstridebits="0" />
+      <decimalpl>0</decimalpl>
+      <min>0.000000</min>
+      <max>255.000000</max>
+      <outputtype>1</outputtype>
+      <MATH equation="X*0.005">
+        <VAR id="X" />
+      </MATH>
+    </XDFAXIS>
+  </XDFTABLE>
+  <XDFTABLE uniqueid="0x633B" flags="0x0">
+    <title>[KFLDIMX] - [hPa Axis]</title>
+    <description>KFLDIMX - hPa Axis / SPL08LDUW**For 5120 Hack:**- Divide axis by 2</description>
+    <CATEGORYMEM index="0" category="12" />
+    <CATEGORYMEM index="1" category="17" />
+    <XDFAXIS id="x" uniqueid="0x0">
+      <EMBEDDEDDATA mmedelementsizebits="8" mmedmajorstridebits="-32" mmedminorstridebits="0" />
+      <indexcount>8</indexcount>
+      <datatype>0</datatype>
+      <unittype>0</unittype>
+      <DALINK index="0" />
+      <LABEL index="0" value="1.00" />
+      <LABEL index="1" value="2.00" />
+      <LABEL index="2" value="3.00" />
+      <LABEL index="3" value="4.00" />
+      <LABEL index="4" value="5.00" />
+      <LABEL index="5" value="6.00" />
+      <LABEL index="6" value="7.00" />
+      <LABEL index="7" value="8.00" />
+      <MATH equation="X">
+        <VAR id="X" />
+      </MATH>
+    </XDFAXIS>
+    <XDFAXIS id="y" uniqueid="0x0">
+      <EMBEDDEDDATA mmedelementsizebits="8" mmedmajorstridebits="-32" mmedminorstridebits="0" />
+      <indexcount>1</indexcount>
+      <datatype>0</datatype>
+      <unittype>0</unittype>
+      <DALINK index="0" />
+      <LABEL index="0" value="0.00" />
+      <MATH equation="X">
+        <VAR id="X" />
+      </MATH>
+    </XDFAXIS>
+    <XDFAXIS id="z">
+      <EMBEDDEDDATA mmedtypeflags="0x02" mmedaddress="0x296FA" mmedelementsizebits="16" mmedrowcount="1" mmedcolcount="8" mmedmajorstridebits="0" mmedminorstridebits="0" />
+      <units>hPa</units>
+      <decimalpl>2</decimalpl>
+      <min>0.000000</min>
+      <max>255.000000</max>
+      <outputtype>1</outputtype>
+      <MATH equation="X*0.0390625">
+        <VAR id="X" />
+      </MATH>
+    </XDFAXIS>
+  </XDFTABLE>
+  <XDFTABLE uniqueid="0x1658" flags="0x0">
+    <title>[KFLDRQ0]</title>
+    <description>PID Proportional**For 5120 Hack:**- See Axis</description>
+    <CATEGORYMEM index="0" category="12" />
+    <XDFAXIS id="x" uniqueid="0x0">
+      <EMBEDDEDDATA mmedtypeflags="0x02" mmedaddress="0x100BD" mmedelementsizebits="8" mmedcolcount="16" mmedmajorstridebits="0" mmedminorstridebits="0" />
+      <indexcount>16</indexcount>
+      <decimalpl>0</decimalpl>
+      <embedinfo type="1" />
+      <datatype>0</datatype>
+      <unittype>4</unittype>
+      <DALINK index="0" />
+      <MATH equation="X*40">
+        <VAR id="X" />
+      </MATH>
+    </XDFAXIS>
+    <XDFAXIS id="y" uniqueid="0x0">
+      <EMBEDDEDDATA mmedtypeflags="0x02" mmedaddress="0x10071" mmedelementsizebits="8" mmedcolcount="4" mmedmajorstridebits="0" mmedminorstridebits="0" />
+      <units>hPa</units>
+      <indexcount>4</indexcount>
+      <decimalpl>0</decimalpl>
+      <embedinfo type="3" linkobjid="0x4B22" />
+      <datatype>0</datatype>
+      <unittype>0</unittype>
+      <DALINK index="0" />
+      <MATH equation="X*10">
+        <VAR id="X" />
+      </MATH>
+    </XDFAXIS>
+    <XDFAXIS id="z">
+      <EMBEDDEDDATA mmedtypeflags="0x06" mmedaddress="0x294E6" mmedelementsizebits="16" mmedrowcount="4" mmedcolcount="16" mmedmajorstridebits="0" mmedminorstridebits="0" />
+      <units>%/100 hPa</units>
+      <decimalpl>2</decimalpl>
+      <min>0.000000</min>
+      <max>255.000000</max>
+      <outputtype>1</outputtype>
+      <MATH equation="X*0.05">
+        <VAR id="X" />
+      </MATH>
+    </XDFAXIS>
+  </XDFTABLE>
+  <XDFTABLE uniqueid="0x4B22" flags="0x0">
+    <title>[KFLDRQ0] - + KFLDRQ1+ KFLDRQ2 [hPa Axis]</title>
+    <description>KFLDRQ0 + KFLDRQ1+ KFLDRQ2 - hPa Axis**For 5120 Hack:**- Divide axis by 2</description>
+    <CATEGORYMEM index="0" category="12" />
+    <XDFAXIS id="x" uniqueid="0x0">
+      <EMBEDDEDDATA mmedelementsizebits="8" mmedmajorstridebits="-32" mmedminorstridebits="0" />
+      <units>hPa</units>
+      <indexcount>4</indexcount>
+      <datatype>0</datatype>
+      <unittype>0</unittype>
+      <DALINK index="0" />
+      <LABEL index="0" value="1.00" />
+      <LABEL index="1" value="2.00" />
+      <LABEL index="2" value="3.00" />
+      <LABEL index="3" value="4.00" />
+      <MATH equation="X">
+        <VAR id="X" />
+      </MATH>
+    </XDFAXIS>
+    <XDFAXIS id="y" uniqueid="0x0">
+      <EMBEDDEDDATA mmedelementsizebits="8" mmedmajorstridebits="-32" mmedminorstridebits="0" />
+      <indexcount>1</indexcount>
+      <datatype>0</datatype>
+      <unittype>0</unittype>
+      <DALINK index="0" />
+      <LABEL index="0" value="0.00" />
+      <MATH equation="X">
+        <VAR id="X" />
+      </MATH>
+    </XDFAXIS>
+    <XDFAXIS id="z">
+      <EMBEDDEDDATA mmedaddress="0x10071" mmedelementsizebits="8" mmedrowcount="1" mmedcolcount="4" mmedmajorstridebits="0" mmedminorstridebits="0" />
+      <decimalpl>2</decimalpl>
+      <min>0.000000</min>
+      <max>255.000000</max>
+      <outputtype>1</outputtype>
+      <MATH equation="10*X">
+        <VAR id="X" />
+      </MATH>
+    </XDFAXIS>
+  </XDFTABLE>
+  <XDFCONSTANT uniqueid="0x994">
+    <title>[KMLTESG]</title>
+    <description>Regenerated mass constant**For 5120 Hack:**- Divide by 2</description>
+    <CATEGORYMEM index="0" category="5" />
+    <EMBEDDEDDATA mmedtypeflags="0x02" mmedaddress="0x2BE1E" mmedelementsizebits="16" mmedmajorstridebits="0" mmedminorstridebits="0" />
+    <units>[g*K]/hPa</units>
+    <decimalpl>5</decimalpl>
+    <datatype>0</datatype>
+    <unittype>0</unittype>
+    <DALINK index="0" />
+    <MATH equation="X*0.000016276042">
+      <VAR id="X" />
+    </MATH>
+  </XDFCONSTANT>
+  <XDFTABLE uniqueid="0xDCE" flags="0x0">
+    <title>[NLDIAPU]</title>
+    <description>RPM threshold for I limit adaption**For 5120 Hack:**-See Axis</description>
+    <CATEGORYMEM index="0" category="12" />
+    <XDFAXIS id="x" uniqueid="0x0">
+      <EMBEDDEDDATA mmedtypeflags="0x02" mmedaddress="0x2919D" mmedelementsizebits="8" mmedcolcount="2" mmedmajorstridebits="0" mmedminorstridebits="0" />
+      <units>hPa</units>
+      <indexcount>2</indexcount>
+      <decimalpl>0</decimalpl>
+      <embedinfo type="3" linkobjid="0x1FC4" />
+      <datatype>0</datatype>
+      <unittype>0</unittype>
+      <DALINK index="0" />
+      <MATH equation="X*5">
+        <VAR id="X" />
+      </MATH>
+    </XDFAXIS>
+    <XDFAXIS id="y" uniqueid="0x0">
+      <EMBEDDEDDATA mmedtypeflags="0x02" mmedaddress="0x296F3" mmedelementsizebits="8" mmedmajorstridebits="16" mmedminorstridebits="0" />
+      <indexcount>1</indexcount>
+      <datatype>0</datatype>
+      <unittype>0</unittype>
+      <DALINK index="0" />
+      <LABEL index="0" value="0.00" />
+      <MATH equation="X*5">
+        <VAR id="X" />
+      </MATH>
+    </XDFAXIS>
+    <XDFAXIS id="z">
+      <EMBEDDEDDATA mmedtypeflags="0x02" mmedaddress="0x296F5" mmedelementsizebits="8" mmedrowcount="1" mmedcolcount="2" mmedmajorstridebits="0" mmedminorstridebits="0" />
+      <units>RPM</units>
+      <decimalpl>1</decimalpl>
+      <min>0.000000</min>
+      <max>255.000000</max>
+      <outputtype>1</outputtype>
+      <MATH equation="X*40">
+        <VAR id="X" />
+      </MATH>
+    </XDFAXIS>
+  </XDFTABLE>
+  <XDFTABLE uniqueid="0x1FC4" flags="0x0">
+    <title>[NLDIAPU] - [hPa Axis]</title>
+    <description>NLDIAPU - hPa Axis**For 5120 Hack:**-Divide axis by 2</description>
+    <CATEGORYMEM index="0" category="12" />
+    <XDFAXIS id="x" uniqueid="0x0">
+      <EMBEDDEDDATA mmedelementsizebits="8" mmedmajorstridebits="-32" mmedminorstridebits="0" />
+      <indexcount>2</indexcount>
+      <datatype>0</datatype>
+      <unittype>0</unittype>
+      <DALINK index="0" />
+      <LABEL index="0" value="1.00" />
+      <LABEL index="1" value="2.00" />
+      <MATH equation="X">
+        <VAR id="X" />
+      </MATH>
+    </XDFAXIS>
+    <XDFAXIS id="y" uniqueid="0x0">
+      <EMBEDDEDDATA mmedelementsizebits="8" mmedmajorstridebits="-32" mmedminorstridebits="0" />
+      <indexcount>1</indexcount>
+      <datatype>0</datatype>
+      <unittype>0</unittype>
+      <DALINK index="0" />
+      <LABEL index="0" value="0.00" />
+      <MATH equation="X">
+        <VAR id="X" />
+      </MATH>
+    </XDFAXIS>
+    <XDFAXIS id="z">
+      <EMBEDDEDDATA mmedaddress="0x296F3" mmedelementsizebits="8" mmedrowcount="1" mmedcolcount="2" mmedmajorstridebits="0" mmedminorstridebits="0" />
+      <units>hPa</units>
+      <decimalpl>2</decimalpl>
+      <min>0.000000</min>
+      <max>255.000000</max>
+      <outputtype>1</outputtype>
+      <MATH equation="5*X">
+        <VAR id="X" />
+      </MATH>
+    </XDFAXIS>
+  </XDFTABLE>
+  <XDFTABLE uniqueid="0xB9A" flags="0x0">
+    <title>[KFDPVL]</title>
+    <description> Pressure drop over airfilter**For 5120 Hack:**- Divide by 2</description>
+    <CATEGORYMEM index="0" category="5" />
+    <XDFAXIS id="x" uniqueid="0x0">
+      <EMBEDDEDDATA mmedtypeflags="0x02" mmedaddress="0x2BDE8" mmedelementsizebits="16" mmedcolcount="3" mmedmajorstridebits="16" mmedminorstridebits="0" />
+      <units>km/h</units>
+      <indexcount>3</indexcount>
+      <decimalpl>0</decimalpl>
+      <embedinfo type="1" />
+      <datatype>0</datatype>
+      <unittype>0</unittype>
+      <DALINK index="0" />
+      <MATH equation="X*0.0078125">
+        <VAR id="X" />
+      </MATH>
+    </XDFAXIS>
+    <XDFAXIS id="y" uniqueid="0x0">
+      <EMBEDDEDDATA mmedtypeflags="0x02" mmedaddress="0x2BDEE" mmedelementsizebits="16" mmedcolcount="6" mmedmajorstridebits="16" mmedminorstridebits="0" />
+      <units>kg/h</units>
+      <indexcount>6</indexcount>
+      <decimalpl>0</decimalpl>
+      <embedinfo type="1" />
+      <datatype>0</datatype>
+      <unittype>0</unittype>
+      <DALINK index="0" />
+      <MATH equation="0.1*X">
+        <VAR id="X" />
+      </MATH>
+    </XDFAXIS>
+    <XDFAXIS id="z">
+      <EMBEDDEDDATA mmedtypeflags="0x06" mmedaddress="0x2BDFA" mmedelementsizebits="16" mmedrowcount="6" mmedcolcount="3" mmedmajorstridebits="0" mmedminorstridebits="0" />
+      <units>hPa</units>
+      <decimalpl>4</decimalpl>
+      <min>0.000000</min>
+      <max>255.000000</max>
+      <outputtype>1</outputtype>
+      <MATH equation="X*0.0390625">
+        <VAR id="X" />
+      </MATH>
+    </XDFAXIS>
+  </XDFTABLE>
+  <XDFTABLE uniqueid="0x5C09" flags="0x0">
+    <title>[KFLDRQ2]</title>
+    <description>PID Derivative**For 5120 Hack:**- See Axis</description>
+    <CATEGORYMEM index="0" category="12" />
+    <XDFAXIS id="x" uniqueid="0x0">
+      <EMBEDDEDDATA mmedtypeflags="0x02" mmedaddress="0x100BD" mmedelementsizebits="8" mmedcolcount="16" mmedmajorstridebits="0" mmedminorstridebits="0" />
+      <indexcount>16</indexcount>
+      <decimalpl>0</decimalpl>
+      <embedinfo type="1" />
+      <datatype>0</datatype>
+      <unittype>4</unittype>
+      <DALINK index="0" />
+      <MATH equation="X*40">
+        <VAR id="X" />
+      </MATH>
+    </XDFAXIS>
+    <XDFAXIS id="y" uniqueid="0x0">
+      <EMBEDDEDDATA mmedtypeflags="0x02" mmedaddress="0x10071" mmedelementsizebits="8" mmedcolcount="4" mmedmajorstridebits="0" mmedminorstridebits="0" />
+      <units>hPa</units>
+      <indexcount>4</indexcount>
+      <decimalpl>0</decimalpl>
+      <embedinfo type="3" linkobjid="0x4B22" />
+      <datatype>0</datatype>
+      <unittype>0</unittype>
+      <DALINK index="0" />
+      <MATH equation="X*10">
+        <VAR id="X" />
+      </MATH>
+    </XDFAXIS>
+    <XDFAXIS id="z">
+      <EMBEDDEDDATA mmedtypeflags="0x06" mmedaddress="0x295E6" mmedelementsizebits="16" mmedrowcount="4" mmedcolcount="16" mmedmajorstridebits="0" mmedminorstridebits="0" />
+      <units>%/100hpa</units>
+      <decimalpl>0</decimalpl>
+      <min>0.000000</min>
+      <max>255.000000</max>
+      <outputtype>1</outputtype>
+      <MATH equation="X*0.05">
+        <VAR id="X" />
+      </MATH>
+    </XDFAXIS>
+  </XDFTABLE>
+  <XDFCONSTANT uniqueid="0x1787">
+    <title>[UMDYLDR] - Charge Pressure PID - Cut-off threshold for dynamic charge pressure regulation</title>
+    <description>Switching threshold dynamic LDR**For 5120 Hack:**- Divide by 2</description>
+    <CATEGORYMEM index="0" category="12" />
+    <EMBEDDEDDATA mmedtypeflags="0x01" mmedaddress="0x1A32D" mmedelementsizebits="8" mmedmajorstridebits="0" mmedminorstridebits="0" />
+    <datatype>0</datatype>
+    <unittype>0</unittype>
+    <DALINK index="0" />
+    <MATH equation="X*10">
+      <VAR id="X" />
+    </MATH>
+  </XDFCONSTANT>
+  <XDFTABLE uniqueid="0x78D4" flags="0x0">
+    <title>[LDRQ1ST] - Q1 PID controller parameters in stationary mode (integration factor)</title>
+    <description>Controller parameters Q1 PID controller in stationary operation (integration coefficient)**For 5120 Hack:**- Multiply by 2</description>
+    <CATEGORYMEM index="0" category="12" />
+    <XDFAXIS id="x" uniqueid="0x0">
+      <EMBEDDEDDATA mmedaddress="0x100BD" mmedelementsizebits="8" mmedcolcount="16" mmedmajorstridebits="0" mmedminorstridebits="0" />
+      <units>Upm</units>
+      <indexcount>16</indexcount>
+      <embedinfo type="1" />
+      <datatype>0</datatype>
+      <unittype>0</unittype>
+      <DALINK index="0" />
+      <MATH equation="X*40">
+        <VAR id="X" />
+      </MATH>
+    </XDFAXIS>
+    <XDFAXIS id="y" uniqueid="0x0">
+      <EMBEDDEDDATA mmedelementsizebits="8" mmedmajorstridebits="-32" mmedminorstridebits="0" />
+      <indexcount>1</indexcount>
+      <datatype>0</datatype>
+      <unittype>0</unittype>
+      <DALINK index="0" />
+      <LABEL index="0" value="0.00" />
+      <MATH equation="X">
+        <VAR id="X" />
+      </MATH>
+    </XDFAXIS>
+    <XDFAXIS id="z">
+      <EMBEDDEDDATA mmedtypeflags="0x02" mmedaddress="0x296D2" mmedelementsizebits="16" mmedrowcount="1" mmedcolcount="16" mmedmajorstridebits="0" mmedminorstridebits="0" />
+      <decimalpl>2</decimalpl>
+      <min>0.000000</min>
+      <max>255.000000</max>
+      <outputtype>1</outputtype>
+      <MATH equation="X*0.05">
+        <VAR id="X" />
+      </MATH>
+    </XDFAXIS>
+  </XDFTABLE>
+  <XDFCONSTANT uniqueid="0x4E67">
+    <title>[LDRQ0S]</title>
+    <description>Controller parameters Q0 LDR-PID controller in stationary operation**For 5120 Hack:**- Multiply by 2</description>
+    <CATEGORYMEM index="0" category="12" />
+    <EMBEDDEDDATA mmedaddress="0x296D0" mmedelementsizebits="8" mmedmajorstridebits="0" mmedminorstridebits="0" />
+    <datatype>0</datatype>
+    <unittype>0</unittype>
+    <DALINK index="0" />
+    <MATH equation="X*0.05">
+      <VAR id="X" />
+    </MATH>
+  </XDFCONSTANT>
+  <XDFTABLE uniqueid="0x75A7" flags="0x0">
+    <title>[FLAMPA] - [hPa Axis]</title>
+    <description>FLAMPA - hPa Axis**For 5120 Hack:**- Divide axis by 2</description>
+    <CATEGORYMEM index="0" category="10" />
+    <XDFAXIS id="x" uniqueid="0x0">
+      <EMBEDDEDDATA mmedelementsizebits="8" mmedmajorstridebits="-32" mmedminorstridebits="0" />
+      <indexcount>10</indexcount>
+      <datatype>0</datatype>
+      <unittype>0</unittype>
+      <DALINK index="0" />
+      <LABEL index="0" value="1.00" />
+      <LABEL index="1" value="2.00" />
+      <LABEL index="2" value="3.00" />
+      <LABEL index="3" value="4.00" />
+      <LABEL index="4" value="5.00" />
+      <LABEL index="5" value="6.00" />
+      <LABEL index="6" value="7.00" />
+      <LABEL index="7" value="8.00" />
+      <LABEL index="8" value="9.00" />
+      <LABEL index="9" value="10.00" />
+      <MATH equation="X">
+        <VAR id="X" />
+      </MATH>
+    </XDFAXIS>
+    <XDFAXIS id="y" uniqueid="0x0">
+      <EMBEDDEDDATA mmedelementsizebits="8" mmedmajorstridebits="-32" mmedminorstridebits="0" />
+      <indexcount>1</indexcount>
+      <datatype>0</datatype>
+      <unittype>0</unittype>
+      <DALINK index="0" />
+      <LABEL index="0" value="0.00" />
+      <MATH equation="X">
+        <VAR id="X" />
+      </MATH>
+    </XDFAXIS>
+    <XDFAXIS id="z">
+      <EMBEDDEDDATA mmedtypeflags="0x02" mmedaddress="0x13E80" mmedelementsizebits="16" mmedrowcount="1" mmedcolcount="10" mmedmajorstridebits="0" mmedminorstridebits="0" />
+      <decimalpl>2</decimalpl>
+      <min>0.000000</min>
+      <max>255.000000</max>
+      <outputtype>1</outputtype>
+      <MATH equation="X*0.0390625">
+        <VAR id="X" />
+      </MATH>
+    </XDFAXIS>
+  </XDFTABLE>
+  <XDFTABLE uniqueid="0x38AC" flags="0x0">
+    <title>[PBKVVSTGPV] - [hPa Axis]</title>
+    <description>PBKVVSTGPV - hPa Axis**For 5120 Hack:**- Divide axis by 2 </description>
+    <CATEGORYMEM index="0" category="11" />
+    <XDFAXIS id="x" uniqueid="0x0">
+      <EMBEDDEDDATA mmedelementsizebits="8" mmedmajorstridebits="-32" mmedminorstridebits="0" />
+      <indexcount>6</indexcount>
+      <datatype>0</datatype>
+      <unittype>0</unittype>
+      <DALINK index="0" />
+      <LABEL index="0" value="1.00" />
+      <LABEL index="1" value="2.00" />
+      <LABEL index="2" value="3.00" />
+      <LABEL index="3" value="4.00" />
+      <LABEL index="4" value="5.00" />
+      <LABEL index="5" value="6.00" />
+      <MATH equation="X">
+        <VAR id="X" />
+      </MATH>
+    </XDFAXIS>
+    <XDFAXIS id="y" uniqueid="0x0">
+      <EMBEDDEDDATA mmedelementsizebits="8" mmedmajorstridebits="-32" mmedminorstridebits="0" />
+      <indexcount>1</indexcount>
+      <datatype>0</datatype>
+      <unittype>0</unittype>
+      <DALINK index="0" />
+      <LABEL index="0" value="0.00" />
+      <MATH equation="X">
+        <VAR id="X" />
+      </MATH>
+    </XDFAXIS>
+    <XDFAXIS id="z">
+      <EMBEDDEDDATA mmedtypeflags="0x03" mmedaddress="0x2DCBA" mmedelementsizebits="16" mmedrowcount="1" mmedcolcount="6" mmedmajorstridebits="0" mmedminorstridebits="0" />
+      <units>hPa</units>
+      <decimalpl>2</decimalpl>
+      <min>0.000000</min>
+      <max>255.000000</max>
+      <outputtype>1</outputtype>
+      <MATH equation="X*0.0390625">
+        <VAR id="X" />
+      </MATH>
+    </XDFAXIS>
+  </XDFTABLE>
+  <XDFCONSTANT uniqueid="0x130A">
+    <title>pvdk_w 1013 division #1</title>
+    <description>For 5120 Hack:**- Replace with A632 HEX</description>
+    <EMBEDDEDDATA mmedaddress="0x6C4FC" mmedelementsizebits="16" mmedmajorstridebits="0" mmedminorstridebits="0" />
+    <outputtype>3</outputtype>
+    <datatype>0</datatype>
+    <unittype>0</unittype>
+    <DALINK index="0" />
+    <MATH equation="X">
+      <VAR id="X" />
+    </MATH>
+  </XDFCONSTANT>
+  <XDFCONSTANT uniqueid="0x4F46">
+    <title>pvdk_w 1013 division #2</title>
+    <description>For 5120 Hack:**- Replace with A632 HEX</description>
+    <EMBEDDEDDATA mmedaddress="0x6C6D2" mmedelementsizebits="16" mmedmajorstridebits="0" mmedminorstridebits="0" />
+    <outputtype>3</outputtype>
+    <datatype>0</datatype>
+    <unittype>0</unittype>
+    <DALINK index="0" />
+    <MATH equation="X">
+      <VAR id="X" />
+    </MATH>
+  </XDFCONSTANT>
+  <XDFCONSTANT uniqueid="0x7364">
+    <title>pus_w 1013 division #1</title>
+    <description>For 5120 Hack:**- Replace with 0E05 HEX</description>
+    <EMBEDDEDDATA mmedaddress="0x6D40C" mmedelementsizebits="16" mmedmajorstridebits="0" mmedminorstridebits="0" />
+    <outputtype>3</outputtype>
+    <datatype>0</datatype>
+    <unittype>0</unittype>
+    <DALINK index="0" />
+    <MATH equation="X">
+      <VAR id="X" />
+    </MATH>
+  </XDFCONSTANT>
+  <XDFCONSTANT uniqueid="0x2BF">
+    <title>pus_w 1013 division #2</title>
+    <description>For 5120 Hack:**- Replace with 0E05 HEX</description>
+    <EMBEDDEDDATA mmedaddress="0x6D45A" mmedelementsizebits="16" mmedmajorstridebits="0" mmedminorstridebits="0" />
+    <outputtype>3</outputtype>
+    <datatype>0</datatype>
+    <unittype>0</unittype>
+    <DALINK index="0" />
+    <MATH equation="X">
+      <VAR id="X" />
+    </MATH>
+  </XDFCONSTANT>
+  <XDFCONSTANT uniqueid="0x5F3C">
+    <title>fvpdkds 1013 division #1</title>
+    <description>For 5120 Hack:**- Replace with 0E05 HEX</description>
+    <EMBEDDEDDATA mmedaddress="0x6D4F8" mmedelementsizebits="16" mmedmajorstridebits="0" mmedminorstridebits="0" />
+    <outputtype>3</outputtype>
+    <datatype>0</datatype>
+    <unittype>0</unittype>
+    <DALINK index="0" />
+    <MATH equation="X">
+      <VAR id="X" />
+    </MATH>
+  </XDFCONSTANT>
+  <XDFCONSTANT uniqueid="0x335B">
+    <title>fvpdkds 1013 division #2</title>
+    <description>For 5120 Hack:**- Replace with 0E05 HEX</description>
+    <EMBEDDEDDATA mmedaddress="0x6D61E" mmedelementsizebits="16" mmedmajorstridebits="0" mmedminorstridebits="0" />
+    <outputtype>3</outputtype>
+    <datatype>0</datatype>
+    <unittype>0</unittype>
+    <DALINK index="0" />
+    <MATH equation="X">
+      <VAR id="X" />
+    </MATH>
+  </XDFCONSTANT>
+  <XDFCONSTANT uniqueid="0x2AD6">
+    <title>fho_w 1013 division</title>
+    <description>For 5120 Hack:**- Replace with 0E05 HEX</description>
+    <EMBEDDEDDATA mmedaddress="0x6DB78" mmedelementsizebits="16" mmedmajorstridebits="0" mmedminorstridebits="0" />
+    <outputtype>3</outputtype>
+    <datatype>0</datatype>
+    <unittype>0</unittype>
+    <DALINK index="0" />
+    <MATH equation="X">
+      <VAR id="X" />
+    </MATH>
+  </XDFCONSTANT>
+  <XDFCONSTANT uniqueid="0x4270">
+    <title>frhodkr_w 1013 division</title>
+    <description>For 5120 Hack:**-Replace with 32A6 HEX</description>
+    <EMBEDDEDDATA mmedaddress="0x6F2B2" mmedelementsizebits="16" mmedmajorstridebits="0" mmedminorstridebits="0" />
+    <outputtype>3</outputtype>
+    <datatype>0</datatype>
+    <unittype>0</unittype>
+    <DALINK index="0" />
+    <MATH equation="X">
+      <VAR id="X" />
+    </MATH>
+  </XDFCONSTANT>
+  <XDFTABLE uniqueid="0x5524" flags="0x0">
+    <title>[KWP1281] - VCDS FIX [plsol]</title>
+    <description>For 5120 Hack:**E6*F8*08*00*E7*FE*C8*00**</description>
+    <XDFAXIS id="x" uniqueid="0x0">
+      <EMBEDDEDDATA mmedelementsizebits="8" mmedmajorstridebits="-32" mmedminorstridebits="0" />
+      <indexcount>8</indexcount>
+      <datatype>0</datatype>
+      <unittype>0</unittype>
+      <DALINK index="0" />
+      <LABEL index="0" value="0.00" />
+      <LABEL index="1" value="0.00" />
+      <LABEL index="2" value="0.00" />
+      <LABEL index="3" value="0.00" />
+      <LABEL index="4" value="0.00" />
+      <LABEL index="5" value="0.00" />
+      <LABEL index="6" value="0.00" />
+      <LABEL index="7" value="0.00" />
+      <MATH equation="X">
+        <VAR id="X" />
+      </MATH>
+    </XDFAXIS>
+    <XDFAXIS id="y" uniqueid="0x0">
+      <EMBEDDEDDATA mmedelementsizebits="8" mmedmajorstridebits="-32" mmedminorstridebits="0" />
+      <indexcount>1</indexcount>
+      <datatype>0</datatype>
+      <unittype>0</unittype>
+      <DALINK index="0" />
+      <LABEL index="0" value="0.00" />
+      <MATH equation="X">
+        <VAR id="X" />
+      </MATH>
+    </XDFAXIS>
+    <XDFAXIS id="z">
+      <EMBEDDEDDATA mmedaddress="0x90C78" mmedelementsizebits="8" mmedrowcount="1" mmedcolcount="8" mmedmajorstridebits="0" mmedminorstridebits="0" />
+      <decimalpl>2</decimalpl>
+      <min>0.000000</min>
+      <max>255.000000</max>
+      <outputtype>3</outputtype>
+      <MATH equation="X">
+        <VAR id="X" />
+      </MATH>
+    </XDFAXIS>
+  </XDFTABLE>
+  <XDFTABLE uniqueid="0x42EF" flags="0x0">
+    <title>[KWP1281] - VCDS FIX [pvdks_w]</title>
+    <description>For 5120 Hack:**E6*F8*08*00*E7*FE*C8*00**</description>
+    <XDFAXIS id="x" uniqueid="0x0">
+      <EMBEDDEDDATA mmedelementsizebits="8" mmedmajorstridebits="-32" mmedminorstridebits="0" />
+      <indexcount>8</indexcount>
+      <datatype>0</datatype>
+      <unittype>0</unittype>
+      <DALINK index="0" />
+      <LABEL index="0" value="0.00" />
+      <LABEL index="1" value="0.00" />
+      <LABEL index="2" value="0.00" />
+      <LABEL index="3" value="0.00" />
+      <LABEL index="4" value="0.00" />
+      <LABEL index="5" value="0.00" />
+      <LABEL index="6" value="0.00" />
+      <LABEL index="7" value="0.00" />
+      <MATH equation="X">
+        <VAR id="X" />
+      </MATH>
+    </XDFAXIS>
+    <XDFAXIS id="y" uniqueid="0x0">
+      <EMBEDDEDDATA mmedelementsizebits="8" mmedmajorstridebits="-32" mmedminorstridebits="0" />
+      <indexcount>1</indexcount>
+      <datatype>0</datatype>
+      <unittype>0</unittype>
+      <DALINK index="0" />
+      <LABEL index="0" value="0.00" />
+      <MATH equation="X">
+        <VAR id="X" />
+      </MATH>
+    </XDFAXIS>
+    <XDFAXIS id="z">
+      <EMBEDDEDDATA mmedaddress="0x90D98" mmedelementsizebits="8" mmedrowcount="1" mmedcolcount="8" mmedmajorstridebits="0" mmedminorstridebits="0" />
+      <decimalpl>2</decimalpl>
+      <min>0.000000</min>
+      <max>255.000000</max>
+      <outputtype>3</outputtype>
+      <MATH equation="X">
+        <VAR id="X" />
+      </MATH>
+    </XDFAXIS>
+  </XDFTABLE>
+  <XDFTABLE uniqueid="0x41FC" flags="0x0">
+    <title>[KWP1281] - VCDS FIX [ps_w]</title>
+    <description>For 5120 Hack:**E6*F8*08*00*E7*FE*C8*00****</description>
+    <XDFAXIS id="x" uniqueid="0x0">
+      <EMBEDDEDDATA mmedelementsizebits="8" mmedmajorstridebits="-32" mmedminorstridebits="0" />
+      <indexcount>8</indexcount>
+      <datatype>0</datatype>
+      <unittype>0</unittype>
+      <DALINK index="0" />
+      <LABEL index="0" value="0.00" />
+      <LABEL index="1" value="0.00" />
+      <LABEL index="2" value="0.00" />
+      <LABEL index="3" value="0.00" />
+      <LABEL index="4" value="0.00" />
+      <LABEL index="5" value="0.00" />
+      <LABEL index="6" value="0.00" />
+      <LABEL index="7" value="0.00" />
+      <MATH equation="X">
+        <VAR id="X" />
+      </MATH>
+    </XDFAXIS>
+    <XDFAXIS id="y" uniqueid="0x0">
+      <EMBEDDEDDATA mmedelementsizebits="8" mmedmajorstridebits="-32" mmedminorstridebits="0" />
+      <indexcount>1</indexcount>
+      <datatype>0</datatype>
+      <unittype>0</unittype>
+      <DALINK index="0" />
+      <LABEL index="0" value="0.00" />
+      <MATH equation="X">
+        <VAR id="X" />
+      </MATH>
+    </XDFAXIS>
+    <XDFAXIS id="z">
+      <EMBEDDEDDATA mmedaddress="0x90C88" mmedelementsizebits="8" mmedrowcount="1" mmedcolcount="8" mmedmajorstridebits="0" mmedminorstridebits="0" />
+      <decimalpl>2</decimalpl>
+      <min>0.000000</min>
+      <max>255.000000</max>
+      <outputtype>3</outputtype>
+      <MATH equation="X">
+        <VAR id="X" />
+      </MATH>
+    </XDFAXIS>
+  </XDFTABLE>
+  <XDFTABLE uniqueid="0x3912" flags="0x0">
+    <title>[KWP1281] - VCDS FIX [pvdkds_w]</title>
+    <description>For 5120 Hack:**E6*F8*08*00*E7*FE*C8*00****</description>
+    <XDFAXIS id="x" uniqueid="0x0">
+      <EMBEDDEDDATA mmedelementsizebits="8" mmedmajorstridebits="-32" mmedminorstridebits="0" />
+      <indexcount>8</indexcount>
+      <datatype>0</datatype>
+      <unittype>0</unittype>
+      <DALINK index="0" />
+      <LABEL index="0" value="0.00" />
+      <LABEL index="1" value="0.00" />
+      <LABEL index="2" value="0.00" />
+      <LABEL index="3" value="0.00" />
+      <LABEL index="4" value="0.00" />
+      <LABEL index="5" value="0.00" />
+      <LABEL index="6" value="0.00" />
+      <LABEL index="7" value="0.00" />
+      <MATH equation="X">
+        <VAR id="X" />
+      </MATH>
+    </XDFAXIS>
+    <XDFAXIS id="y" uniqueid="0x0">
+      <EMBEDDEDDATA mmedelementsizebits="8" mmedmajorstridebits="-32" mmedminorstridebits="0" />
+      <indexcount>1</indexcount>
+      <datatype>0</datatype>
+      <unittype>0</unittype>
+      <DALINK index="0" />
+      <LABEL index="0" value="0.00" />
+      <MATH equation="X">
+        <VAR id="X" />
+      </MATH>
+    </XDFAXIS>
+    <XDFAXIS id="z">
+      <EMBEDDEDDATA mmedaddress="0x90D98" mmedelementsizebits="8" mmedrowcount="1" mmedcolcount="8" mmedmajorstridebits="0" mmedminorstridebits="0" />
+      <decimalpl>2</decimalpl>
+      <min>0.000000</min>
+      <max>255.000000</max>
+      <outputtype>3</outputtype>
+      <MATH equation="X">
+        <VAR id="X" />
+      </MATH>
+    </XDFAXIS>
+  </XDFTABLE>
+  <XDFPATCH uniqueid="0x2162">
+    <title>[5120] - Patch</title>
+    <description>Apply 5120 asm patches and most map changes. **Note LDRPID changes are not fully patched due to typical changes performed to boost PID (IE KFLDIMX). **Notes: 1)DSLOFS - Stock Sensor, DSLGRAD - stock sensor, **Manually divide KFLDIMX hpa axis.</description>
+    <XDFPATCHENTRY name="[KFLDIOPU]" address="0x100CE" datasize="0x8" patchdata="3C4650555A5F646E" basedata="788CA0AAB4BEC8DC" />
+    <XDFPATCHENTRY name="[KWP1281] - VCDS FIX [pvdkds_w]" address="0x90D98" datasize="0x8" patchdata="E6F80800E7FEC800" basedata="E6F81200E7FEFA00" />
+    <XDFPATCHENTRY name="[KWP1281] - VCDS FIX [ps_w]" address="0x90C88" datasize="0x8" patchdata="E6F80800E7FEC800" basedata="E6F81200E7FEFA00" />
+    <XDFPATCHENTRY name="[KWP1281] - VCDS FIX [pvdks_w]" address="0x927BA" datasize="0x8" patchdata="E6F80800E7FEC800" basedata="E6F81200E7FEFA00" />
+    <XDFPATCHENTRY name="[KWP1281] - VCDS FIX [plsol]" address="0x90C78" datasize="0x8" patchdata="E6F80800E7FEC800" basedata="E6F81200E7FEFA00" />
+    <XDFPATCHENTRY name="frhodkr_w 1013 division" address="0x6F2B2" datasize="0x2" patchdata="A632" basedata="4D65" />
+    <XDFPATCHENTRY name="fho_w 1013 division" address="0x6DB78" datasize="0x2" patchdata="0E05" basedata="8702" />
+    <XDFPATCHENTRY name="fvpdkds 1013 division #2" address="0x6D61E" datasize="0x2" patchdata="0E05" basedata="8702" />
+    <XDFPATCHENTRY name="fvpdkds 1013 division #1" address="0x6D4F8" datasize="0x2" patchdata="0E05" basedata="8702" />
+    <XDFPATCHENTRY name="pus_w 1013 division #2" address="0x6D45A" datasize="0x2" patchdata="0E05" basedata="8702" />
+    <XDFPATCHENTRY name="pus_w 1013 division #1" address="0x6D40C" datasize="0x2" patchdata="0E05" basedata="8702" />
+    <XDFPATCHENTRY name="pvdk_w 1013 division #2" address="0x6C6D2" datasize="0x2" patchdata="A632" basedata="4D65" />
+    <XDFPATCHENTRY name="pvdk_w 1013 division #1" address="0x6C4FC" datasize="0x2" patchdata="A632" basedata="4D65" />
+    <XDFPATCHENTRY name="[MSNPCV] - [hPa Axis]" address="0x19BBC" datasize="0xE" patchdata="0305070A0D0F111417191B1E2123" basedata="050A0F14191E23282D32373C4146" />
+    <XDFPATCHENTRY name="[PSSOLPGRD]" address="0x14C06" datasize="0x2" patchdata="0002" basedata="0004" />
+    <XDFPATCHENTRY name="[PSSOLPF]" address="0x14C04" datasize="0x2" patchdata="8000" basedata="0001" />
+    <XDFPATCHENTRY name="[PSSOLNGRD]" address="0x14C02" datasize="0x2" patchdata="40FC" basedata="80F8" />
+    <XDFPATCHENTRY name="[KVLAD]" address="0x10EFD" datasize="0x1" patchdata="4C" basedata="26" />
+    <XDFPATCHENTRY name="[FHOKH]" address="0x2753E" datasize="0x2" patchdata="0000" basedata="5C2F" />
+    <XDFPATCHENTRY name="[KFPRG]" address="0x1E8A0" datasize="0x78" patchdata="4D03000240024002A60200030004C0040005C0054D03000240024002A60200030004C0040005C0054D03000240024002A60200030004C0040005C0052706000500058004A705730500074007400600062706000500058004A705730500074007400600062706000500058004A70573050007400740060006" basedata="9A060004800480044D05000600088009000A800B9A060004800480044D05000600088009000A800B9A060004800480044D05000600088009000A800B4D0C000A000A00094D0BE60A000E800E800C000C4D0C000A000A00094D0BE60A000E800E800C000C4D0C000A000A00094D0BE60A000E800E800C000C" />
+    <XDFPATCHENTRY name="[KISRM]" address="0x147E8" datasize="0x2" patchdata="A410" basedata="4821" />
+    <XDFPATCHENTRY name="[KFURL]" address="0x1E93C" datasize="0x78" patchdata="A08CD084A08CA08CA08C70947094709410A4E0ABA08CD084A08CA08CA08C70947094709410A4E0ABA08CD084A08CA08CA08C70947094709410A4E0ABD084A08CA08CA08CA08C7094409C409C409C409CD084A08CA08CA08CA08C7094409C409C409C409CD084A08CA08CA08CA08C7094409C409C409C409C" basedata="0F4644441F451F45B14489486349444B375055550F4644441F451F45B14489486349444B375055550F4644441F451F45B14489486349444B375055551944F344DD447C460F463D4A754CA74D504D0E4D1944F344DD447C460F463D4A754CA74D504D0E4D1944F344DD447C460F463D4A754CA74D504D0E4D" />
+    <XDFPATCHENTRY name="[KFDPVL]" address="0x2BDFA" datasize="0x24" patchdata="010002000A0076008701C003010002000A0076008701C003010002000A0076008701C003" basedata="020004001400EC000D038007020004001400EC000D038007020004001400EC000D038007" />
+    <XDFPATCHENTRY name="[KMLTESG]" address="0x2BE1E" datasize="0x2" patchdata="3301" basedata="6602" />
+    <XDFPATCHENTRY name="[KLDLUL]" address="0x27E91" datasize="0x8" patchdata="4646463C2B262626" basedata="8C8C8C78564C4C4C" />
+    <XDFPATCHENTRY name="[DLDUVES]" address="0x13FF8" datasize="0x2" patchdata="0046" basedata="008C" />
+    <XDFPATCHENTRY name="[DPUPS]" address="0x10F07" datasize="0x1" patchdata="19" basedata="32" />
+    <XDFPATCHENTRY name="[KLDLUL] - [hpa Axis]" address="0x27E89" datasize="0x8" patchdata="E7F3000D1925323F" basedata="CEE70019324B647F" />
+    <XDFPATCHENTRY name="[DSUGRAD]" address="0x1EB30" datasize="0x2" patchdata="AE1F" basedata="5D3F" />
+    <XDFPATCHENTRY name="[DPDSVLU]" address="0x1EB0C" datasize="0x2" patchdata="000A" basedata="0014" />
+    <XDFPATCHENTRY name="[ZDSU]" address="0x18C28" datasize="0x1" patchdata="03" basedata="03" />
+    <XDFPATCHENTRY name="[PVDKMN]" address="0x1EB3C" datasize="0x2" patchdata="8011" basedata="0023" />
+    <XDFPATCHENTRY name="[PUMX]" address="0x1EB38" datasize="0x2" patchdata="803E" basedata="007D" />
+    <XDFPATCHENTRY name="[PUMN]" address="0x1EB36" datasize="0x2" patchdata="8011" basedata="0023" />
+    <XDFPATCHENTRY name="[PUE]" address="0x1EB34" datasize="0x2" patchdata="0023" basedata="0046" />
+    <XDFPATCHENTRY name="[FLAMPA] - [hPa Axis]" address="0x13E80" datasize="0x14" patchdata="001900230028002DA632003C004600500064007D" basedata="003200460050005A4D650078008C00A000C800FA" />
+    <XDFPATCHENTRY name="[PADMSA]" address="0x1DA52" datasize="0xC" patchdata="40008001800380070010001E" basedata="800000030007000F0020003C" />
+    <XDFPATCHENTRY name="[PUELSU]" address="0x1DA5E" datasize="0x2" patchdata="A632" basedata="4D65" />
+    <XDFPATCHENTRY name="[PBKVVSTGPV]" address="0x2DCC6" datasize="0xC" patchdata="00008004800780084008C006" basedata="00000009000F00118010800D" />
+    <XDFPATCHENTRY name="[CWGGPBKV_0_A]" address="0x12B7B" datasize="0x1" patchdata="06" basedata="06" />
+    <XDFPATCHENTRY name="[PUEBKV]" address="0x2DCD2" datasize="0x2" patchdata="001E" basedata="003C" />
+    <XDFPATCHENTRY name="[PBKVVSTGPV] - [hPa Axis]" address="0x2DCBA" datasize="0xC" patchdata="0000000AC0120019001E0028" basedata="0000001480250032003C0050" />
+    <XDFPATCHENTRY name="[LDEIAU]" address="0x1A315" datasize="0x1" patchdata="FB" basedata="F6" />
+    <XDFPATCHENTRY name="[LDEIAPS]" address="0x1A314" datasize="0x1" patchdata="03" basedata="06" />
+    <XDFPATCHENTRY name="[LDEIAO]" address="0x1A312" datasize="0x1" patchdata="FF" basedata="FF" />
+    <XDFPATCHENTRY name="[LDEIAP]" address="0x1A313" datasize="0x1" patchdata="FF" basedata="FD" />
+    <XDFPATCHENTRY name="[KFLDRQ0] - + KFLDRQ1+ KFLDRQ2 [h" address="0x10071" datasize="0x4" patchdata="050A1423" basedata="0A142846" />
+    <XDFPATCHENTRY name="[LDUVRS]" address="0x1563C" datasize="0x1" patchdata="00" basedata="00" />
+    <XDFPATCHENTRY name="[HSLDSUA]" address="0x1563A" datasize="0x2" patchdata="0002" basedata="0004" />
+    <XDFPATCHENTRY name="[NLDIAPU] - [hPa Axis]" address="0x296F3" datasize="0x2" patchdata="3C64" basedata="78C8" />
+    <XDFPATCHENTRY name="[FRLFSDP] - [hPa Axis]" address="0x1F9E0" datasize="0x16" patchdata="80F8C0F950FBE0FC20FE00004001D002E004E0066009" basedata="00F180F300F680F800FB80FD0000800200058007000A" />
+    <XDFPATCHENTRY name="[UMDYLDR]" address="0x1A32D" datasize="0x1" patchdata="04" basedata="08" />
+    <XDFPATCHENTRY name="[LDRQ0S]" address="0x296D0" datasize="0x2" patchdata="6000" basedata="3000" />
+    <XDFPATCHENTRY name="[LDRQ1ST]" address="0x296D2" datasize="0x20" patchdata="0C000C000C000C000C000C000C000C000C00120018001C002000200020002000" basedata="06000600060006000600060006000600060009000C000E001000100010001000" />
+  </XDFPATCH>
+  <XDFTABLE uniqueid="0x5707" flags="0x0">
+    <title>[P1681] - Work Around</title>
+    <description>Stock:**DB 00 28 02 84 00 ?? ?? C2 F4 ?? ?? 66 F4 80 00 2D****Modified:**DB 00 28 02 84 00 ?? ?? C2 F4 ?? ?? 66 F4 80 00 0D</description>
+    <XDFAXIS id="x" uniqueid="0x0">
+      <EMBEDDEDDATA mmedelementsizebits="8" mmedmajorstridebits="-32" mmedminorstridebits="0" />
+      <indexcount>17</indexcount>
+      <datatype>0</datatype>
+      <unittype>0</unittype>
+      <DALINK index="0" />
+      <LABEL index="0" value="1.00" />
+      <LABEL index="1" value="2.00" />
+      <LABEL index="2" value="3.00" />
+      <LABEL index="3" value="4.00" />
+      <LABEL index="4" value="5.00" />
+      <LABEL index="5" value="6.00" />
+      <LABEL index="6" value="7.00" />
+      <LABEL index="7" value="8.00" />
+      <LABEL index="8" value="9.00" />
+      <LABEL index="9" value="10.00" />
+      <LABEL index="10" value="11.00" />
+      <LABEL index="11" value="12.00" />
+      <LABEL index="12" value="13.00" />
+      <LABEL index="13" value="14.00" />
+      <LABEL index="14" value="15.00" />
+      <LABEL index="15" value="16.00" />
+      <LABEL index="16" value="17.00" />
+      <MATH equation="X">
+        <VAR id="X" />
+      </MATH>
+    </XDFAXIS>
+    <XDFAXIS id="y" uniqueid="0x0">
+      <EMBEDDEDDATA mmedelementsizebits="8" mmedmajorstridebits="-32" mmedminorstridebits="0" />
+      <indexcount>1</indexcount>
+      <datatype>0</datatype>
+      <unittype>0</unittype>
+      <DALINK index="0" />
+      <LABEL index="0" value="0.00" />
+      <MATH equation="X">
+        <VAR id="X" />
+      </MATH>
+    </XDFAXIS>
+    <XDFAXIS id="z">
+      <EMBEDDEDDATA mmedaddress="0x6B5A6" mmedelementsizebits="8" mmedrowcount="1" mmedcolcount="17" mmedmajorstridebits="0" mmedminorstridebits="0" />
+      <decimalpl>2</decimalpl>
+      <min>0.000000</min>
+      <max>255.000000</max>
+      <outputtype>3</outputtype>
+      <MATH equation="X">
+        <VAR id="X" />
+      </MATH>
+    </XDFAXIS>
+  </XDFTABLE>
+</XDFFORMAT>
