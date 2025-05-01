@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <script type="text/javascript" src="{{ site.baseurl }}/assets/vendor/color-modes.js"></script>
+
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="{{ site.description }}" />
+    <meta name="author" content="{{ site.author }}" />
+    <title>{{ site.title }}{% if page.title %} | {{ page.title }}{% endif %}</title>
+
+    {% include favicons.html %}
+
+    <link href="{{ site.baseurl }}/assets/css/style.css" rel="stylesheet" />
+    <link href="{{ site.baseurl }}/assets/vendor/bootstrap.min.css" rel="stylesheet" />
+    <link href="{{ site.baseurl }}/assets/vendor/bootstrap-icons.min.css" rel="stylesheet" />
+  </head>
+  <body class="d-flex flex-column vh-100 mx-auto">
+    {% include color_mode.html %}
+
+    {% include navbar.html %}
+    <main class="px-5 py-3">
+      <!-- Main Content -->
+      {{ content }}
+    </main>
+    {% include footer.html %}
+
+    <!-- Scripts -->
+    <script type="text/javascript" src="{{ site.baseurl }}/assets/vendor/jquery.min.js"></script>
+    <script type="text/javascript" src="{{ site.baseurl }}/assets/vendor/bootstrap.bundle.min.js"></script>
+    {%- for script in page.js %}
+    <script type="text/javascript" src="{{ script }}"></script>
+    {%- endfor %}
+  </body>
+</html>

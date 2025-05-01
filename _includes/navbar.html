@@ -1,0 +1,26 @@
+<!-- Navbar -->
+<header class="p-3 border-bottom">
+  <div class="container-fluid">
+    <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
+      <a href="{{ site.baseurl }}" class="d-flex align-items-center me-2 mb-2 mb-lg-0 text-body text-decoration-none">
+        <i class="bi bi-gender-male fs-4 me-2"></i>
+        <span class="fs-4">{{ site.title }}</span>
+      </a>
+      <ul class="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0">
+      {%- for item in site.data.navbar %}
+        <li {%- if item.dropdown %} class="dropdown"{% endif %}>
+          <a {%- if item.href %} href="{{ site.baseurl }}{{ item.href }}"{% endif %} class="nav-link px-2 text-{% if item.href == page.permalink %}secondary{% else %}body{% endif %} {%- if item.dropdown %} dropdown-toggle{% endif %}" {% if item.dropdown %}  data-bs-toggle="dropdown" aria-expanded="false" {% endif %}>
+            {{ item.title }}
+          </a>
+          {%- if item.dropdown %}
+            <ul class="dropdown-menu text-small">
+              {%- for subitem in item.dropdown %}
+                <a {%- if subitem.href %} href="{{ site.baseurl }}{{ subitem.href }}"{% endif %} class="nav-link px-2 text-{% if subitem.href == page.permalink %}secondary{% else %}body{% endif %}">{{ subitem.title }}</a>
+              {%- endfor %}
+            </ul>
+          {% endif %}
+        </li>
+      {%- endfor %}
+      </ul>
+  </div>
+</header>

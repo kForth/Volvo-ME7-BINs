@@ -1,0 +1,10 @@
+title: Volvo ME7 BINs
+email: kgoforth1503@gmail.com
+description: >-
+  A collection of BIN files for the Volvo ME7 ECUs, including
+  stock and modified files. The goal is to provide a resource for
+  enthusiasts and tuners to share and access these files.
+baseurl: "/Volvo-ME7-BINs"
+url: "https://kforth.github.io/Volvo-ME7-BINs"
+repo_url: "https://github.com/kForth/Volvo-ME7-BINs"
+kofi_id: Q5Q01020LV
