@@ -1,0 +1,2120 @@
+00ENFP-AUT-EU.bin:
+  build_date: 1999-10-29 10:20
+  chassis_group: P23
+  drivetrain: ''
+  ecu_variant: ''
+  engine_group: ''
+  engine_model: B6284T
+  epk_version: ''
+  file_checksum: ccc77a9f7cc1943aa0ad28f778c07ccfe6e19b1c48ef1845c90450ef423766e3
+  file_name: 00ENFP-AUT-EU.bin
+  file_size: 1048576
+  header_position: 99141
+  header_version: '0.0'
+  is_valid: true
+  me_version: '7.0'
+  region: EU
+  software_version: ''
+  sub_variant: ''
+  transmission: AUT
+  variant: 00ENFP
+00EPFP-AUT-2WD-US.bin:
+  build_date: 1999-12-17 10:42
+  chassis_group: P23
+  drivetrain: 2WD
+  ecu_variant: ''
+  engine_group: ''
+  engine_model: B6284T
+  epk_version: ''
+  file_checksum: 2919cdfbf40f78d2f69139864e3132e682ccc55e27bee1c28d38da70a8e9cd22
+  file_name: 00EPFP-AUT-2WD-US.bin
+  file_size: 1048576
+  header_position: 99141
+  header_version: '0.0'
+  is_valid: true
+  me_version: '7.0'
+  region: US
+  software_version: ''
+  sub_variant: ''
+  transmission: AUT
+  variant: 00EPFP
+00NHHJ-T0NHBVD0-AUT-FWD-EU.bin:
+  build_date: 2004-08-12 08:04
+  chassis_group: P2X
+  drivetrain: FWD
+  ecu_variant: 30653032 B
+  engine_group: B6294LT
+  engine_model: B6294T
+  epk_version: 45/1/ME701/19///70192N6/70192N6/120704172530/
+  file_checksum: db37c8d7fb09052d5490db30df7300f527ba8a4df25cf3b507d2c6f086472186
+  file_name: 00NHHJ-T0NHBVD0-AUT-FWD-EU.bin
+  file_size: 524288
+  header_position: 100103
+  header_version: '1.0'
+  is_valid: false
+  me_version: 7.0.1
+  region: EU
+  software_version: 30729123A
+  sub_variant: T0NHBVD0
+  transmission: AUT
+  variant: 00NHHJ
+10ENFP-AUT-EU 1.bin:
+  build_date: 1999-10-29 10:34
+  chassis_group: P80
+  drivetrain: ''
+  ecu_variant: ''
+  engine_group: B52X4XT
+  engine_model: B5234HT
+  epk_version: ''
+  file_checksum: f20facd6dfdde41f1c03fae8d859761bc5cd9250b1c7b25759409bb8aeadf0aa
+  file_name: 10ENFP-AUT-EU 1.bin
+  file_size: 1048576
+  header_position: 99128
+  header_version: '0.0'
+  is_valid: true
+  me_version: '7.0'
+  region: EU
+  software_version: ''
+  sub_variant: ''
+  transmission: AUT
+  variant: 10ENFP
+10ENFP-AUT-EU.bin:
+  build_date: 1999-10-29 10:34
+  chassis_group: P80
+  drivetrain: ''
+  ecu_variant: ''
+  engine_group: B52X4XT
+  engine_model: B5234HT
+  epk_version: ''
+  file_checksum: 68eacee44d0dc594519d506c2ff6991ec69e4c15da20122e769ff081341ec4b8
+  file_name: 10ENFP-AUT-EU.bin
+  file_size: 1048576
+  header_position: 99128
+  header_version: '0.0'
+  is_valid: true
+  me_version: '7.0'
+  region: EU
+  software_version: ''
+  sub_variant: ''
+  transmission: AUT
+  variant: 10ENFP
+10EPFP-AUT-EU 1.bin:
+  build_date: 1999-12-17 10:53
+  chassis_group: P80
+  drivetrain: ''
+  ecu_variant: ''
+  engine_group: B52X4XT
+  engine_model: B5244LT
+  epk_version: ''
+  file_checksum: 9cd4b824a8a488195dbdab40881e36631448f2ccb68117be4156507f407383db
+  file_name: 10EPFP-AUT-EU 1.bin
+  file_size: 1048576
+  header_position: 99128
+  header_version: '0.0'
+  is_valid: true
+  me_version: '7.0'
+  region: EU
+  software_version: ''
+  sub_variant: ''
+  transmission: AUT
+  variant: 10EPFP
+10EPFP-AUT-EU.bin:
+  build_date: 1999-12-17 10:53
+  chassis_group: P80
+  drivetrain: ''
+  ecu_variant: ''
+  engine_group: B52X4XT
+  engine_model: B5244LT
+  epk_version: ''
+  file_checksum: 57c3ff62b927c0c5bba7ef3f17070bcd29df1a67a73ee846c410c0b0411f0e9e
+  file_name: 10EPFP-AUT-EU.bin
+  file_size: 1048576
+  header_position: 99128
+  header_version: '0.0'
+  is_valid: true
+  me_version: '7.0'
+  region: EU
+  software_version: ''
+  sub_variant: ''
+  transmission: AUT
+  variant: 10EPFP
+10EUHJ-10EU0000.bin:
+  build_date: 2006-02-01 09:22
+  chassis_group: P80
+  drivetrain: ''
+  ecu_variant: ''
+  engine_group: B52X4XT
+  engine_model: ''
+  epk_version: ''
+  file_checksum: 24f1d1aa39ccf875a40be1d6716230fa5689e59a6e84462079903e27338cb767
+  file_name: 10EUHJ-10EU0000.bin
+  file_size: 1048576
+  header_position: 99276
+  header_version: '1.0'
+  is_valid: true
+  me_version: '7.0'
+  region: ''
+  software_version: ''
+  sub_variant: 10EU0000
+  transmission: ''
+  variant: 10EUHJ
+10J0MGDE-MAN-2WD-EU.bin:
+  build_date: 980806 15:46
+  chassis_group: P80
+  drivetrain: 2WD
+  ecu_variant: ''
+  engine_group: ''
+  engine_model: B5254LT
+  epk_version: ''
+  file_checksum: 11ad71f5de8bfc2c85a17707b97f085af9c19a9df55c9e2b398100b2cbfb41ee
+  file_name: 10J0MGDE-MAN-2WD-EU.bin
+  file_size: 524288
+  header_position: 113643
+  header_version: '0.0'
+  is_valid: false
+  me_version: '7.0'
+  region: EU
+  software_version: ''
+  sub_variant: ''
+  transmission: MAN
+  variant: 10J0MGDE
+10N0MHDE-2WD-EU.bin:
+  build_date: 981112 15:27
+  chassis_group: P80
+  drivetrain: 2WD
+  ecu_variant: ''
+  engine_group: ''
+  engine_model: B5254LT
+  epk_version: ''
+  file_checksum: 79b2a61c9fd04b4d4fd0250fe6abc48f40a2770a1e283a8b0061ba21ee5b3030
+  file_name: 10N0MHDE-2WD-EU.bin
+  file_size: 524288
+  header_position: 127335
+  header_version: '0.0'
+  is_valid: false
+  me_version: '7.0'
+  region: EU
+  software_version: ''
+  sub_variant: ''
+  transmission: ''
+  variant: 10N0MHDE
+10N0MHDE-4WD-EU.bin:
+  build_date: 981112 15:27
+  chassis_group: P80
+  drivetrain: 4WD
+  ecu_variant: ''
+  engine_group: ''
+  engine_model: B5254LT
+  epk_version: ''
+  file_checksum: 1c3c8d2411935528599d0cb81409539ba90b9aad261e101330e7425719e93108
+  file_name: 10N0MHDE-4WD-EU.bin
+  file_size: 524288
+  header_position: 127335
+  header_version: '0.0'
+  is_valid: false
+  me_version: '7.0'
+  region: EU
+  software_version: ''
+  sub_variant: ''
+  transmission: ''
+  variant: 10N0MHDE
+10R1HJ-10R10000.bin:
+  build_date: 2006-02-14 07:55
+  chassis_group: P80
+  drivetrain: ''
+  ecu_variant: ''
+  engine_group: ''
+  engine_model: ''
+  epk_version: ''
+  file_checksum: 98cd2f6b2906e42004357a4bf2fd7cc2d4efa3f1a41231cc58703b02473b0f43
+  file_name: 10R1HJ-10R10000.bin
+  file_size: 524288
+  header_position: 127417
+  header_version: '1.0'
+  is_valid: false
+  me_version: '7.0'
+  region: ''
+  software_version: ''
+  sub_variant: 10R10000
+  transmission: ''
+  variant: 10R1HJ
+1XEBMHDE-MAN-EU 1.bin:
+  build_date: 981023 12:07
+  chassis_group: P80
+  drivetrain: ''
+  ecu_variant: ''
+  engine_group: B52X4XT
+  engine_model: B5234HT
+  epk_version: ''
+  file_checksum: cd187ea4ff1d6697698a0beba6060b0eb7975d3a6a3075a177d56ebeaaf87d8b
+  file_name: 1XEBMHDE-MAN-EU 1.bin
+  file_size: 589840
+  header_position: 99082
+  header_version: '0.0'
+  is_valid: true
+  me_version: '7.0'
+  region: EU
+  software_version: ''
+  sub_variant: ''
+  transmission: MAN
+  variant: 1XEBMHDE
+1XEBMHDE-MAN-EU 2.bin:
+  build_date: 981023 12:07
+  chassis_group: P80
+  drivetrain: ''
+  ecu_variant: ''
+  engine_group: B52X4XT
+  engine_model: B5234HT
+  epk_version: ''
+  file_checksum: d6d21cedd61b6d8b82e7e7eee69e3f6839720a87be2c6f9d554dcae1e832c2c5
+  file_name: 1XEBMHDE-MAN-EU 2.bin
+  file_size: 1048576
+  header_position: 99082
+  header_version: '0.0'
+  is_valid: true
+  me_version: '7.0'
+  region: EU
+  software_version: ''
+  sub_variant: ''
+  transmission: MAN
+  variant: 1XEBMHDE
+1XEBMHDE-MAN-EU.bin:
+  build_date: 981023 12:07
+  chassis_group: P80
+  drivetrain: ''
+  ecu_variant: ''
+  engine_group: B52X4XT
+  engine_model: B5234HT
+  epk_version: ''
+  file_checksum: 3674766d2f0812b786cbadf6a1688db969e8fa0103ea681e872dca683a603b47
+  file_name: 1XEBMHDE-MAN-EU.bin
+  file_size: 1048576
+  header_position: 99082
+  header_version: '0.0'
+  is_valid: true
+  me_version: '7.0'
+  region: EU
+  software_version: ''
+  sub_variant: ''
+  transmission: MAN
+  variant: 1XEBMHDE
+1XEIMH-AUT-4WD-EU.bin:
+  build_date: 990323 15:35
+  chassis_group: P80
+  drivetrain: 4WD
+  ecu_variant: ''
+  engine_group: B52X4XT
+  engine_model: B5244RT
+  epk_version: ''
+  file_checksum: 3f65c923363555e6d8379ebdca213a2fe6c4e602a50c6928445f26c72ccae8dc
+  file_name: 1XEIMH-AUT-4WD-EU.bin
+  file_size: 1048576
+  header_position: 99128
+  header_version: '0.0'
+  is_valid: true
+  me_version: '7.0'
+  region: EU
+  software_version: ''
+  sub_variant: ''
+  transmission: AUT
+  variant: 1XEIMH
+1XEKMH-MAN-4WD-EU.bin:
+  build_date: 990408 07:45
+  chassis_group: P80
+  drivetrain: 4WD
+  ecu_variant: ''
+  engine_group: B52X4XT
+  engine_model: B5244LT
+  epk_version: ''
+  file_checksum: 7b2e6d08d284c063974df33aaa3db53215e4329147b321521a3c5cbf251b091a
+  file_name: 1XEKMH-MAN-4WD-EU.bin
+  file_size: 1048576
+  header_position: 99128
+  header_version: '0.0'
+  is_valid: true
+  me_version: '7.0'
+  region: EU
+  software_version: ''
+  sub_variant: ''
+  transmission: MAN
+  variant: 1XEKMH
+20FMFP 1.bin:
+  build_date: 1999-12-01 08:10
+  chassis_group: P2X
+  drivetrain: ''
+  ecu_variant: ''
+  engine_group: B52X4XT
+  engine_model: ''
+  epk_version: ''
+  file_checksum: 8defdb58cebfcb8c73df464ddaf07bac27b0788ffcc4c15105398c3b4e80c4b5
+  file_name: 20FMFP 1.bin
+  file_size: 1048576
+  header_position: 99115
+  header_version: '0.0'
+  is_valid: true
+  me_version: '7.0'
+  region: ''
+  software_version: ''
+  sub_variant: ''
+  transmission: ''
+  variant: 20FMFP
+20FMFP 2.bin:
+  build_date: 1999-12-01 08:10
+  chassis_group: P2X
+  drivetrain: ''
+  ecu_variant: ''
+  engine_group: B52X4XT
+  engine_model: ''
+  epk_version: ''
+  file_checksum: a410af75ea26522f072cbe898049172629e612787aaa4c489ceecf12eac6c34d
+  file_name: 20FMFP 2.bin
+  file_size: 1048576
+  header_position: 99115
+  header_version: '0.0'
+  is_valid: true
+  me_version: '7.0'
+  region: ''
+  software_version: ''
+  sub_variant: ''
+  transmission: ''
+  variant: 20FMFP
+20FMFP 3.bin:
+  build_date: 1999-12-01 08:10
+  chassis_group: P2X
+  drivetrain: ''
+  ecu_variant: ''
+  engine_group: B52X4XT
+  engine_model: ''
+  epk_version: ''
+  file_checksum: e3159c865e540949c61540a338e4cb93dd74be5341af21b34682211fa16462cb
+  file_name: 20FMFP 3.bin
+  file_size: 1048576
+  header_position: 99115
+  header_version: '0.0'
+  is_valid: true
+  me_version: '7.0'
+  region: ''
+  software_version: ''
+  sub_variant: ''
+  transmission: ''
+  variant: 20FMFP
+20FMFP-AUT-2WD-EU.bin:
+  build_date: 1999-12-01 08:10
+  chassis_group: P2X
+  drivetrain: 2WD
+  ecu_variant: 08658507 H
+  engine_group: B52X4XT
+  engine_model: B5204LT
+  epk_version: 38/1//19///20KP/K1KPABS1/230701175335/01102642/
+  file_checksum: 79b356c281f299b8be84df7f0f08c4d2f1b4fd127067356a3b1bdf567fbc694c
+  file_name: 20FMFP-AUT-2WD-EU.bin
+  file_size: 1048576
+  header_position: 99943
+  header_version: '0.0'
+  is_valid: true
+  me_version: '7.0'
+  region: EU
+  software_version: ''
+  sub_variant: ''
+  transmission: AUT
+  variant: 20FMFP
+20FMFP-MAN-2WD-EU.bin:
+  build_date: 1999-12-01 08:10
+  chassis_group: P2X
+  drivetrain: 2WD
+  ecu_variant: ''
+  engine_group: B52X4XT
+  engine_model: B5234HT
+  epk_version: ''
+  file_checksum: 8a64f6c20e5a3fdaf46ad2a0f8dfa96bb25debf036f0e44d6f186c772fb40129
+  file_name: 20FMFP-MAN-2WD-EU.bin
+  file_size: 1048576
+  header_position: 99115
+  header_version: '0.0'
+  is_valid: true
+  me_version: '7.0'
+  region: EU
+  software_version: ''
+  sub_variant: ''
+  transmission: MAN
+  variant: 20FMFP
+20FMFP.bin:
+  build_date: 1999-12-01 08:10
+  chassis_group: P2X
+  drivetrain: ''
+  ecu_variant: ''
+  engine_group: B52X4XT
+  engine_model: ''
+  epk_version: ''
+  file_checksum: 31f5acdb3e00a0960b72199db5941f3d6d571ee89d738de78dd6e08f8319da87
+  file_name: 20FMFP.bin
+  file_size: 1048576
+  header_position: 99115
+  header_version: '0.0'
+  is_valid: true
+  me_version: '7.0'
+  region: ''
+  software_version: ''
+  sub_variant: ''
+  transmission: ''
+  variant: 20FMFP
+20FQMA-AUT-2WD-EU 1.bin:
+  build_date: 2000-10-23 08:55
+  chassis_group: P2X
+  drivetrain: 2WD
+  ecu_variant: ''
+  engine_group: B52X4XT
+  engine_model: B5234HT
+  epk_version: ''
+  file_checksum: 997a3e83bb122986401e6f28e3f8c17a18b3e01cd88c7862ed17de36410acae0
+  file_name: 20FQMA-AUT-2WD-EU 1.bin
+  file_size: 1048576
+  header_position: 99261
+  header_version: '0.0'
+  is_valid: true
+  me_version: '7.0'
+  region: EU
+  software_version: ''
+  sub_variant: ''
+  transmission: AUT
+  variant: 20FQMA
+20FQMA-AUT-2WD-EU 2.bin:
+  build_date: 2000-10-23 08:55
+  chassis_group: P2X
+  drivetrain: 2WD
+  ecu_variant: ''
+  engine_group: B52X4XT
+  engine_model: B5234HT
+  epk_version: ''
+  file_checksum: ced98e807da7b9b8231e305ceade2965f38df5ef9f140ae4fb60448eb13d599b
+  file_name: 20FQMA-AUT-2WD-EU 2.bin
+  file_size: 1048576
+  header_position: 99261
+  header_version: '0.0'
+  is_valid: true
+  me_version: '7.0'
+  region: EU
+  software_version: ''
+  sub_variant: ''
+  transmission: AUT
+  variant: 20FQMA
+20FQMA-AUT-2WD-EU.bin:
+  build_date: 2000-10-23 08:55
+  chassis_group: P2X
+  drivetrain: 2WD
+  ecu_variant: ''
+  engine_group: B52X4XT
+  engine_model: B5234HT
+  epk_version: ''
+  file_checksum: 0257c26ae2e9342f260328d206ee33b14c18d8975d921a6287ad4052a6e751ce
+  file_name: 20FQMA-AUT-2WD-EU.bin
+  file_size: 1048576
+  header_position: 99261
+  header_version: '0.0'
+  is_valid: true
+  me_version: '7.0'
+  region: EU
+  software_version: ''
+  sub_variant: ''
+  transmission: AUT
+  variant: 20FQMA
+20FQMA-MAN-2WD-EU.bin:
+  build_date: 2000-10-23 08:55
+  chassis_group: P2X
+  drivetrain: 2WD
+  ecu_variant: ''
+  engine_group: B52X4XT
+  engine_model: B5234HT
+  epk_version: ''
+  file_checksum: 0bfb186488af6257fe266f9d9b9f5826b0d37f4715268be86afee68fa2cc3613
+  file_name: 20FQMA-MAN-2WD-EU.bin
+  file_size: 1048576
+  header_position: 99261
+  header_version: '0.0'
+  is_valid: true
+  me_version: '7.0'
+  region: EU
+  software_version: ''
+  sub_variant: ''
+  transmission: MAN
+  variant: 20FQMA
+20FQMA-MAN-FWD-EU.bin:
+  build_date: 2000-10-23 08:55
+  chassis_group: P2X
+  drivetrain: 2WD
+  ecu_variant: ''
+  engine_group: B52X4XT
+  engine_model: B5234HT
+  epk_version: ''
+  file_checksum: 17bbd80658fadebeb5e9581a4acdc8ca5a65c21afa7baa7de5f6640e42f173cf
+  file_name: 20FQMA-MAN-FWD-EU.bin
+  file_size: 1048576
+  header_position: 99261
+  header_version: '0.0'
+  is_valid: true
+  me_version: '7.0'
+  region: EU
+  software_version: ''
+  sub_variant: ''
+  transmission: MAN
+  variant: 20FQMA
+20FVHJ-L1FVOVD0-MAN-2WD-EU.bin:
+  build_date: 2006-02-02 08:20
+  chassis_group: P2X
+  drivetrain: 2WD
+  ecu_variant: ''
+  engine_group: B52X4XT
+  engine_model: B5204LT
+  epk_version: ''
+  file_checksum: 511ab0b11175f3ce7d6883b0381bd3629ddebf671f0937f52efdfeb4529728a5
+  file_name: 20FVHJ-L1FVOVD0-MAN-2WD-EU.bin
+  file_size: 1048576
+  header_position: 99263
+  header_version: '1.0'
+  is_valid: true
+  me_version: '7.0'
+  region: EU
+  software_version: 30785721AA
+  sub_variant: L1FVOVD0
+  transmission: MAN
+  variant: 20FVHJ
+20FWHJ-50FWRVD0-AUT-FWD-EU 1.bin:
+  build_date: 2006-01-25 21:46
+  chassis_group: P2X
+  drivetrain: FWD
+  ecu_variant: ''
+  engine_group: B52X4XT
+  engine_model: B5234HT
+  epk_version: ''
+  file_checksum: 2498f9a7a60187dc444fea53de7e6e364a143f89c8af538069a4779e9a41e917
+  file_name: 20FWHJ-50FWRVD0-AUT-FWD-EU 1.bin
+  file_size: 1048576
+  header_position: 99263
+  header_version: '1.0'
+  is_valid: true
+  me_version: '7.0'
+  region: EU
+  software_version: 30788300AA
+  sub_variant: 50FWRVD0
+  transmission: AUT
+  variant: 20FWHJ
+20FWHJ-50FWRVD0-AUT-FWD-EU.bin:
+  build_date: 2006-01-25 21:46
+  chassis_group: P2X
+  drivetrain: FWD
+  ecu_variant: ''
+  engine_group: B52X4XT
+  engine_model: B5234HT
+  epk_version: ''
+  file_checksum: 6d9cad7a5b8f52f8b1a52986be3f0fa9369c48e3401af2706bcb3ad5d2fe7610
+  file_name: 20FWHJ-50FWRVD0-AUT-FWD-EU.bin
+  file_size: 1048576
+  header_position: 99263
+  header_version: '1.0'
+  is_valid: true
+  me_version: '7.0'
+  region: EU
+  software_version: 30788300AA
+  sub_variant: 50FWRVD0
+  transmission: AUT
+  variant: 20FWHJ
+20FWHJ-52FWRVD0-AUT-FWD-US 2.bin:
+  build_date: 2006-01-25 21:46
+  chassis_group: P2X
+  drivetrain: FWD
+  ecu_variant: ''
+  engine_group: B52X4XT
+  engine_model: B5234HT
+  epk_version: ''
+  file_checksum: 0ef3440981c8ecf78a855934d77583b94f4d68d5ea86d55f295d3b620c363b19
+  file_name: 20FWHJ-52FWRVD0-AUT-FWD-US 2.bin
+  file_size: 1048576
+  header_position: 99263
+  header_version: '1.0'
+  is_valid: true
+  me_version: '7.0'
+  region: US
+  software_version: 30788302AA
+  sub_variant: 52FWRVD0
+  transmission: AUT
+  variant: 20FWHJ
+20FWHJ-52FWRVD0-AUT-FWD-US.bin:
+  build_date: 2006-01-25 21:46
+  chassis_group: P2X
+  drivetrain: FWD
+  ecu_variant: ''
+  engine_group: B52X4XT
+  engine_model: B5234HT
+  epk_version: ''
+  file_checksum: d1f9d4d94635ab3e9b5d5d95f6dbb3ab766774f93452381c451f04bc0c4cdd7c
+  file_name: 20FWHJ-52FWRVD0-AUT-FWD-US.bin
+  file_size: 1048576
+  header_position: 99263
+  header_version: '1.0'
+  is_valid: true
+  me_version: '7.0'
+  region: US
+  software_version: 30788302AA
+  sub_variant: 52FWRVD0
+  transmission: AUT
+  variant: 20FWHJ
+20FWHJ-53FWRVD0-MAN-FWD-US 2.bin:
+  build_date: 2006-01-25 21:46
+  chassis_group: P2X
+  drivetrain: FWD
+  ecu_variant: ''
+  engine_group: B52X4XT
+  engine_model: B5234HT
+  epk_version: ''
+  file_checksum: a3cce791da89067854f0eae53e2301dc8842e8545439f4b30b1d4b2e5cee9e18
+  file_name: 20FWHJ-53FWRVD0-MAN-FWD-US 2.bin
+  file_size: 1048576
+  header_position: 99263
+  header_version: '1.0'
+  is_valid: true
+  me_version: '7.0'
+  region: US
+  software_version: 30788303AA
+  sub_variant: 53FWRVD0
+  transmission: MAN
+  variant: 20FWHJ
+20FWHJ-53FWRVD0-MAN-FWD-US.bin:
+  build_date: 2006-01-25 21:46
+  chassis_group: P2X
+  drivetrain: FWD
+  ecu_variant: ''
+  engine_group: B52X4XT
+  engine_model: B5234HT
+  epk_version: ''
+  file_checksum: 6ecdce6ab59ed718b9bf912ba104db65a2a5fcb7b0eebbb1af4c22d307b526f8
+  file_name: 20FWHJ-53FWRVD0-MAN-FWD-US.bin
+  file_size: 1048576
+  header_position: 99263
+  header_version: '1.0'
+  is_valid: true
+  me_version: '7.0'
+  region: US
+  software_version: 30788303AA
+  sub_variant: 53FWRVD0
+  transmission: MAN
+  variant: 20FWHJ
+20FWHJ-81FWOVD0-MAN-FWD-EU 1.bin:
+  build_date: 2006-01-25 21:46
+  chassis_group: P2X
+  drivetrain: FWD
+  ecu_variant: ''
+  engine_group: B52X4XT
+  engine_model: B5244LT
+  epk_version: ''
+  file_checksum: b39daa4a81fa930f81b4750afcf64277563f3e6b51444aa6d11c6421be84ab75
+  file_name: 20FWHJ-81FWOVD0-MAN-FWD-EU 1.bin
+  file_size: 1048576
+  header_position: 99263
+  header_version: '1.0'
+  is_valid: true
+  me_version: '7.0'
+  region: EU
+  software_version: ''
+  sub_variant: 81FWOVD0
+  transmission: MAN
+  variant: 20FWHJ
+20FWHJ-81FWOVD0-MAN-FWD-EU 2.bin:
+  build_date: 2006-01-25 21:46
+  chassis_group: P2X
+  drivetrain: FWD
+  ecu_variant: ''
+  engine_group: B52X4XT
+  engine_model: B5244LT
+  epk_version: ''
+  file_checksum: aad53bd513a9166914b9f5341c4216faff3ce5df580e5d21b27fcabfca1bc3d9
+  file_name: 20FWHJ-81FWOVD0-MAN-FWD-EU 2.bin
+  file_size: 1048576
+  header_position: 99263
+  header_version: '1.0'
+  is_valid: true
+  me_version: '7.0'
+  region: EU
+  software_version: ''
+  sub_variant: 81FWOVD0
+  transmission: MAN
+  variant: 20FWHJ
+20FWHJ-81FWOVD0-MAN-FWD-EU.bin:
+  build_date: 2006-01-25 21:46
+  chassis_group: P2X
+  drivetrain: FWD
+  ecu_variant: ''
+  engine_group: B52X4XT
+  engine_model: B5244LT
+  epk_version: ''
+  file_checksum: 07dc7c3a6a821fe2d71120fea21a062474edd3d350426f14a7f7349e3e17a9e5
+  file_name: 20FWHJ-81FWOVD0-MAN-FWD-EU.bin
+  file_size: 1048576
+  header_position: 99263
+  header_version: '1.0'
+  is_valid: true
+  me_version: '7.0'
+  region: EU
+  software_version: ''
+  sub_variant: 81FWOVD0
+  transmission: MAN
+  variant: 20FWHJ
+20FWHJ-8CFWOVD0-AUT-AWD-US.bin:
+  build_date: 2006-01-25 21:46
+  chassis_group: P2X
+  drivetrain: AWD
+  ecu_variant: ''
+  engine_group: B52X4XT
+  engine_model: B5244LT
+  epk_version: ''
+  file_checksum: eb6b39a7d629fe8c576ed8e89c15c20e7abc4ebae8ca4d8b14b4a89e77a59320
+  file_name: 20FWHJ-8CFWOVD0-AUT-AWD-US.bin
+  file_size: 1048576
+  header_position: 99263
+  header_version: '1.0'
+  is_valid: true
+  me_version: '7.0'
+  region: US
+  software_version: 31211029AC
+  sub_variant: 8CFWOVD0
+  transmission: AUT
+  variant: 20FWHJ
+20KPSC-G1KPD-MAN-EU 1.bin:
+  build_date: 2001-07-25 10:41
+  chassis_group: P2X
+  drivetrain: ''
+  ecu_variant: 08658507 H
+  engine_group: B52X4XT
+  engine_model: B5244LT
+  epk_version: 47/1/ME701/19///70193K11/70193K11/230701102642/
+  file_checksum: b0949e67f66ef8ee49e78b596899cc11ac0fcd3c8ef837190fc82f324e3b03cf
+  file_name: 20KPSC-G1KPD-MAN-EU 1.bin
+  file_size: 1048576
+  header_position: 99943
+  header_version: '1.0'
+  is_valid: true
+  me_version: 7.0.1
+  region: EU
+  software_version: ''
+  sub_variant: G1KPD
+  transmission: MAN
+  variant: 20KPSC
+20KPSC-G1KPD-MAN-EU.bin:
+  build_date: 2001-07-25 10:41
+  chassis_group: P2X
+  drivetrain: ''
+  ecu_variant: 08658507 H
+  engine_group: B52X4XT
+  engine_model: B5244LT
+  epk_version: 47/1/ME701/19///70193K11/70193K11/230701102642/
+  file_checksum: 2b931b7dddc0b9aaa1d853440033b8d630c3fba2168b6add98fd0ec726a6277d
+  file_name: 20KPSC-G1KPD-MAN-EU.bin
+  file_size: 1048576
+  header_position: 99943
+  header_version: '1.0'
+  is_valid: true
+  me_version: 7.0.1
+  region: EU
+  software_version: ''
+  sub_variant: G1KPD
+  transmission: MAN
+  variant: 20KPSC
+20KPSC-K2KPE-AUT-US.bin:
+  build_date: 2001-07-25 10:41
+  chassis_group: P2X
+  drivetrain: ''
+  ecu_variant: 08658507 H
+  engine_group: B52X4XT
+  engine_model: B5234HT
+  epk_version: 38/1//19///20KQ/K2KQCBS0/210302152223/02104824/
+  file_checksum: 142f3257e6b303a19848950149a0c705b4edbef7c020ca75ec21ec3724d5414b
+  file_name: 20KPSC-K2KPE-AUT-US.bin
+  file_size: 1048576
+  header_position: 99943
+  header_version: '1.0'
+  is_valid: false
+  me_version: 7.0.1
+  region: US
+  software_version: ''
+  sub_variant: K2KPE
+  transmission: AUT
+  variant: 20KPSC
+20KTHJ-G0KTCVD0-AUT-FWD-EU.bin:
+  build_date: 2004-06-18 07:53
+  chassis_group: P2X
+  drivetrain: FWD
+  ecu_variant: 08658507 H
+  engine_group: B52X4XT
+  engine_model: B5244LT
+  epk_version: 47/1/ME701/19///70193K15/70193K15/160604113341/
+  file_checksum: bb848289f904a2f3bd848aa1f4e824db6b3c04c31774e8ff570a5174183209cf
+  file_name: 20KTHJ-G0KTCVD0-AUT-FWD-EU.bin
+  file_size: 1048576
+  header_position: 99944
+  header_version: '1.0'
+  is_valid: true
+  me_version: 7.0.1
+  region: EU
+  software_version: 30729069A
+  sub_variant: G0KTCVD0
+  transmission: AUT
+  variant: 20KTHJ
+20KTHJ-K3KTCVD0-MAN-US 1.bin:
+  build_date: 2004-06-18 07:53
+  chassis_group: P2X
+  drivetrain: ''
+  ecu_variant: 08658507 H
+  engine_group: B52X4XT
+  engine_model: B5234HT
+  epk_version: 47/1/ME701/19///70193K15/70193K15/160604113341/
+  file_checksum: 035277541d4901488542a75d6cd67bbe2d357de3e7665e0c349adb87770851d4
+  file_name: 20KTHJ-K3KTCVD0-MAN-US 1.bin
+  file_size: 1048576
+  header_position: 99944
+  header_version: '1.0'
+  is_valid: true
+  me_version: 7.0.1
+  region: US
+  software_version: 30743400AA
+  sub_variant: K3KTCVD0
+  transmission: MAN
+  variant: 20KTHJ
+20KTHJ-K3KTCVD0-MAN-US.bin:
+  build_date: 2004-06-18 07:53
+  chassis_group: P2X
+  drivetrain: ''
+  ecu_variant: 08658507 H
+  engine_group: B52X4XT
+  engine_model: B5234HT
+  epk_version: 47/1/ME701/19///70193K15/70193K15/160604113341/
+  file_checksum: 30bed8ec748074bb2f11f303f774bea21753dc9ccedee0b702454c9dcd40d98c
+  file_name: 20KTHJ-K3KTCVD0-MAN-US.bin
+  file_size: 1048576
+  header_position: 99944
+  header_version: '1.0'
+  is_valid: true
+  me_version: 7.0.1
+  region: US
+  software_version: 30743400AA
+  sub_variant: K3KTCVD0
+  transmission: MAN
+  variant: 20KTHJ
+20NCHJ-G1NCKVD0-MAN-EU 1.bin:
+  build_date: 2002-04-12 08:12
+  chassis_group: P2X
+  drivetrain: ''
+  ecu_variant: 30641746 B
+  engine_group: B52X4XT
+  engine_model: B5244LT
+  epk_version: 47/1/ME701/19///70193N2Z/70193N2Z/090402154215/
+  file_checksum: 0440611f2d8a9bbba957f7a03b5e80bc77d2ca2e7e3f53ce06de97ae6ac2a39a
+  file_name: 20NCHJ-G1NCKVD0-MAN-EU 1.bin
+  file_size: 1048576
+  header_position: 100028
+  header_version: '1.0'
+  is_valid: true
+  me_version: 7.0.1
+  region: EU
+  software_version: 30641509A
+  sub_variant: G1NCKVD0
+  transmission: MAN
+  variant: 20NCHJ
+20NCHJ-G1NCKVD0-MAN-EU 2.bin:
+  build_date: 2002-04-12 08:12
+  chassis_group: P2X
+  drivetrain: ''
+  ecu_variant: 30641746 B
+  engine_group: B52X4XT
+  engine_model: B5244LT
+  epk_version: 47/1/ME701/19///70193N2Z/70193N2Z/090402154215/
+  file_checksum: f0d1c3292e10de6497e09d9840668b52f7bd83366ad776004c8ab8bcfe39c98b
+  file_name: 20NCHJ-G1NCKVD0-MAN-EU 2.bin
+  file_size: 1048576
+  header_position: 100028
+  header_version: '1.0'
+  is_valid: true
+  me_version: 7.0.1
+  region: EU
+  software_version: 30641509A
+  sub_variant: G1NCKVD0
+  transmission: MAN
+  variant: 20NCHJ
+20NCHJ-G1NCKVD0-MAN-EU 3.bin:
+  build_date: 2002-04-12 08:12
+  chassis_group: P2X
+  drivetrain: ''
+  ecu_variant: 30641746 B
+  engine_group: B52X4XT
+  engine_model: B5244LT
+  epk_version: 47/1/ME701/19///70193N2Z/70193N2Z/090402154215/
+  file_checksum: 2cbefd76e6bc2bdb6599c6c9b7211c4237b5912a0cc92ca7ff76064b4576fb0d
+  file_name: 20NCHJ-G1NCKVD0-MAN-EU 3.bin
+  file_size: 1048576
+  header_position: 100028
+  header_version: '1.0'
+  is_valid: true
+  me_version: 7.0.1
+  region: EU
+  software_version: 30641509A
+  sub_variant: G1NCKVD0
+  transmission: MAN
+  variant: 20NCHJ
+20NCHJ-G1NCKVD0-MAN-EU.bin:
+  build_date: 2002-04-12 08:12
+  chassis_group: P2X
+  drivetrain: ''
+  ecu_variant: 30641746 B
+  engine_group: B52X4XT
+  engine_model: B5244LT
+  epk_version: 47/1/ME701/19///70193N2Z/70193N2Z/090402154215/
+  file_checksum: 7696af7781beac69772f8e2db24d34ec6e0729fd6a61b0925c2b87b073aeed90
+  file_name: 20NCHJ-G1NCKVD0-MAN-EU.bin
+  file_size: 1048576
+  header_position: 100028
+  header_version: '1.0'
+  is_valid: true
+  me_version: 7.0.1
+  region: EU
+  software_version: 30641509A
+  sub_variant: G1NCKVD0
+  transmission: MAN
+  variant: 20NCHJ
+20NHHJ-F0NHBVD0-AUT-FWD-EU.bin:
+  build_date: 2004-08-12 08:08
+  chassis_group: P2X
+  drivetrain: FWD
+  ecu_variant: 30651321 B
+  engine_group: B52X4XT
+  engine_model: B5234HT
+  epk_version: 45/1/ME701/19///70193N6/70193N6/120704172526/
+  file_checksum: c8e51fda48e88bc5785a26788e712d32e772193729f9d602efffb02dc0fac6e2
+  file_name: 20NHHJ-F0NHBVD0-AUT-FWD-EU.bin
+  file_size: 1048576
+  header_position: 99964
+  header_version: '1.0'
+  is_valid: true
+  me_version: 7.0.1
+  region: EU
+  software_version: 30729105A
+  sub_variant: F0NHBVD0
+  transmission: AUT
+  variant: 20NHHJ
+20NHHJ-G1NHBVD0-MAN-FWD-EU.bin:
+  build_date: 2004-08-09 10:14
+  chassis_group: P2X
+  drivetrain: FWD
+  ecu_variant: 30641746 B
+  engine_group: B52X4XT
+  engine_model: B5244T3
+  epk_version: 45/1/ME701/19///70193N6/70193N6/120704172526/
+  file_checksum: 29374a67d81246c30eeb61f0fa838fe7f9cf53f62cd664a65296f499ec9f6359
+  file_name: 20NHHJ-G1NHBVD0-MAN-FWD-EU.bin
+  file_size: 1048576
+  header_position: 99964
+  header_version: '1.0'
+  is_valid: true
+  me_version: 7.0.1
+  region: EU
+  software_version: 30729101A
+  sub_variant: G1NHBVD0
+  transmission: MAN
+  variant: 20NHHJ
+2XFEMH-MAN-EU 1.bin:
+  build_date: 990611 12:04
+  chassis_group: P2X
+  drivetrain: ''
+  ecu_variant: 08689198 A
+  engine_group: B52X4XT
+  engine_model: B5204HT
+  epk_version: 40/1//19///10ML/Y0MLabs0_2/230902155740/155356/
+  file_checksum: cca2dc6963df1da871cf0054aca2907fb8f8f5789d31d13e086fe990f39e2d53
+  file_name: 2XFEMH-MAN-EU 1.bin
+  file_size: 1048576
+  header_position: 100142
+  header_version: '0.0'
+  is_valid: true
+  me_version: '7.0'
+  region: EU
+  software_version: ''
+  sub_variant: ''
+  transmission: MAN
+  variant: 2XFEMH
+2XFEMH-MAN-EU 2.bin:
+  build_date: 990611 12:04
+  chassis_group: P2X
+  drivetrain: ''
+  ecu_variant: 08658507 H
+  engine_group: B52X4XT
+  engine_model: B5204HT
+  epk_version: 38/1//19///20KP/K0KPBBS0/270701153556/01102642/
+  file_checksum: 68500aaa974c216a2502b5b2748e0be5b245db5af7607a47a078128d13db2f60
+  file_name: 2XFEMH-MAN-EU 2.bin
+  file_size: 1048576
+  header_position: 99943
+  header_version: '0.0'
+  is_valid: true
+  me_version: '7.0'
+  region: EU
+  software_version: ''
+  sub_variant: ''
+  transmission: MAN
+  variant: 2XFEMH
+2XFEMH-MAN-EU.bin:
+  build_date: 990611 12:04
+  chassis_group: P2X
+  drivetrain: ''
+  ecu_variant: 08658507 H
+  engine_group: B52X4XT
+  engine_model: B5204HT
+  epk_version: 47/1/ME701/19///70193K11/70193K11/230701102642/
+  file_checksum: feb4a7916499f793169a97dce9c253451c45212b627e201d25f252b241cfc5c0
+  file_name: 2XFEMH-MAN-EU.bin
+  file_size: 1048576
+  header_position: 99943
+  header_version: '0.0'
+  is_valid: true
+  me_version: '7.0'
+  region: EU
+  software_version: ''
+  sub_variant: ''
+  transmission: MAN
+  variant: 2XFEMH
+40GPHJ-81GPPVD0-MAN-FWD_AWD-EU.bin:
+  build_date: 2005-05-13 07:49
+  chassis_group: P2X
+  drivetrain: FWD/AWD
+  ecu_variant: 30668566 A
+  engine_group: B52X4XT
+  engine_model: B5254LT
+  epk_version: 45/1/ME701/19///70194G8/70194G8/090505161251/
+  file_checksum: 962368981e5cb502b84e7e4feaeed6e3e5129f43769e712a84dd303f2d0668da
+  file_name: 40GPHJ-81GPPVD0-MAN-FWD_AWD-EU.bin
+  file_size: 1048576
+  header_position: 100169
+  header_version: '1.0'
+  is_valid: true
+  me_version: '7.5'
+  region: EU
+  software_version: 30771153AA
+  sub_variant: 81GPPVD0
+  transmission: MAN
+  variant: 40GPHJ
+40GSHJ-80GSU-AUT-FWD_AWD-EU.bin:
+  build_date: 2007-08-15 10:19
+  chassis_group: P2X
+  drivetrain: FWD/AWD
+  ecu_variant: 31219132AA
+  engine_group: B52X4XT
+  engine_model: B5254LT
+  epk_version: 47/1/ME701/19///70194G10/70194G10/210207182641/
+  file_checksum: 41f07fa4d5731bfc3149ebefd68bae5e3093f3a5753a4f4c16f8f671d69086fd
+  file_name: 40GSHJ-80GSU-AUT-FWD_AWD-EU.bin
+  file_size: 1048576
+  header_position: 100172
+  header_version: '1.0'
+  is_valid: true
+  me_version: '7.5'
+  region: EU
+  software_version: ''
+  sub_variant: 80GSU
+  transmission: AUT
+  variant: 40GSHJ
+40LKMA-HRLKJVD0-AUT-AWD-EU.bin:
+  build_date: 2002-07-03 16:22
+  chassis_group: P2X
+  drivetrain: AWD
+  ecu_variant: 30641539 B
+  engine_group: B52X4XT
+  engine_model: B5254T2
+  epk_version: 47/1/ME701/19///70194L8Z/70194L8Z/030702123014/
+  file_checksum: 984219433287d2b3d5fb71bc929a0eca038683fc473b0b8f7f10848cadfab9ce
+  file_name: 40LKMA-HRLKJVD0-AUT-AWD-EU.bin
+  file_size: 1048576
+  header_position: 100477
+  header_version: '1.0'
+  is_valid: true
+  me_version: 7.0.1
+  region: EU
+  software_version: 30653123A
+  sub_variant: HRLKJVD0
+  transmission: AUT
+  variant: 40LKMA
+40LLHJ-E0LLSVD0-AUT-FWD-EU.bin:
+  build_date: 2002-12-03 07:39
+  chassis_group: P2X
+  drivetrain: FWD
+  ecu_variant: 30641539 B
+  engine_group: B52X4XT
+  engine_model: B5254T2
+  epk_version: 45/1/ME701/19///70194L9/70194L9/291102110731/
+  file_checksum: 0a94a5650a3e6cc336393ee5c6541362df677e5589ab522b5019384706488de6
+  file_name: 40LLHJ-E0LLSVD0-AUT-FWD-EU.bin
+  file_size: 1048576
+  header_position: 100409
+  header_version: '1.0'
+  is_valid: true
+  me_version: 7.0.1
+  region: EU
+  software_version: 30641524A
+  sub_variant: E0LLSVD0
+  transmission: AUT
+  variant: 40LLHJ
+40LLHJ-E1LLSVD0-MAN-FWD-EU.bin:
+  build_date: 2002-12-03 07:39
+  chassis_group: P2X
+  drivetrain: FWD
+  ecu_variant: 30641539 B
+  engine_group: B52X4XT
+  engine_model: B5254T2
+  epk_version: 45/1/ME701/19///70194L9/70194L9/291102110731/
+  file_checksum: 62235547d96baf91ea265dc8612959fccc15c8ff96e5da885b5fb2507749b0dd
+  file_name: 40LLHJ-E1LLSVD0-MAN-FWD-EU.bin
+  file_size: 1048576
+  header_position: 100409
+  header_version: '1.0'
+  is_valid: true
+  me_version: 7.0.1
+  region: EU
+  software_version: 30641522A
+  sub_variant: E1LLSVD0
+  transmission: MAN
+  variant: 40LLHJ
+40LNHJ-EALNGVD0-AUT-AWD-EU-BLDC 1.bin:
+  build_date: 2003-04-22 10:04
+  chassis_group: P2X
+  drivetrain: AWD
+  ecu_variant: 30641539 B
+  engine_group: B52X4XT
+  engine_model: B5254T2
+  epk_version: 47/1/ME701/19///70194L10/70194L10/240303150814/
+  file_checksum: 18cfe0bfdf7a28d29e5e37b3d3a31e12b41e7182fdcf53607de341b9d988a785
+  file_name: 40LNHJ-EALNGVD0-AUT-AWD-EU-BLDC 1.bin
+  file_size: 1048576
+  header_position: 100409
+  header_version: '1.0'
+  is_valid: true
+  me_version: 7.0.1
+  region: EU-BLDC
+  software_version: 30668330A
+  sub_variant: EALNGVD0
+  transmission: AUT
+  variant: 40LNHJ
+40LNHJ-EALNGVD0-AUT-AWD-EU-BLDC 2.bin:
+  build_date: 2003-04-22 10:04
+  chassis_group: P2X
+  drivetrain: AWD
+  ecu_variant: 30641539 B
+  engine_group: B52X4XT
+  engine_model: B5254T2
+  epk_version: 47/1/ME701/19///70194L10/70194L10/240303150814/
+  file_checksum: c4617f4db0ef04b53b288ef3f39af4e1f166fb472f421a2c8327e05bf5aa402c
+  file_name: 40LNHJ-EALNGVD0-AUT-AWD-EU-BLDC 2.bin
+  file_size: 1048576
+  header_position: 100409
+  header_version: '1.0'
+  is_valid: true
+  me_version: 7.0.1
+  region: EU-BLDC
+  software_version: 30668330A
+  sub_variant: EALNGVD0
+  transmission: AUT
+  variant: 40LNHJ
+40LNHJ-EALNGVD0-AUT-AWD-EU-BLDC 3.bin:
+  build_date: 2003-04-22 10:04
+  chassis_group: P2X
+  drivetrain: AWD
+  ecu_variant: 30641539 B
+  engine_group: B52X4XT
+  engine_model: B5254T2
+  epk_version: 47/1/ME701/19///70194L10/70194L10/240303150814/
+  file_checksum: 28c771f17c20fc9b6dbb4717db981a9b044f077e3a8cf6ed1374f29ba754fa7c
+  file_name: 40LNHJ-EALNGVD0-AUT-AWD-EU-BLDC 3.bin
+  file_size: 1048576
+  header_position: 100409
+  header_version: '1.0'
+  is_valid: true
+  me_version: 7.0.1
+  region: EU-BLDC
+  software_version: 30668330A
+  sub_variant: EALNGVD0
+  transmission: AUT
+  variant: 40LNHJ
+40LNHJ-EALNGVD0-AUT-AWD-EU-BLDC 4.bin:
+  build_date: 2003-04-22 10:04
+  chassis_group: P2X
+  drivetrain: AWD
+  ecu_variant: 30641539 B
+  engine_group: B52X4XT
+  engine_model: B5254T2
+  epk_version: 47/1/ME701/19///70194L10/70194L10/240303150814/
+  file_checksum: 1bb7446b4c956ace9295112de6db78ce6538faffea9571a3c96512b66ffddf5d
+  file_name: 40LNHJ-EALNGVD0-AUT-AWD-EU-BLDC 4.bin
+  file_size: 1048576
+  header_position: 100409
+  header_version: '1.0'
+  is_valid: true
+  me_version: 7.0.1
+  region: EU-BLDC
+  software_version: 30668330A
+  sub_variant: EALNGVD0
+  transmission: AUT
+  variant: 40LNHJ
+40LNHJ-EALNGVD0-AUT-AWD-EU-BLDC 5.bin:
+  build_date: 2003-04-22 10:04
+  chassis_group: P2X
+  drivetrain: AWD
+  ecu_variant: 30641539 B
+  engine_group: B52X4XT
+  engine_model: B5254T2
+  epk_version: 47/1/ME701/19///70194L10/70194L10/240303150814/
+  file_checksum: f89a97d8d5a2b9692ef35d736ab5697861bd49b5b6012ccb5baca8984a7efca4
+  file_name: 40LNHJ-EALNGVD0-AUT-AWD-EU-BLDC 5.bin
+  file_size: 1048576
+  header_position: 100409
+  header_version: '1.0'
+  is_valid: true
+  me_version: 7.0.1
+  region: EU-BLDC
+  software_version: 30668330A
+  sub_variant: EALNGVD0
+  transmission: AUT
+  variant: 40LNHJ
+40LNHJ-EALNGVD0-AUT-AWD-EU-BLDC 6.bin:
+  build_date: 2003-04-22 10:04
+  chassis_group: P2X
+  drivetrain: AWD
+  ecu_variant: 30641539 B
+  engine_group: B52X4XT
+  engine_model: B5254T2
+  epk_version: 47/1/ME701/19///70194L10/70194L10/240303150814/
+  file_checksum: 0f7a3e5290c67692213dc814debeba1cc3014bbd7b633bff87d6a9cf0a4ea453
+  file_name: 40LNHJ-EALNGVD0-AUT-AWD-EU-BLDC 6.bin
+  file_size: 1048576
+  header_position: 100409
+  header_version: '1.0'
+  is_valid: true
+  me_version: 7.0.1
+  region: EU-BLDC
+  software_version: 30668330A
+  sub_variant: EALNGVD0
+  transmission: AUT
+  variant: 40LNHJ
+40LNHJ-EALNGVD0-AUT-AWD-EU-BLDC.bin:
+  build_date: 2003-04-22 10:04
+  chassis_group: P2X
+  drivetrain: AWD
+  ecu_variant: 30641539 B
+  engine_group: B52X4XT
+  engine_model: B5254T2
+  epk_version: 47/1/ME701/19///70194L10/70194L10/240303150814/
+  file_checksum: 6e7d9155edc872b6b9f426bd90bdd15c3954a9092210babf5c4c3c7325fd65b0
+  file_name: 40LNHJ-EALNGVD0-AUT-AWD-EU-BLDC.bin
+  file_size: 1048576
+  header_position: 100409
+  header_version: '1.0'
+  is_valid: true
+  me_version: 7.0.1
+  region: EU-BLDC
+  software_version: 30668330A
+  sub_variant: EALNGVD0
+  transmission: AUT
+  variant: 40LNHJ
+40LNHJ-EBLNCVD0-MAN-AWD-EU-BLDC 1.bin:
+  build_date: 2003-04-22 10:04
+  chassis_group: P2X
+  drivetrain: AWD
+  ecu_variant: 30641539 B
+  engine_group: B52X4XT
+  engine_model: B5254T2
+  epk_version: 47/1/ME701/19///70194L10/70194L10/240303150814/
+  file_checksum: e4550c4fbb153c70b6d45745c024f137f945e8c085900abfb2ac66b9fd2221b7
+  file_name: 40LNHJ-EBLNCVD0-MAN-AWD-EU-BLDC 1.bin
+  file_size: 1048576
+  header_position: 100409
+  header_version: '1.0'
+  is_valid: true
+  me_version: 7.0.1
+  region: EU-BLDC
+  software_version: 30670436A
+  sub_variant: EBLNCVD0
+  transmission: MAN
+  variant: 40LNHJ
+40LNHJ-EBLNCVD0-MAN-AWD-EU-BLDC.bin:
+  build_date: 2003-04-22 10:04
+  chassis_group: P2X
+  drivetrain: AWD
+  ecu_variant: 30641539 B
+  engine_group: B52X4XT
+  engine_model: B5254T2
+  epk_version: 47/1/ME701/19///70194L10/70194L10/240303150814/
+  file_checksum: 21b19b309b75ef62072e9185802a3ec0c9e0b9b4b3d1af382c043392497af8a9
+  file_name: 40LNHJ-EBLNCVD0-MAN-AWD-EU-BLDC.bin
+  file_size: 1048576
+  header_position: 100409
+  header_version: '1.0'
+  is_valid: true
+  me_version: 7.0.1
+  region: EU-BLDC
+  software_version: 30670436A
+  sub_variant: EBLNCVD0
+  transmission: MAN
+  variant: 40LNHJ
+40LNHJ-ECLNGVD0-AUT-AWD-US-BLDC.bin:
+  build_date: 2003-04-22 10:04
+  chassis_group: P2X
+  drivetrain: AWD
+  ecu_variant: 30641539 B
+  engine_group: B52X4XT
+  engine_model: B5254T2
+  epk_version: 47/1/ME701/19///70194L10/70194L10/240303150814/
+  file_checksum: 6e421e76e9600274654b9e4b273941965e66b1fe3233111647bd3a45c20be554
+  file_name: 40LNHJ-ECLNGVD0-AUT-AWD-US-BLDC.bin
+  file_size: 1048576
+  header_position: 100409
+  header_version: '1.0'
+  is_valid: true
+  me_version: 7.0.1
+  region: US-BLDC
+  software_version: 30668331A
+  sub_variant: ECLNGVD0
+  transmission: AUT
+  variant: 40LNHJ
+40LNHJ-ECLNGVD0-AUT-AWD-US.bin:
+  build_date: 2003-04-22 10:04
+  chassis_group: P2X
+  drivetrain: AWD
+  ecu_variant: 30641539 B
+  engine_group: B52X4XT
+  engine_model: B5254T2
+  epk_version: 47/1/ME701/19///70194L10/70194L10/240303150814/
+  file_checksum: bf9ca783ed76d51fc0f5ff8cda8e7876b61cc79cac7fda90719354317eb47c22
+  file_name: 40LNHJ-ECLNGVD0-AUT-AWD-US.bin
+  file_size: 1048576
+  header_position: 100409
+  header_version: '1.0'
+  is_valid: true
+  me_version: 7.0.1
+  region: US-BLDC
+  software_version: 30668331A
+  sub_variant: ECLNGVD0
+  transmission: AUT
+  variant: 40LNHJ
+40LPHJ-ERLPDVD0-AUT-AWD-EU 1.bin:
+  build_date: 2004-08-09 13:11
+  chassis_group: P2X
+  drivetrain: AWD
+  ecu_variant: 30641539 B
+  engine_group: B52X4XT
+  engine_model: B5254T2
+  epk_version: 47/1/ME701/19///70194L11/70194L11/060704165125/
+  file_checksum: 2f49f42f90f9c94a471e479b4202e35820a732be7c53786721f8d3c4cea1059b
+  file_name: 40LPHJ-ERLPDVD0-AUT-AWD-EU 1.bin
+  file_size: 1048576
+  header_position: 100412
+  header_version: '1.0'
+  is_valid: true
+  me_version: 7.0.1
+  region: EU
+  software_version: 31211194AB
+  sub_variant: ERLPDVD0
+  transmission: AUT
+  variant: 40LPHJ
+40LPHJ-ERLPDVD0-AUT-AWD-EU.bin:
+  build_date: 2004-08-09 13:11
+  chassis_group: P2X
+  drivetrain: AWD
+  ecu_variant: 30641539 B
+  engine_group: B52X4XT
+  engine_model: B5254T2
+  epk_version: 47/1/ME701/19///70194L11/70194L11/060704165125/
+  file_checksum: cdfe544eda92f0981b5100e0303517cc1b2522c0abdb919d629fd1289dfeb713
+  file_name: 40LPHJ-ERLPDVD0-AUT-AWD-EU.bin
+  file_size: 1048576
+  header_position: 100412
+  header_version: '1.0'
+  is_valid: true
+  me_version: 7.0.1
+  region: EU
+  software_version: 31211194AB
+  sub_variant: ERLPDVD0
+  transmission: AUT
+  variant: 40LPHJ
+50GMHJ-22GMJVD0-AUT-AWD-US.bin:
+  build_date: 2004-05-24 12:09
+  chassis_group: P2X
+  drivetrain: AWD
+  ecu_variant: 30668566 A
+  engine_group: B52X4XT
+  engine_model: B5254RT
+  epk_version: 45/1/ME701/19///70195G6/70195G6/140504114927/
+  file_checksum: 8145db0b7f3931fd3eb7008cf42b9f3a0e30bb3f7c4ebcde482d089fd36ffd0a
+  file_name: 50GMHJ-22GMJVD0-AUT-AWD-US.bin
+  file_size: 1048576
+  header_position: 100169
+  header_version: '1.0'
+  is_valid: true
+  me_version: '7.5'
+  region: US
+  software_version: 30743144AA
+  sub_variant: 22GMJVD0
+  transmission: AUT
+  variant: 50GMHJ
+50GMHJ-23GMJVD0-MAN-AWD-US.bin:
+  build_date: 2004-05-24 12:09
+  chassis_group: P2X
+  drivetrain: AWD
+  ecu_variant: 30668566 A
+  engine_group: B52X4XT
+  engine_model: B5254RT
+  epk_version: 45/1/ME701/19///70195G6/70195G6/140504114927/
+  file_checksum: bd883b6b9dcc47c9e02f7b9c96a2252892b13dfd66477c748001337a68a43ac3
+  file_name: 50GMHJ-23GMJVD0-MAN-AWD-US.bin
+  file_size: 1048576
+  header_position: 100169
+  header_version: '1.0'
+  is_valid: true
+  me_version: '7.5'
+  region: US
+  software_version: 30743143AA
+  sub_variant: 23GMJVD0
+  transmission: MAN
+  variant: 50GMHJ
+50GPHJ-20GPPVD0-AUT-AWD-EU.bin:
+  build_date: 2005-05-13 07:54
+  chassis_group: P2X
+  drivetrain: AWD
+  ecu_variant: 30668566 A
+  engine_group: B52X4XT
+  engine_model: B5254RT
+  epk_version: 45/1/ME701/19///70195G8/70195G8/090505151134/
+  file_checksum: 43bd9e49e00fcb5fb58cc70c47fab66aa57fe98dcba8963b4e23de08a3910ad0
+  file_name: 50GPHJ-20GPPVD0-AUT-AWD-EU.bin
+  file_size: 1048576
+  header_position: 100169
+  header_version: '1.0'
+  is_valid: true
+  me_version: '7.5'
+  region: EU
+  software_version: 30771150AA
+  sub_variant: 20GPPVD0
+  transmission: AUT
+  variant: 50GPHJ
+50GPHJ-21GPPVD0-MAN-AWD-EU.Bin:
+  build_date: 2005-05-13 07:54
+  chassis_group: P2X
+  drivetrain: AWD
+  ecu_variant: 30668566 A
+  engine_group: B52X4XT
+  engine_model: B5254RT
+  epk_version: 45/1/ME701/19///70195G8/70195G8/090505151134/
+  file_checksum: 97b144369bd0d3553a4f0b79505500a1bd2c25aed25dccfc38416b0390268731
+  file_name: 50GPHJ-21GPPVD0-MAN-AWD-EU.Bin
+  file_size: 1048576
+  header_position: 100169
+  header_version: '1.0'
+  is_valid: true
+  me_version: '7.5'
+  region: EU
+  software_version: 30771149AA
+  sub_variant: 21GPPVD0
+  transmission: MAN
+  variant: 50GPHJ
+50GPHJ-50GPPVD0-AUT-FWD-EU.Bin:
+  build_date: 2005-05-13 07:54
+  chassis_group: P2X
+  drivetrain: FWD
+  ecu_variant: 30668566 A
+  engine_group: B52X4XT
+  engine_model: B5244HT
+  epk_version: 45/1/ME701/19///70195G8/70195G8/090505151134/
+  file_checksum: e56e766c4b8bb5cb9dec4fc80570e23f24f9a2b27a65c81c469b17491cace461
+  file_name: 50GPHJ-50GPPVD0-AUT-FWD-EU.Bin
+  file_size: 1048576
+  header_position: 100169
+  header_version: '1.0'
+  is_valid: true
+  me_version: '7.5'
+  region: EU
+  software_version: 30771146AA
+  sub_variant: 50GPPVD0
+  transmission: AUT
+  variant: 50GPHJ
+50GPHJ-51GPPVD0-MAN-FWD-EU 1.bin:
+  build_date: 2005-05-13 07:54
+  chassis_group: P2X
+  drivetrain: FWD
+  ecu_variant: 30668566 A
+  engine_group: B52X4XT
+  engine_model: B5244HT
+  epk_version: 45/1/ME701/19///70195G8/70195G8/090505151134/
+  file_checksum: f7733c426941dda586bbe6f5b146d02b66e5202f26ddb14e044f13ce5e3e6019
+  file_name: 50GPHJ-51GPPVD0-MAN-FWD-EU 1.bin
+  file_size: 1048576
+  header_position: 100169
+  header_version: '1.0'
+  is_valid: true
+  me_version: '7.5'
+  region: EU
+  software_version: 30771145AA
+  sub_variant: 51GPPVD0
+  transmission: MAN
+  variant: 50GPHJ
+50GPHJ-51GPPVD0-MAN-FWD-EU 2.bin:
+  build_date: 2005-05-13 07:54
+  chassis_group: P2X
+  drivetrain: FWD
+  ecu_variant: 30668566 A
+  engine_group: B52X4XT
+  engine_model: B5244HT
+  epk_version: 45/1/ME701/19///70195G8/70195G8/090505151134/
+  file_checksum: 0a1b7996d0bb2ae6a50f1ec93fb1d55557e891150d20de9954d835d628a3f042
+  file_name: 50GPHJ-51GPPVD0-MAN-FWD-EU 2.bin
+  file_size: 1048576
+  header_position: 100169
+  header_version: '1.0'
+  is_valid: true
+  me_version: '7.5'
+  region: EU
+  software_version: 30771145AA
+  sub_variant: 51GPPVD0
+  transmission: MAN
+  variant: 50GPHJ
+50GPHJ-51GPPVD0-MAN-FWD-EU 3.bin:
+  build_date: 2005-05-13 07:54
+  chassis_group: P2X
+  drivetrain: FWD
+  ecu_variant: 30668566 A
+  engine_group: B52X4XT
+  engine_model: B5244HT
+  epk_version: 45/1/ME701/19///70195G8/70195G8/090505151134/
+  file_checksum: addacd3f62e46d4e7804217b09678b365486557c5035004caabe58a4ff85dd6c
+  file_name: 50GPHJ-51GPPVD0-MAN-FWD-EU 3.bin
+  file_size: 1048576
+  header_position: 100169
+  header_version: '1.0'
+  is_valid: true
+  me_version: '7.5'
+  region: EU
+  software_version: 30771145AA
+  sub_variant: 51GPPVD0
+  transmission: MAN
+  variant: 50GPHJ
+50GPHJ-51GPPVD0-MAN-FWD-EU.bin:
+  build_date: 2005-05-13 07:54
+  chassis_group: P2X
+  drivetrain: FWD
+  ecu_variant: 30668566 A
+  engine_group: B52X4XT
+  engine_model: B5244HT
+  epk_version: 45/1/ME701/19///70195G8/70195G8/090505151134/
+  file_checksum: 36d7a8364da24cac41fba7a05e5842a1417a0ee4defa5bcc9a9d468db33b664a
+  file_name: 50GPHJ-51GPPVD0-MAN-FWD-EU.bin
+  file_size: 1048576
+  header_position: 100169
+  header_version: '1.0'
+  is_valid: true
+  me_version: '7.5'
+  region: EU
+  software_version: 30771145AA
+  sub_variant: 51GPPVD0
+  transmission: MAN
+  variant: 50GPHJ
+50GPHJ-53GPPVD0-MAN-FWD-US.bin:
+  build_date: 2005-05-13 07:54
+  chassis_group: P2X
+  drivetrain: FWD
+  ecu_variant: 30668566 A
+  engine_group: B52X4XT
+  engine_model: B5244HT
+  epk_version: 45/1/ME701/19///70195G8/70195G8/090505151134/
+  file_checksum: fbb617a4a829b2e45c8823695c7af53ae848997dcf9a35baaea2e7f98efb1ec5
+  file_name: 50GPHJ-53GPPVD0-MAN-FWD-US.bin
+  file_size: 1048576
+  header_position: 100169
+  header_version: '1.0'
+  is_valid: true
+  me_version: '7.5'
+  region: US
+  software_version: 30771147AA
+  sub_variant: 53GPPVD0
+  transmission: MAN
+  variant: 50GPHJ
+50GSHJ-22GSI-AUT-AWD-US-2.bin:
+  build_date: 2007-01-18 10:34
+  chassis_group: P2X
+  drivetrain: AWD
+  ecu_variant: 31219132AA
+  engine_group: B52X4XT
+  engine_model: B5254RT
+  epk_version: 47/1/ME701/19///70195G10/70195G10/120107143316/
+  file_checksum: 73ecd116c2c4f899a6fac7ed33c8b8cad04bda20c42f2b63b4bdaa89db00d5c2
+  file_name: 50GSHJ-22GSI-AUT-AWD-US-2.bin
+  file_size: 1048576
+  header_position: 100172
+  header_version: '1.0'
+  is_valid: true
+  me_version: '7.5'
+  region: US
+  software_version: ''
+  sub_variant: 22GSI
+  transmission: AUT
+  variant: 50GSHJ
+50GSHJ-22GSI-AUT-AWD-US-3.bin:
+  build_date: 2007-01-18 10:34
+  chassis_group: P2X
+  drivetrain: AWD
+  ecu_variant: 31219132AA
+  engine_group: B52X4XT
+  engine_model: B5254RT
+  epk_version: 47/1/ME701/19///70195G10/70195G10/120107143316/
+  file_checksum: 26817d20157277a8d90dd3a2d6803c62d5bc0183d47224a1afb52a356a8445ab
+  file_name: 50GSHJ-22GSI-AUT-AWD-US-3.bin
+  file_size: 1048576
+  header_position: 100172
+  header_version: '1.0'
+  is_valid: true
+  me_version: '7.5'
+  region: US
+  software_version: ''
+  sub_variant: 22GSI
+  transmission: AUT
+  variant: 50GSHJ
+50GSHJ-22GSI-AUT-AWD-US.bin:
+  build_date: 2007-01-18 10:34
+  chassis_group: P2X
+  drivetrain: AWD
+  ecu_variant: 31219132AA
+  engine_group: B52X4XT
+  engine_model: B5254RT
+  epk_version: 47/1/ME701/19///70195G10/70195G10/120107143316/
+  file_checksum: e8d521e186ab27f07d388b6013f325b01d2b73aab8115f7135ab637d38e0753d
+  file_name: 50GSHJ-22GSI-AUT-AWD-US.bin
+  file_size: 1048576
+  header_position: 100172
+  header_version: '1.0'
+  is_valid: true
+  me_version: '7.5'
+  region: US
+  software_version: ''
+  sub_variant: 22GSI
+  transmission: AUT
+  variant: 50GSHJ
+50GSHJ-23GSI-MAN-AWD-US.bin:
+  build_date: 2007-01-18 10:34
+  chassis_group: P2X
+  drivetrain: AWD
+  ecu_variant: 31219132AA
+  engine_group: B52X4XT
+  engine_model: B5254RT
+  epk_version: 47/1/ME701/19///70195G10/70195G10/120107143316/
+  file_checksum: 853d6bb1acb8c50a587d31e945f6d2068851222ccc4312fb22bd135530644c65
+  file_name: 50GSHJ-23GSI-MAN-AWD-US.bin
+  file_size: 1048576
+  header_position: 100172
+  header_version: '1.0'
+  is_valid: true
+  me_version: '7.5'
+  region: US
+  software_version: ''
+  sub_variant: 23GSI
+  transmission: MAN
+  variant: 50GSHJ
+50GSHJ-52GSI-AUT-FWD-US.bin:
+  build_date: 2007-01-18 10:34
+  chassis_group: P2X
+  drivetrain: FWD
+  ecu_variant: 31219132AA
+  engine_group: B52X4XT
+  engine_model: B5244HT
+  epk_version: 47/1/ME701/19///70195G10/70195G10/120107143316/
+  file_checksum: 38e65a29a8d0b906a303b97c2d2cdbdf8447a94a5ff596dce12a6d9d6bfe2e16
+  file_name: 50GSHJ-52GSI-AUT-FWD-US.bin
+  file_size: 1048576
+  header_position: 100172
+  header_version: '1.0'
+  is_valid: true
+  me_version: '7.5'
+  region: US
+  software_version: ''
+  sub_variant: 52GSI
+  transmission: AUT
+  variant: 50GSHJ
+50GSHJ-53GSI-MAN-FWD-US.bin:
+  build_date: 2007-01-18 10:34
+  chassis_group: P2X
+  drivetrain: FWD
+  ecu_variant: 31219132AA
+  engine_group: B52X4XT
+  engine_model: B5244HT
+  epk_version: 47/1/ME701/19///70195G10/70195G10/120107143316/
+  file_checksum: 8b711bb4386ece12ef0642bc79c1feaebe162c56621c4d910d1acc09e5a5b175
+  file_name: 50GSHJ-53GSI-MAN-FWD-US.bin
+  file_size: 1048576
+  header_position: 100172
+  header_version: '1.0'
+  is_valid: true
+  me_version: '7.5'
+  region: US
+  software_version: ''
+  sub_variant: 53GSI
+  transmission: MAN
+  variant: 50GSHJ
+50GSHJ-82GSI-AUT-FWD_AWD-US.bin:
+  build_date: 2007-01-18 10:34
+  chassis_group: P2X
+  drivetrain: FWD/AWD
+  ecu_variant: 31219132AA
+  engine_group: B52X4XT
+  engine_model: B5254LT
+  epk_version: 47/1/ME701/19///70195G10/70195G10/120107143316/
+  file_checksum: 3ef5f27397e4fa38dd626ceebf506af52e44483d59929dfde067c10c30601612
+  file_name: 50GSHJ-82GSI-AUT-FWD_AWD-US.bin
+  file_size: 1048576
+  header_position: 100172
+  header_version: '1.0'
+  is_valid: true
+  me_version: '7.5'
+  region: US
+  software_version: ''
+  sub_variant: 82GSI
+  transmission: AUT
+  variant: 50GSHJ
+50QGHJ-CBQGTVD0-MAN-AWD-EU 2.bin:
+  build_date: 2003-06-19 06:58
+  chassis_group: P2X
+  drivetrain: AWD
+  ecu_variant: 30641542 B
+  engine_group: B5254RT
+  engine_model: B5244T4
+  epk_version: 45/1/ME701/19///70195Q6/70195Q6/160603231337/
+  file_checksum: ad2a27f3993c632fd442eec4fc18e5f23e863293ac8d01cb8d0857e6d4746756
+  file_name: 50QGHJ-CBQGTVD0-MAN-AWD-EU 2.bin
+  file_size: 1048576
+  header_position: 100511
+  header_version: '1.0'
+  is_valid: true
+  me_version: 7.0.1
+  region: EU
+  software_version: 30668178A
+  sub_variant: CBQGTVD0
+  transmission: MAN
+  variant: 50QGHJ
+50QGHJ-CBQGTVD0-MAN-AWD-EU.bin:
+  build_date: 2003-06-19 06:58
+  chassis_group: P2X
+  drivetrain: AWD
+  ecu_variant: 30641542 B
+  engine_group: B5254RT
+  engine_model: B5244T4
+  epk_version: 45/1/ME701/19///70195Q6/70195Q6/160603231337/
+  file_checksum: 89557c6c983e8d92e0167886fd6537e6bfaacf39b2c5b518151c44529ea6f706
+  file_name: 50QGHJ-CBQGTVD0-MAN-AWD-EU.bin
+  file_size: 1048576
+  header_position: 100511
+  header_version: '1.0'
+  is_valid: true
+  me_version: 7.0.1
+  region: EU
+  software_version: 30668178A
+  sub_variant: CBQGTVD0
+  transmission: MAN
+  variant: 50QGHJ
+50QHHJ-CAQHCVD0-AUT-AWD-EU.bin:
+  build_date: 2004-08-10 12:25
+  chassis_group: P2X
+  drivetrain: AWD
+  ecu_variant: 30641542 B
+  engine_group: B5254RT
+  engine_model: B5254T4
+  epk_version: 45/1/ME701/19///70195Q7/70195Q7/070704110959/
+  file_checksum: 6d1b35069386c36bb05bfbd79a5863c2f13d1f8a1d7903d789af3f278e13393a
+  file_name: 50QHHJ-CAQHCVD0-AUT-AWD-EU.bin
+  file_size: 1048576
+  header_position: 100514
+  header_version: '1.0'
+  is_valid: true
+  me_version: 7.0.1
+  region: EU
+  software_version: 30729087A
+  sub_variant: CAQHCVD0
+  transmission: AUT
+  variant: 50QHHJ
+50QHHJ-CBQHCVD0-MAN-AWD-EU.Bin:
+  build_date: 2004-08-10 12:25
+  chassis_group: P2X
+  drivetrain: AWD
+  ecu_variant: 30641542 B
+  engine_group: B5254RT
+  engine_model: B5254T4
+  epk_version: 45/1/ME701/19///70195Q7/70195Q7/070704110959/
+  file_checksum: 9f13e6eb16f677c11495372ae1b5ee05c6c6b44d1e062ec1dd61ef63782891d1
+  file_name: 50QHHJ-CBQHCVD0-MAN-AWD-EU.Bin
+  file_size: 1048576
+  header_position: 100514
+  header_version: '1.0'
+  is_valid: true
+  me_version: 7.0.1
+  region: EU
+  software_version: 30729088A
+  sub_variant: CBQHCVD0
+  transmission: MAN
+  variant: 50QHHJ
+50QHHJ-E2QHCVD0-AUT-FWD-US.bin:
+  build_date: 2004-08-10 12:25
+  chassis_group: P2X
+  drivetrain: FWD
+  ecu_variant: 30651320 B
+  engine_group: B5254RT
+  engine_model: B5254LT
+  epk_version: 45/1/ME701/19///70195Q7/70195Q7/070704110959/
+  file_checksum: 1cb930efe9868bb4d6940ed2d68d974263804732a586ec7e49a1a250725180b3
+  file_name: 50QHHJ-E2QHCVD0-AUT-FWD-US.bin
+  file_size: 1048576
+  header_position: 100514
+  header_version: '1.0'
+  is_valid: true
+  me_version: 7.0.1
+  region: US
+  software_version: 30729126A
+  sub_variant: E2QHCVD0
+  transmission: AUT
+  variant: 50QHHJ
+50QKHJ-CCQKG-AUT-AWD-US.bin:
+  build_date: 2007-11-01 07:26
+  chassis_group: P2X
+  drivetrain: AWD
+  ecu_variant: 31219528AA
+  engine_group: B5254RT
+  engine_model: B5254T4
+  epk_version: 47/1/ME701/19///70195Q8Z/70195Q8Z/291007141745/
+  file_checksum: 1f91d960613855a1983a167ab52898d34bfef6efa6598a4c2fa0740415ddd398
+  file_name: 50QKHJ-CCQKG-AUT-AWD-US.bin
+  file_size: 1048576
+  header_position: 100513
+  header_version: '1.0'
+  is_valid: true
+  me_version: 7.0.1
+  region: US
+  software_version: ''
+  sub_variant: CCQKG
+  transmission: AUT
+  variant: 50QKHJ
+50QKHJ-CDQKG-MAN-AWD-US 1.bin:
+  build_date: 2007-11-01 07:26
+  chassis_group: P2X
+  drivetrain: AWD
+  ecu_variant: 31219528AA
+  engine_group: B5254RT
+  engine_model: B5254T4
+  epk_version: 47/1/ME701/19///70195Q8Z/70195Q8Z/291007141745/
+  file_checksum: 86f045ea7dcd957c00a59be60c57a80b2aa096706893c7edb89548d7e29b9e28
+  file_name: 50QKHJ-CDQKG-MAN-AWD-US 1.bin
+  file_size: 1048576
+  header_position: 100513
+  header_version: '1.0'
+  is_valid: true
+  me_version: 7.0.1
+  region: US
+  software_version: ''
+  sub_variant: CDQKG
+  transmission: MAN
+  variant: 50QKHJ
+50QKHJ-CDQKG-MAN-AWD-US.bin:
+  build_date: 2007-11-01 07:26
+  chassis_group: P2X
+  drivetrain: AWD
+  ecu_variant: 31219528AA
+  engine_group: B5254RT
+  engine_model: B5254T4
+  epk_version: 47/1/ME701/19///70195Q8Z/70195Q8Z/291007141745/
+  file_checksum: eb3ba2e43297773b4183ddc8d1225b5c498e90238688583dfe6f13b4d017b8e7
+  file_name: 50QKHJ-CDQKG-MAN-AWD-US.bin
+  file_size: 1048576
+  header_position: 100513
+  header_version: '1.0'
+  is_valid: true
+  me_version: 7.0.1
+  region: US
+  software_version: ''
+  sub_variant: CDQKG
+  transmission: MAN
+  variant: 50QKHJ
+50WRHJ-23WRA-MAN-AWD-US.bin:
+  build_date: 2004-10-22 15:03
+  chassis_group: P2X
+  drivetrain: ''
+  ecu_variant: 30743290AA
+  engine_group: B52X4XT
+  engine_model: ''
+  epk_version: 47/1/ME701/19///70195H9Z/70195H9Z/191205195236/
+  file_checksum: 03167bf8d597674b22935a2f05e7aad4dc92a3de935f21da22fdd8400cc8b7a8
+  file_name: 50WRHJ-23WRA-MAN-AWD-US.bin
+  file_size: 1048576
+  header_position: 100177
+  header_version: '1.0'
+  is_valid: true
+  me_version: '7.5'
+  region: ''
+  software_version: 30684626A
+  sub_variant: 23WRA
+  transmission: ''
+  variant: 50WRHJ
+50WRHJ-23WRA.bin:
+  build_date: 2004-10-22 15:03
+  chassis_group: P2X
+  drivetrain: ''
+  ecu_variant: 31219133AA
+  engine_group: B52X4XT
+  engine_model: ''
+  epk_version: 47/1/ME701/19///70195H10/70195H10/250107123252/
+  file_checksum: c66d1689f561297119cc15defc839f48967cd82ddffd02f3904932a0dd34d0c6
+  file_name: 50WRHJ-23WRA.bin
+  file_size: 1048576
+  header_position: 100179
+  header_version: '1.0'
+  is_valid: true
+  me_version: '7.5'
+  region: ''
+  software_version: 30684626A
+  sub_variant: 23WRA
+  transmission: ''
+  variant: 50WRHJ
+50WRHJ-51WRA 2.bin:
+  build_date: 2004-10-22 15:03
+  chassis_group: P2X
+  drivetrain: ''
+  ecu_variant: 30771311AA
+  engine_group: B52X4XT
+  engine_model: ''
+  epk_version: 45/1/ME701/19///70195Z6/70195Z6/020506154051/
+  file_checksum: 3e770d6f27675f85d365c0533c75c1cc17b0d9800ee7c90e8a80f172ab1a11c3
+  file_name: 50WRHJ-51WRA 2.bin
+  file_size: 1048576
+  header_position: 100201
+  header_version: '1.0'
+  is_valid: true
+  me_version: '7.5'
+  region: ''
+  software_version: 30684626A
+  sub_variant: 51WRA
+  transmission: ''
+  variant: 50WRHJ
+50WRHJ-51WRA.bin:
+  build_date: 2004-10-22 15:03
+  chassis_group: P2X
+  drivetrain: ''
+  ecu_variant: 30771311AA
+  engine_group: B52X4XT
+  engine_model: ''
+  epk_version: 45/1/ME701/19///70195Z6/70195Z6/020506154051/
+  file_checksum: c3987eef5d3742978243ff83b8d84d8f389548e2c3d985b410da58083c8fb8b5
+  file_name: 50WRHJ-51WRA.bin
+  file_size: 1048576
+  header_position: 100201
+  header_version: '1.0'
+  is_valid: true
+  me_version: '7.5'
+  region: ''
+  software_version: 30684626A
+  sub_variant: 51WRA
+  transmission: ''
+  variant: 50WRHJ
+50WRHJ-72WRA-AUT-AWD-US.bin:
+  build_date: 2004-10-22 15:03
+  chassis_group: P2X
+  drivetrain: ''
+  ecu_variant: 31219133AA
+  engine_group: B52X4XT
+  engine_model: ''
+  epk_version: 47/1/ME701/19///70195H10/70195H10/250107123252/
+  file_checksum: 7f43dc63c9c73e0e8007723f58fe23ebb25112502349d4bf9bd806fd31aba527
+  file_name: 50WRHJ-72WRA-AUT-AWD-US.bin
+  file_size: 1048576
+  header_position: 100179
+  header_version: '1.0'
+  is_valid: true
+  me_version: '7.5'
+  region: ''
+  software_version: 30684626A
+  sub_variant: 72WRA
+  transmission: ''
+  variant: 50WRHJ
+50WRHJ-72WRA.bin:
+  build_date: 2004-10-22 15:03
+  chassis_group: P2X
+  drivetrain: ''
+  ecu_variant: 31219133AA
+  engine_group: B52X4XT
+  engine_model: ''
+  epk_version: 47/1/ME701/19///70195H10/70195H10/250107123252/
+  file_checksum: bc5d8f6703386b7df0e2e740206353a28271651abdd5c21be7bfc40aa88bcc00
+  file_name: 50WRHJ-72WRA.bin
+  file_size: 1048576
+  header_position: 100179
+  header_version: '1.0'
+  is_valid: true
+  me_version: '7.5'
+  region: ''
+  software_version: 30684626A
+  sub_variant: 72WRA
+  transmission: ''
+  variant: 50WRHJ
+60LPHJ-TRLPDVD0-AUT-AWD-EU 1.bin:
+  build_date: 2004-08-09 13:27
+  chassis_group: P2X
+  drivetrain: AWD
+  ecu_variant: 30641540 B
+  engine_group: B6294LT
+  engine_model: B6294T
+  epk_version: 47/1/ME701/19///70196L11/70196L11/060704165127/
+  file_checksum: 03ad129719753588b9ea51e72a73bfbadac42a81c27d27ba9f1c33bf0583bca9
+  file_name: 60LPHJ-TRLPDVD0-AUT-AWD-EU 1.bin
+  file_size: 1048576
+  header_position: 100424
+  header_version: '1.0'
+  is_valid: true
+  me_version: 7.0.1
+  region: EU
+  software_version: 31211196AB
+  sub_variant: TRLPDVD0
+  transmission: AUT
+  variant: 60LPHJ
+60LPHJ-TRLPDVD0-AUT-AWD-EU.bin:
+  build_date: 2004-08-09 13:27
+  chassis_group: P2X
+  drivetrain: AWD
+  ecu_variant: 30641540 B
+  engine_group: B6294LT
+  engine_model: B6294T
+  epk_version: 47/1/ME701/19///70196L11/70196L11/060704165127/
+  file_checksum: 00d5464e648706c6f4057b40fb20a6970c702d7097985666dd8d508cbf310b9f
+  file_name: 60LPHJ-TRLPDVD0-AUT-AWD-EU.bin
+  file_size: 1048576
+  header_position: 100424
+  header_version: '1.0'
+  is_valid: true
+  me_version: 7.0.1
+  region: EU
+  software_version: 31211196AB
+  sub_variant: TRLPDVD0
+  transmission: AUT
+  variant: 60LPHJ
+60LRHJ-TTLRIHJC-AUT-AWD-US.bin:
+  build_date: 2007-10-26 10:10
+  chassis_group: P2X
+  drivetrain: AWD
+  ecu_variant: 31219525AA
+  engine_group: B6294LT
+  engine_model: B6294T
+  epk_version: 47/1/ME701/19///70196L12/70196L12/221007141457/
+  file_checksum: a98764eb553f7f5fa39ab2873df4c02563e0c4a8b944628faa3930e1ac52f7f7
+  file_name: 60LRHJ-TTLRIHJC-AUT-AWD-US.bin
+  file_size: 1048576
+  header_position: 100423
+  header_version: '1.0'
+  is_valid: true
+  me_version: 7.0.1
+  region: US
+  software_version: ''
+  sub_variant: TTLRIHJC
+  transmission: AUT
+  variant: 60LRHJ
