@@ -11,24 +11,6 @@ The goal is to provide a resource for enthusiasts and tuners to share and access
 
 The files in the repository have been shared by the community and are not guaranteed to be safe or functional. Use them at your own risk.
 
-## Firmware Files
-
-#### [Stock Firmware Files](bins/)
-
-#### [Tuned Firmware Files](bins/tuned/)
-
-<br>
-
-## Definition Files
-
-#### [TunerPro Definitions](defs/tunerpro)
-
-#### [WinOLS Project Files](defs/winols)
-
-#### [OpenMoose Logging Files](defs/openmoose)
-
-<br>
-
 ### Contributing
 
 Contributions are welcome! Please submit a pull request or open and issue to discuss changes or report bugs.
