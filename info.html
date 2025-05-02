@@ -1,0 +1,118 @@
+---
+layout: default
+title: Firmware Info Tool
+permalink: /info
+js:
+    - /assets/vendor/knockout-latest.js
+    - /assets/js/info.js
+---
+<div class="pt-3 pb-2 mb-3 border-bottom">
+    <h2>Firmware Info Tool</h2>
+</div>
+
+<form class="row">
+  <div class="mb-3 col-md-6 row">
+    <label class="col-sm-2 col-form-label">File:</label>
+    <div class="col-sm-10">
+        <input class="form-control" type="file" data-bind="fileUpload: firmware.file" />
+    </div>
+  </div>
+</form>
+
+<form class="row">
+  <div class="mb-3 col-md-6 row">
+    <label class="col-sm-2 col-form-label">File Size:</label>
+    <div class="col-sm-10">
+      <input class="form-control" type="text" data-bind="value: firmware.filesize" />
+    </div>
+  </div>
+  <div class="mb-3 col-md-6 row">
+    <label class="col-sm-2 col-form-label">Is Valid:</label>
+    <div class="col-sm-10">
+      <input class="form-control" type="text" data-bind="value: firmware.isValid" />
+    </div>
+  </div>
+  <div class="mb-3 col-md-6 row">
+    <label class="col-sm-2 col-form-label">ME Version:</label>
+    <div class="col-sm-10">
+      <input class="form-control" type="text" data-bind="value: firmware.meVersion" />
+    </div>
+  </div>
+  <div class="mb-3 col-md-6 row">
+    <label class="col-sm-2 col-form-label">Variant:</label>
+    <div class="col-sm-10">
+      <input class="form-control" type="text" data-bind="value: firmware.variant" />
+    </div>
+  </div>
+  <div class="mb-3 col-md-6 row">
+    <label class="col-sm-2 col-form-label">SubVariant:</label>
+    <div class="col-sm-10">
+      <input class="form-control" type="text" data-bind="value: firmware.subVariant" />
+    </div>
+  </div>
+  <div class="mb-3 col-md-6 row">
+    <label class="col-sm-2 col-form-label">EPK Version:</label>
+    <div class="col-sm-10">
+      <input class="form-control" type="text" data-bind="value: firmware.epkVersion" />
+    </div>
+  </div>
+  <div class="mb-3 col-md-6 row">
+    <label class="col-sm-2 col-form-label">Software Version:</label>
+    <div class="col-sm-10">
+      <input
+        class="form-control"
+        type="text"
+        data-bind="value: firmware.softwareVersion"
+      />
+    </div>
+  </div>
+  <div class="mb-3 col-md-6 row">
+    <label class="col-sm-2 col-form-label">Build Date:</label>
+    <div class="col-sm-10">
+      <input class="form-control" type="text" data-bind="value: firmware.buildDate" />
+    </div>
+  </div>
+  <div class="mb-3 col-md-6 row">
+    <label class="col-sm-2 col-form-label">Chassis:</label>
+    <div class="col-sm-10">
+      <input class="form-control" type="text" data-bind="value: firmware.chassis" />
+    </div>
+  </div>
+  <div class="mb-3 col-md-6 row">
+    <label class="col-sm-2 col-form-label">Engine:</label>
+    <div class="col-sm-10">
+      <input class="form-control" type="text" data-bind="value: firmware.engine" />
+    </div>
+  </div>
+  <div class="mb-3 col-md-6 row">
+    <label class="col-sm-2 col-form-label">Engine Model:</label>
+    <div class="col-sm-10">
+      <input class="form-control" type="text" data-bind="value: firmware.engineModel" />
+    </div>
+  </div>
+  <div class="mb-3 col-md-6 row">
+    <label class="col-sm-2 col-form-label">Transmission:</label>
+    <div class="col-sm-10">
+      <input class="form-control" type="text" data-bind="value: firmware.transmission" />
+    </div>
+  </div>
+  <div class="mb-3 col-md-6 row">
+    <label class="col-sm-2 col-form-label">Drivetrain:</label>
+    <div class="col-sm-10">
+      <input class="form-control" type="text" data-bind="value: firmware.drivetrain" />
+    </div>
+  </div>
+  <div class="mb-3 col-md-6 row">
+    <label class="col-sm-2 col-form-label">Region:</label>
+    <div class="col-sm-10">
+      <input class="form-control" type="text" data-bind="value: firmware.region" />
+    </div>
+  </div>
+  <div class="mb-3 col-md-6 row">
+    <label class="col-sm-2 col-form-label">ECU Variant:</label>
+    <div class="col-sm-10">
+      <input class="form-control" type="text" data-bind="value: firmware.ecuVariant" />
+    </div>
+  </div>
+</form>
+

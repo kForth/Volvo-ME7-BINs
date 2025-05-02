@@ -29,7 +29,7 @@
     <script type="text/javascript" src="{{ site.baseurl }}/assets/vendor/jquery.min.js"></script>
     <script type="text/javascript" src="{{ site.baseurl }}/assets/vendor/bootstrap.bundle.min.js"></script>
     {%- for script in page.js %}
-    <script type="text/javascript" src="{{ script }}"></script>
+    <script type="text/javascript" src="{{ site.baseurl }}{{ script }}"></script>
     {%- endfor %}
   </body>
 </html>
