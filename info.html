@@ -1,15 +1,13 @@
 ---
 layout: default
 title: Firmware Info Tool
-permalink: /info
+permalink: /tools/info
 js:
     - /assets/vendor/knockout-latest.js
+    - /assets/js/util.js
     - /assets/js/info.js
 ---
-<div class="pt-3 pb-2 mb-3 border-bottom">
-    <h2>Firmware Info Tool</h2>
-</div>
-
+{% include snippets/section_title.html title="Firmware Info Tool" %}
 <form class="row">
   <div class="mb-3 col-md-6 row">
     <label class="col-sm-2 col-form-label">File:</label>

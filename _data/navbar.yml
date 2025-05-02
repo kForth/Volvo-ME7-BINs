@@ -15,5 +15,7 @@
       title: TunerPro
     - href: /defs/winols
       title: WinOLS
-- href: /info
-  title: Info Tool
+- title: Tools
+  dropdown:
+    - href: /tools/info
+      title: Firmware Info Tool

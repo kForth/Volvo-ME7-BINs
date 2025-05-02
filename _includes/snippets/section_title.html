@@ -1,0 +1,6 @@
+<div class="pt-3 pb-2 mb-3 border-bottom">
+  <h3 {%- if include.id %} id="{{ include.id }}" {% endif %}>
+    {{ include.title }}
+    {%- if include.subtitle %} <small class="h3"> - {{include.subtitle}}</small>{% endif %}
+  </h3>
+</div>

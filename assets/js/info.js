@@ -1,17 +1,3 @@
-ko.bindingHandlers.fileUpload = {
-  init: function (element, valueAccessor) {
-    $(element).on("change", function () {
-      valueAccessor()(element.files[0]);
-    });
-  },
-  update: function (element, valueAccessor) {
-    if (ko.unwrap(valueAccessor()) === null) {
-      $(element).wrap("<form>").closest("form").get(0).reset();
-      $(element).unwrap();
-    }
-  },
-};
-
 const EpkStringRegex = /(\d{2}\/1\/(?:[\d\w]*\/)+)/;
 const FileHeaderRegex = /(\d+.\d+)Vatlab VOLVO ID.([^\n]+)\n/;
 const BinVariantRegex = /(?:^|\s)([\d\w]+).a2l/;
