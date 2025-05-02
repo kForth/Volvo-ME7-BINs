@@ -1,0 +1,115 @@
+---
+layout: default
+title: Injector Tuning Tool
+permalink: /tools/injectors
+js:
+    - /assets/vendor/knockout-latest.js
+    - /assets/vendor/math.js
+    - /assets/js/util.js
+    - /assets/js/engine-specs.js
+    - /assets/js/injectors.js
+---
+{% include snippets/section_title.html title="Engine Specs" %}
+<form class="row">
+  <div class="mb-3 col-md-6 row">
+    <label class="col-md-3 col-form-label">Bore:</label>
+    <div class="col-md-9">
+      {% include snippets/unit_input.html val="engine.boreRaw" units="engine.boreUnit" options=site.data.units.linear %}
+    </div>
+  </div>
+  <div class="mb-3 col-md-6 row">
+    <label class="col-md-3 col-form-label">Stroke:</label>
+    <div class="col-md-9">
+      {% include snippets/unit_input.html val="engine.strokeRaw" units="engine.strokeUnit" options=site.data.units.linear %}
+    </div>
+  </div>
+  <div class="mb-3 col-md-6 row">
+    <label class="col-md-3 col-form-label">Cylinders:</label>
+    <div class="col-md-9">
+        <input
+          class="form-control"
+          type="number"
+          data-bind="value: engine.cylinders"
+        />
+    </div>
+  </div>
+  <div class="mb-3 col-md-6 row">
+    <label class="col-md-3 col-form-label">Volumetric Efficiency:</label>
+    <div class="col-md-9">
+      <div class="input-group">
+        <input
+          class="form-control"
+          type="number"
+          min="1"
+          step="1"
+          data-bind="value: engine.volumetricEfficiency"
+        />
+        <span class="input-group-text">%</span>
+      </div>
+    </div>
+  </div>
+  <div class="mb-3 col-md-6 row">
+    <label class="col-md-3 col-form-label">Displacement:</label>
+    <div class="col-md-9">
+      {% include snippets/unit_input.html val="engine.displacementRaw" units="engine.displacementUnit" options=site.data.units.volume readonly=true %}
+    </div>
+  </div>
+</form>
+
+
+{% include snippets/section_title.html title="Fuel System" %}
+<form class="row">
+  <div class="mb-3 col-md-6 row">
+    <label class="col-md-3 col-form-label">Flow Rate</label>
+    <div class="col-md-9">
+      {% include snippets/unit_input.html val="injectors.injectorFlowRaw" units="injectors.injectorFlowUnit" options=site.data.units.flow_rate %}
+    </div>
+  </div>
+  <div class="mb-3 col-md-6 row">
+    <label class="col-md-3 col-form-label">Ideal AFR:</label>
+    <div class="col-md-9">
+      <div class="input-group">
+        <input
+          class="form-control"
+          type="number"
+          data-bind="value: injectors.injectorStoich"
+        />
+        <span class="input-group-text">:1</span>
+      </div>
+    </div>
+  </div>
+  <div class="mb-3 col-md-6 row">
+    <label class="col-md-3 col-form-label">Nominal Pressure</label>
+    <div class="col-md-9">
+      {% include snippets/unit_input.html val="injectors.nominalFuelPressureRaw" units="injectors.nominalFuelPressureUnit" options=site.data.units.pressure %}
+    </div>
+  </div>
+  <div class="mb-3 col-md-6 row">
+    <label class="col-md-3 col-form-label">Actual Pressure:</label>
+    <div class="col-md-9">
+      {% include snippets/unit_input.html val="injectors.fuelPressureRaw" units="injectors.fuelPressureUnit" options=site.data.units.pressure %}
+    </div>
+  </div>
+</form>
+
+{% include snippets/section_title.html title="Tuning Values" %}
+<form class="row">
+    <div class="mb-3 col-md-6 row">
+      <label class="col-md-3 col-form-label">KRKTE</label>
+      <div class="col-md-9">
+          <div class="input-group">
+            <input class="form-control" type="number" data-bind="value: injectors.krkte" readonly />
+            <span class="input-group-text">ms/%</span>
+          </div>
+      </div>
+    </div>
+    <div class="mb-3 col-md-6 row">
+      <label class="col-md-3 col-form-label">KVB</label>
+      <div class="col-md-9">
+          <div class="input-group">
+            <input class="form-control" type="number" data-bind="value: injectors.kvb" readonly />
+            <span class="input-group-text">cc/m</span>
+          </div>
+      </div>
+    </div>
+</form>

@@ -1,0 +1,22 @@
+<div class="input-group">
+  <input
+    class="form-control"
+    type="number"
+    {% if include.min %}min="{{ include.min }}"{%- endif %}
+    {% if include.max %}max="{{ include.max }}"{% endif %}
+    {% if include.step %}step="{{ include.step }}"{% endif %}
+    data-bind="value: {{ include.val }}"
+    {%- if include.readonly%} readonly{% endif %}
+  />
+  {% if include.options %}
+    <select class="input-group-text btn-secondary" data-bind="value: {{ include.units }}">
+      {% for opt in include.options %}
+      <option value="{{ opt.value }}" {%- if opt.default %} selected{% endif %}>
+        {{ opt.label }}
+      </option>
+      {% endfor %}
+    </select>
+  {% else if include.units %}
+    <span class="input-group-text" data-bind="text: {{ include.units }}"></span>
+  {% endif %}
+</div>

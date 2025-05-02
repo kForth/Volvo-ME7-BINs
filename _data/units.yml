@@ -1,0 +1,66 @@
+linear:
+  - value: in
+    label: in
+  - value: ft
+    label: ft
+  - value: mm
+    label: mm
+    default: true
+  - value: cm
+    label: cm
+  - value: dm
+    label: dm
+  - value: m
+    label: m
+area:
+  - value: mm^2
+    label: mm^2
+  - value: cm^2
+    label: cm^2
+  - value: dm^2
+    label: dm^2
+  - value: m^2
+    label: m^2
+  - value: in^2
+    label: in^2
+    default: true
+  - value: ft^2
+    label: ft^2
+volume:
+  - value: dm^3
+    label: dm^3
+  - value: mL
+    label: mL
+  - value: L
+    label: L
+    default: true
+  - value: in^3
+    label: cu.in
+  - value: ft^3
+    label: cu.ft
+pressure:
+  - value: psi
+    label: PSI
+  - value: bar
+    label: Bar
+  - value: kPa
+    label: kPa
+flow_rate:
+  - value: cm^3/min
+    label: cc/m
+  - value: L/h
+    label: Lph
+time:
+  - value: ms
+    label: ms
+  - value: sec
+    label: sec
+  - value: min
+    label: min
+  - value: hr
+    label: hr
+frequency:
+  - value: rpm
+    label: RPM
+  - value: Hz
+    label: Hz

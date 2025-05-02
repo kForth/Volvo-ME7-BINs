@@ -19,3 +19,5 @@
   dropdown:
     - href: /tools/info
       title: Firmware Info Tool
+    - href: /tools/injectors
+      title: Injector Tuning Tool
