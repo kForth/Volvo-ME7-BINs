@@ -1,0 +1,32 @@
+---
+layout: default
+title: Checksum Tool
+permalink: /tools/checksum
+js:
+    - /assets/vendor/knockout-latest.js
+    - /assets/js/util.js
+    - /assets/js/checksum.js
+---
+<div class="container">
+    <div class="col-md-10 col-xl-8 col-xxl-6 mx-auto">
+        <form class="p-4 p-md-5 border rounded-3 bg-body-tertiary">
+            <div class="mb-3">
+                <h1 class="h3 mb-3 fw-normal">ME7 Checksum Tool</h1>
+            </div>
+            <div class="mb-3">
+                <label class="form-label" for="fileInput">Select Firmware File:</label>
+                <input class="form-control" type="file" data-bind="fileUpload: checksum.file" accept=".bin" />
+            </div>
+            <div class="mb-3">
+                <label class="form-label">Checksum:</label>
+                <input class="form-control" type="text" data-bind="value: checksum.status" readonly />
+            </div>
+            <div class="mb-3">
+              <button class="btn btn-primary w-100" data-bind="click: checksum.fixChecksum, attr: {disabled: checksum.fixButtonDisabled}" disabled>Fix Checksum</button>
+            </div>
+            <div class="mb-3">
+              <button class="btn btn-success w-100" data-bind="click: checksum.downloadFile, attr: {disabled: checksum.downloadButtonDisabled}" disabled>Download</button>
+            </div>
+        </form>
+    </div>
+</div>
