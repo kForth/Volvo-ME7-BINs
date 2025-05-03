@@ -6,10 +6,26 @@ permalink: /
 
 [![License](https://img.shields.io/github/license/kForth/Volvo-ME7-BINs)](https://github.com/kForth/Volvo-ME7-BINs/blob/main/LICENSE)
 
-A collection of BIN files for the Volvo ME7 ECUs, including stock and modified files.
+A collection of BIN files for the Volvo ME7 ECUs, including stock and modified files, as well as tools for modifying firmwares.
 The goal is to provide a resource for enthusiasts and tuners to share and access these files.
 
 The files in the repository have been shared by the community and are not guaranteed to be safe or functional. Use them at your own risk.
+
+## Tools
+
+### Firmware Info Tool
+
+See information about any firmware file.
+
+### Fuel Injector Calculator
+
+Calculate new `krkte` and `kvb` values for different sized injectors or fuel types.
+
+### Firmware Checksum Tool
+
+Check or correct the checksum values of a modified firmware file.
+
+## More
 
 ### Contributing
 
