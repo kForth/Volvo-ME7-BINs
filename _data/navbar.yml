@@ -15,6 +15,10 @@
       title: TunerPro
     - href: /defs/winols
       title: WinOLS
+- title: Reference Values
+  dropdown:
+    - href: /values/maf
+      title: MAF Curves
 - title: Tools
   dropdown:
     - href: /tools/info
