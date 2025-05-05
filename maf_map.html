@@ -1,0 +1,67 @@
+---
+layout: default
+title: MAF Map Editor Tool
+permalink: /tools/maf-map
+js:
+    - /assets/vendor/knockout-latest.js
+    - /assets/vendor/plotly.js
+    - /assets/js/util.js
+    - /assets/js/maf-map.js
+---
+
+{% include snippets/section_title.html title="MAF Maps" %}
+<form class="row" onsubmit="return false;">
+  <div class="mb-3 col-md-6 row">
+    <label class="col-md-3 col-form-label">Original Map:</label>
+    <div class="col-md-9">
+      <textarea class="form-control" data-bind="value: maf.originalMap"></textarea>
+    </div>
+  </div>
+  <div class="mb-3 col-md-6 row">
+    <label class="col-md-3 col-form-label">Modified Map:</label>
+    <div class="col-md-9">
+      <textarea class="form-control" data-bind="value: maf.newMap" readonly></textarea>
+    </div>
+  </div>
+</form>
+
+{% include snippets/section_title.html title="Offset & Scale" %}
+<form class="row" onsubmit="return false;">
+  <div class="mb-3 col-md-4 row">
+    <label class="col-md-5 col-form-label">Offset Before Scale:</label>
+    <div class="col-md-7">
+      <input type="number" class="form-control" data-bind="value: maf.offsetPreScale" />
+    </div>
+  </div>
+  <div class="mb-3 col-md-4 row">
+    <label class="col-md-5 col-form-label">Scale By:</label>
+    <div class="col-md-7">
+      <input type="number" class="form-control" data-bind="value: maf.scale" />
+    </div>
+  </div>
+  <div class="mb-3 col-md-4 row">
+    <label class="col-md-5 col-form-label">Offset After Scale:</label>
+    <div class="col-md-7">
+      <input type="number" class="form-control" data-bind="value: maf.offsetPostScale" />
+    </div>
+  </div>
+</form>
+
+{% include snippets/section_title.html title="Reinterpolation" %}
+<form class="row" onsubmit="return false;">
+  <div class="mb-3 col-md-6 row">
+    <label class="col-md-3 col-form-label">Original Length:</label>
+    <div class="col-md-9">
+      <input type="number" class="form-control" data-bind="value: maf.originalLength" readonly />
+    </div>
+  </div>
+  <div class="mb-3 col-md-6 row">
+    <label class="col-md-3 col-form-label">New Length:</label>
+    <div class="col-md-9">
+      <input type="number" class="form-control" data-bind="value: maf.newLength" />
+    </div>
+  </div>
+</form>
+
+{% include snippets/section_title.html title="MAF Curve" %}
+<div class="w-100" id="maf-canvas"></div>
