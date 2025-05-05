@@ -1,0 +1,49 @@
+---
+layout: default
+title: MAF Housing Rescale Tool
+permalink: /tools/maf-housing
+js:
+    - /assets/vendor/knockout-latest.js
+    - /assets/vendor/math.js
+    - /assets/js/util.js
+    - /assets/js/maf-housing.js
+---
+
+{% include snippets/section_title.html title="MAF Housing Rescale Tool" %}
+<p>
+  When changing the MAF housing size, the MAF map must be rescaled to ensure the correct amount of air is being measured.
+  This tool will help you calculate the new MAF scaling value based on the original and new MAF housing sizes.
+  <br>
+  <strong>Note:</strong> Diameter is the inner diameter of the housing at the MAF sensor element.
+</p>
+
+{% include snippets/section_title.html title="MAF Sizes" %}
+<form class="row">
+  <div class="mb-3 col-md-6 row">
+    <label class="col-md-3 col-form-label">Original Diameter:</label>
+    <div class="col-md-9">
+      {% include snippets/unit_input.html val="maf.orgSizeRaw" units="maf.orgSizeUnit" options=site.data.units.linear %}
+    </div>
+  </div>
+  <div class="mb-3 col-md-6 row">
+    <label class="col-md-3 col-form-label">New Diameter:</label>
+    <div class="col-md-9">
+      {% include snippets/unit_input.html val="maf.newSizeRaw" units="maf.newSizeUnit" options=site.data.units.linear %}
+    </div>
+  </div>
+</form>
+
+{% include snippets/section_title.html title="Tuning Values" %}
+<form class="row">
+  <div class="mb-3 col-md-6 row">
+    <label class="col-md-3 col-form-label">MAF Scaling:</label>
+    <div class="col-md-9">
+      <input
+        class="form-control"
+        type="number"
+        data-bind="value: maf.scaling"
+        readonly=true
+      />
+    </div>
+  </div>
+</form>
