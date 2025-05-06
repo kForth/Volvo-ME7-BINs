@@ -3,20 +3,21 @@ class MafValuesModel {
     var self = this;
 
     self.mafs = MAFS;
+    self.delimeterOptions = [
+      {name: "Tab", value: "\t"},
+      {name: "Newline", value: "\n"},
+      {name: "Comma", value: ","},
+      {name: "Space", value: " "},
+      {name: "Semicolon", value: ";"},
+    ]
 
     self.selectedMaf = ko.observable();
     self._maf = () => self.selectedMaf() || {};
+    self.orgMapOffset = ko.computed(() => self._maf().offset || 0);
     self.orgMapLength = ko.computed(() => (self._maf().data || []).length);
-    self.orgMapStr = ko.computed(() => (self._maf().data || []).map(e => e.toFixed(2)).join("\t"));
 
-    self.newMapLength = ko.observable(512);
-    self.newMapData = ko.computed(() => {
-      if (!self.selectedMaf())
-        return [];
-
-      return reinterpolateData(self.selectedMaf().data, self.newMapLength());
-    });
-    self.newMapStr = ko.computed(() => self.newMapData().map(e => e.toFixed(2)).join("\t"));
+    self.delimeter = ko.observable("\t");
+    self.orgMapStr = ko.computed(() => (self._maf().data || []).map(e => e.toFixed(2)).join(self.delimeter()));
 
     self.chart = {
       elemId: "maf-canvas",
