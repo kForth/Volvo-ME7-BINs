@@ -30,7 +30,7 @@ class MafValuesModel {
           opacity:0.9,
       };}),
       layout: {
-        title: "MAF Curve",
+        title: "MAF Curves",
         autosize: true,
         legend: {"orientation": "h"},
         scene: {
