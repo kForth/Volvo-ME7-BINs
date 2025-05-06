@@ -18,7 +18,6 @@ class MafMapToolModel {
         [";", (mapStr.match(/;/g) || []).length],
         ["\n", (mapStr.match(/\n/g) || []).length],
       ].sort((a, b) => b[1] - a[1]);
-      console.log(delims);
       self.originalDelim(delims[0][0]);
       self.orgMapVals(vals.map((x) => parseFloat(x)));
       self.originalLength(vals.length);
@@ -31,27 +30,15 @@ class MafMapToolModel {
 
     self.newLength = ko.observable(0);
     self.newMapVals = ko.computed(() => {
-      var vals = []
-      if (self.originalLength() == self.newLength()) {
-        for (var val of self.orgMapVals()) {
-          vals.push((val + parseFloat(self.offsetPreScale())) * parseFloat(self.scale()) + parseFloat(self.offsetPostScale()));
-        }
-      } else {
-        var sizeScale = self.newLength() / self.originalLength();
-        for (var i = 0; i < self.newLength(); i++) {
-          var lb = Math.floor(i / sizeScale);
-          var ub = Math.ceil(i / sizeScale);
-          var lv = self.orgMapVals()[lb];
-          var uv = self.orgMapVals()[ub];
-          var scale = (i / sizeScale) - lb;
-          var val = (lv + (uv - lv) * scale);
-          val = (val + parseFloat(self.offsetPreScale())) * parseFloat(self.scale()) + parseFloat(self.offsetPostScale());
-          vals.push(val);
-        }
-      }
-      return vals;
+      if (!self.originalMap()) return [];
+
+      var offset1 = parseFloat(self.offsetPreScale());
+      var offset2 = parseFloat(self.offsetPostScale());
+      var scale = parseFloat(self.scale());
+      var data = self.orgMapVals().map(e => (e + offset1) * scale + offset2);
+      return reinterpolateData(data, self.newLength());
     });
-    self.newMap = ko.computed(() => self.newMapVals().join(self.originalDelim()));
+    self.newMap = ko.computed(() => self.newMapVals().map(e => e.toFixed(2)).join(self.originalDelim()));
 
     self.chart = {
       elemId: "maf-canvas",
@@ -77,9 +64,9 @@ class MafMapToolModel {
     self.plot = Plotly.newPlot(self.chart.elemId, self.chart.data, self.chart.layout);
 
     self.newMap.subscribe(() => {
-      self.chart.data[0].x = Array.from({length: self.originalLength()}, (_,k) => k+1);
+      self.chart.data[0].x = Array.from({length: self.originalLength()}, (_,k) => indexToX(k, self.originalLength()));
       self.chart.data[0].y = self.orgMapVals();
-      self.chart.data[1].x = Array.from({length: self.newLength()}, (_,k) => k+1);
+      self.chart.data[1].x = Array.from({length: self.newLength()}, (_,k) => indexToX(k, self.newLength()));
       self.chart.data[1].y = self.newMapVals();
       Plotly.redraw(self.chart.elemId);
     });

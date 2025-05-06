@@ -213,3 +213,29 @@ function updateChart2D(refresh, map) {
 function scaleValue(value, srcMin, srcMax, outMin, outMax) {
   return (value - srcMin) / (srcMax - srcMin) * (outMax - outMin) + outMin;
 }
+
+function indexToX(index, length) {
+  return index / (length - 1);
+}
+
+function reinterpolateData(data, newLength, fitDegree) {
+  if (data.length == newLength) return data;
+  var coeffs = Polyfit(
+    Array.from({length: data.length}).map((_, i) => indexToX(i, data.length)),
+    data
+  ).computeCoefficients(fitDegree || 4);
+  var vals = [];
+  for (var i = 0; i < newLength; i++) {
+    var x = indexToX(i, newLength);
+    var y = 0;
+    for(var j = 0; j < coeffs.length; j++) {
+      var coeff = coeffs[j];
+      if (j == 0)
+        y += coeff;
+      else
+        y += coeff * x ** j
+    }
+    vals.push(y);
+  }
+  return vals;
+}
