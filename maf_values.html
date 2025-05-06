@@ -5,10 +5,46 @@ permalink: /values/maf
 js:
     - /assets/vendor/knockout-latest.js
     - /assets/vendor/plotly.js
+    - /assets/js/polyfit.js
     - /assets/js/util.js
     - /assets/js/mafs.js
     - /assets/js/maf-values.js
 ---
 
-{% include snippets/section_title.html title="MAF Curve" %}
+{% include snippets/section_title.html title="Reference MAF Values" %}
+<form class="row">
+  <div class="mb-3 col-md-12 row">
+    <label class="col-md-3 col-form-label">Selected MAF:</label>
+    <div class="col-md-9">
+      <select class="form-select" data-bind="options: maf.mafs, value: maf.selectedMaf, optionsText: 'title', optionsCaption: 'Select MAF'"></select>
+    </div>
+  </div>
+  <div class="mb-3 col-md-6 row">
+    <label class="col-md-3 col-form-label">Original Length:</label>
+    <div class="col-md-9">
+      <input type="number" class="form-control" data-bind="value: maf.orgMapLength" />
+    </div>
+  </div>
+  <div class="mb-3 col-md-6 row">
+    <label class="col-md-3 col-form-label">Output Length:</label>
+    <div class="col-md-9">
+      <input type="number" class="form-control" data-bind="value: maf.newMapLength" />
+    </div>
+  </div>
+  <div class="mb-3 col-md-6 row">
+    <label class="col-md-3 col-form-label">MAF Curve Data:</label>
+    <div class="col-md-9">
+      <textarea class="form-control" data-bind="value: maf.orgMapStr" readonly></textarea>
+    </div>
+  </div>
+  <div class="mb-3 col-md-6 row">
+    <label class="col-md-3 col-form-label">MAF Curve Data:</label>
+    <div class="col-md-9">
+      <textarea class="form-control" data-bind="value: maf.newMapStr" readonly></textarea>
+    </div>
+  </div>
+</form>
+
+
+{% include snippets/section_title.html title="MAF Curves" %}
 <div class="w-100" id="maf-canvas"></div>
