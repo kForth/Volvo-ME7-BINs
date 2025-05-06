@@ -1,7 +1,7 @@
 const MAFS = [
   {
-    title: "Volvo 8670113 (Bosch 0-280-218-109) (Early S80 T6)",
-    variants: "00ENFP / 00EPFP",
+    title: "Early S80 T6 - Volvo 8670113 / Bosch 0-280-218-109",
+    source: "00ENFP / 00EPFP",
     offset: 200,
     data: [
       142.7, 143.5, 144.2, 145.0, 145.8, 146.5, 147.3, 148.0, 148.8, 149.5, 150.2, 151.0,
@@ -51,8 +51,8 @@ const MAFS = [
     ],
   },
   {
-    title: "Volvo 31342362 (Bosch 0-280-218-335) (Early P80 C70)",
-    variants: "10J0MGDE",
+    title: "Early P80 C70 - Volvo 31342362 / Bosch 0-280-218-335",
+    source: "10J0MGDE",
     offset: 200,
     data: [
       149.6, 150.4, 151.1, 151.9, 152.6, 153.4, 154.1, 154.8, 155.5, 156.2, 157.0, 157.7,
@@ -102,8 +102,8 @@ const MAFS = [
     ],
   },
   {
-    title: "Volvo 31342362 (Bosch 0-280-218-335) (Late P80)",
-    variants: "10ENFP / 10EPFP / 10EUHJ / 10N0MHDE / 10R1HJ / 1XEBMHDE / 1XEIMH / 20FMFP / 20FQMA / 20FVHJ / 20FWHJ",
+    title: "Late P80 - Volvo 31342362 / Bosch 0-280-218-335",
+    source: "10ENFP / 10EPFP / 10EUHJ / 10N0MHDE / 10R1HJ / 1XEBMHDE / 1XEIMH / 20FMFP / 20FQMA / 20FVHJ / 20FWHJ",
     offset: 200,
     data: [
       150.4, 151.1, 151.8, 152.5, 153.2, 153.9, 154.6, 155.3, 156.0, 156.7, 157.4, 158.0,
@@ -153,8 +153,8 @@ const MAFS = [
     ],
   },
   {
-    title: "Volvo 31342362 (Bosch 0-280-218-335) (Early P2)",
-    variants: "20KPSC / 20KTHJ / 20NCHJ / 20NHHJ / 2XFEMH / 40LKMA / 40LLHJ / 40LNHJ / 40LPHJ",
+    title: "Early P2 2.5T - Volvo 31342362 / Bosch 0-280-218-335",
+    source: "20KPSC / 20KTHJ / 20NCHJ / 20NHHJ / 2XFEMH / 40LKMA / 40LLHJ / 40LNHJ / 40LPHJ",
     offset: 200,
     data: [
       146.2, 147.1, 147.9, 148.6, 149.4, 150.2, 151.0, 151.8, 152.5, 153.3, 154.0, 154.8,
@@ -204,8 +204,8 @@ const MAFS = [
     ],
   },
   {
-    title: "Volvo 31342362 (Bosch 0-280-218-335) (Late P2)",
-    variants: "40GPHJ / 40GSHJ",
+    title: "Late P2 2.5T - Volvo 31342362 / Bosch 0-280-218-335",
+    source: "40GPHJ / 40GSHJ",
     offset: 0,
     data: [
       -53.2, -50.9, -47.9, -45.0, -41.1, -38.4, -36.1, -33.6, -30.7, -28.4, -27.1, -24.5,
@@ -222,8 +222,8 @@ const MAFS = [
     ],
   },
   {
-    title: "Volvo 31342363 (Bosch 0-280-218-446) (Early P2)",
-    variants: "00NHHJ / 50QGHJ / 50QHHJ / 50QKHJ / 60LPHJ / 60LRHJ",
+    title: "Early P2R / T6 - Volvo 31342363 / Bosch 0-280-218-446",
+    source: "00NHHJ / 50QGHJ / 50QHHJ / 50QKHJ / 60LPHJ / 60LRHJ",
     offset: 200,
     data: [
       140.0, 140.7, 141.5, 142.2, 142.9, 143.6, 144.3, 145.0, 145.7, 146.5, 147.2, 147.9,
@@ -273,8 +273,8 @@ const MAFS = [
     ],
   },
   {
-    title: "Volvo 31342363 (Bosch 0-280-218-446) (Late P2)",
-    variants: "50GMHJ / 50GPHJ / 50GSHJ / 50WRHJ-23WRA / 50WRHJ-51WRA / 50WRHJ-72WRA",
+    title: "Late P2R - Volvo 31342363 / Bosch 0-280-218-446",
+    source: "50GMHJ / 50GPHJ / 50GSHJ / 50WRHJ-23WRA / 50WRHJ-51WRA / 50WRHJ-72WRA",
     offset: 0,
     data: [
       -59.9, -57.1, -54.2, -51.4, -48.6, -45.8, -43.0, -40.2, -36.9, -34.7, -31.7, -29.3,
@@ -291,7 +291,7 @@ const MAFS = [
     ],
   },
   {
-    title: "Bosch 0-280-218-067 (Audi RS4)",
+    title: "Audi RS4 - Bosch 0-280-218-067",
     variants: "Audi RS4 (Also Bosch 0-986-280-219)",
     source: "https://www.ms4x.net/index.php?title=Aftermarket_Upgrade_Sensor_Data",
     offset: 0,
