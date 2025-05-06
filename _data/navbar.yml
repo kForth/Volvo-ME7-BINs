@@ -19,6 +19,8 @@
   dropdown:
     - href: /values/maf
       title: MAF Curves
+    - href: /values/injectors
+      title: Fuel Injectors
 - title: Tools
   dropdown:
     - href: /tools/info
