@@ -7,10 +7,10 @@ js:
     - /assets/vendor/math.js
     - /assets/js/util.js
     - /assets/js/engine-specs.js
-    - /assets/js/injectors.js
+    - /assets/js/injector-calc.js
 ---
 {% include snippets/section_title.html title="Engine Specs" %}
-<form class="row">
+<form class="row" onsubmit="return false;">
   <div class="mb-3 col-md-6 row">
     <label class="col-md-3 col-form-label">Bore:</label>
     <div class="col-md-9">
@@ -57,7 +57,7 @@ js:
 </form>
 
 {% include snippets/section_title.html title="Fuel System" %}
-<form class="row">
+<form class="row" onsubmit="return false;">
   <div class="mb-3 col-md-6 row">
     <label class="col-md-3 col-form-label">Flow Rate</label>
     <div class="col-md-9">
@@ -92,7 +92,7 @@ js:
 </form>
 
 {% include snippets/section_title.html title="Tuning Values" %}
-<form class="row">
+<form class="row" onsubmit="return false;">
     <div class="mb-3 col-md-6 row">
       <label class="col-md-3 col-form-label">KRKTE</label>
       <div class="col-md-9">
