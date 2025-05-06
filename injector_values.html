@@ -9,17 +9,21 @@ js:
     - /assets/js/util.js
     - /assets/js/injector-values.js
 ---
-{% include snippets/section_title.html title="Engine Configuration" %}
+{% include snippets/section_title.html title="Fuel Injectors" %}
 <form class="row" onsubmit="return false;">
-  <div class="mb-3 col-md-12 row">
-    <label class="col-md-3 col-form-label">Select:</label>
-    <div class="col-md-9">
-      <select class="form-select" data-bind="options: injectors.configs, value: injectors.selectedConfig, optionsText: 'title', optionsCaption: 'Select Configuration'"></select>
+    <div class="mb-3 col-md-12 row">
+        <label class="col-md-3 col-form-label">Select:</label>
+        <div class="col-md-9">
+            <select class="form-select" data-bind="options: injectors.configs, value: injectors.selectedConfig, optionsText: 'title', optionsCaption: 'Select Configuration'"></select>
+        </div>
     </div>
-  </div>
 </form>
 
 {% include snippets/section_title.html title="Injector Values" %}
+<p>
+    The <code>KRKTE</code> and <code>KVB</code> values are for specfic vehicle configurations, they will need to be scaled if using a different engine displacement or fuel pressure.
+    In general, these values may need to be adjusted based on your specific setup and tuning goals.
+</p>
 <form class="row" onsubmit="return false;">
     <div class="mb-3 col-md-6 row">
       <label class="col-md-3 col-form-label">KRKTE</label>
