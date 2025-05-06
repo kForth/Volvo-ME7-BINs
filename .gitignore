@@ -52,11 +52,6 @@ package-lock.json
 # Configuration
 .env
 
-# Misc. Data
-cache/
-ref/
-ghidra/
-
 # VS Code
 .vscode/
 
