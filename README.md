@@ -2,6 +2,7 @@
 layout: default
 permalink: /
 ---
+
 # Volvo ME7 BINs
 
 [![License](https://img.shields.io/github/license/kForth/Volvo-ME7-BINs)](https://github.com/kForth/Volvo-ME7-BINs/blob/main/LICENSE)
@@ -11,19 +12,24 @@ The goal is to provide a resource for enthusiasts and tuners to share and access
 
 The files in the repository have been shared by the community and are not guaranteed to be safe or functional. Use them at your own risk.
 
+## Reference Values
+
+| Tool               | Description                              |
+| :----------------- | :--------------------------------------- |
+| **MAF Curves**     | Curve data for various MAF sensors.      |
+| **Fuel Injectors** | Injector tuning data for various setups. |
+
 ## Tools
 
-### Firmware Info Tool
-
-See information about any firmware file.
-
-### Fuel Injector Calculator
-
-Calculate new `krkte` and `kvb` values for different sized injectors or fuel types.
-
-### Firmware Checksum Tool
-
-Check or correct the checksum values of a modified firmware file.
+| Tool                         | Description                                                                         |
+| :--------------------------- | :---------------------------------------------------------------------------------- |
+| **BIN Map Viewer**           | View firmware map data by specifying the address and table data.                    |
+| **BIN XDF Viewer**           | View firmware map data using a XDF definition file.                                 |
+| **Firmware Info Tool**       | See information about any firmware file.                                            |
+| **Fuel Injector Calculator** | Calculate new `krkte` and `kvb` values for different sized injectors or fuel types. |
+| **MAF Curve Tool**           | Manipulate MAF curve data, including scaling, offsets, and reinterpolation.         |
+| **MAF Housing Tool**         | Calculate the scaling factor when chaning the MAF housing size.                     |
+| **Firmware Checksum Tool**   | Check or correct the checksum values of a modified firmware file.                   |
 
 ## More
 
