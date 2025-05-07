@@ -123,9 +123,30 @@ class MapViewerModel {
       self.headersFromData,
     ].map(e => e.subscribe(() => {
       // Update chart
-      self.chart.data[0].x = self.colHeaders.values();
-      self.chart.data[0].y = self.rowHeaders.values();
-      self.chart.data[0].z = self.mapData();
+      if (self._rows() == 1) {
+        self.chart.data[0].x = self.colHeaders.values();
+        self.chart.data[0].y = self.mapData()[0];
+        self.chart.data[0].z = [];
+        self.chart.data[0].type = "scatter";
+        self.chart.layout.scene.xaxis.title = "Column";
+        self.chart.layout.scene.yaxis.title = "Value";
+      }
+      else if (self._cols() == 1) {
+        self.chart.data[0].x = self.rowHeaders.values();
+        self.chart.data[0].y = self.mapData().map(e => e[0]);
+        self.chart.data[0].z = [];
+        self.chart.data[0].type = "scatter";
+        self.chart.layout.scene.xaxis.title = "Row";
+        self.chart.layout.scene.yaxis.title = "Value";
+      }
+      else {
+        self.chart.data[0].x = self.colHeaders.values();
+        self.chart.data[0].y = self.rowHeaders.values();
+        self.chart.data[0].z = self.mapData();
+        self.chart.data[0].type = "surface";
+        self.chart.layout.scene.xaxis.title = "Column";
+        self.chart.layout.scene.yaxis.title = "Row";
+      }
       Plotly.redraw(self.chart.elemId);
     }));
 
