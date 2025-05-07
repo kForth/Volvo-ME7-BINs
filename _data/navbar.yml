@@ -25,6 +25,8 @@
   dropdown:
     - href: /tools/map-viewer
       title: BIN Map Viewer
+    - href: /tools/xdf-viewer
+      title: BIN XDF Viewer
     - href: /tools/info
       title: Firmware Info Tool
     - href: /tools/injectors

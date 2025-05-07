@@ -1,0 +1,72 @@
+---
+layout: default
+title: BIN XDF Viewer
+permalink: /tools/xdf-viewer
+js:
+  - /assets/vendor/knockout-latest.js
+  - /assets/vendor/plotly.js
+  - /assets/js/polyfit.js
+  - /assets/js/util.js
+  - /assets/js/xdf-viewer.js
+---
+{% include snippets/section_title.html title=page.title %}
+<form class="row" onsubmit="return false;">
+  <div class="mb-3 col-md-6">
+    <label class="col-md-3 col-form-label">Firmware File:</label>
+    <div class="col-md-9">
+      <input class="form-control" type="file" data-bind="fileUpload: viewer.file" accept=".bin" />
+    </div>
+  </div>
+  <div class="mb-3 col-md-6">
+    <label class="col-md-3 col-form-label">Definition File:</label>
+    <div class="col-md-9">
+      <input class="form-control" type="file" data-bind="fileUpload: viewer.xdf" accept=".xdf" />
+    </div>
+  </div>
+  <div class="mb-3 col-12">
+    <label class="col-md-3 col-form-label">Tables:</label>
+    <div class="col-md-9">
+      <select class="form-control" data-bind="value: viewer.selectedTable, options: viewer.xdfTables, optionsText: 'title'"></select>
+    </div>
+</form>
+
+{% include snippets/section_title.html title="Map Data" %}
+<div class="row mb-3">
+  <div class="col-md-4">
+    <div class="form-check">
+      <input class="form-check-input" type="checkbox" data-bind="checked: viewer.colourScaleBg" />
+      <label class="form-check-label">Background Colour Scale</label>
+    </div>
+  </div>
+  <div class="col-md-4">
+    <div class="form-check">
+      <input class="form-check-input" type="checkbox" data-bind="checked: viewer.showRawHex" />
+      <label class="form-check-label">Show Raw Hex Values</label>
+    </div>
+  </div>
+</div>
+<div class="w-100 overflow-auto p-3 m-0">
+  <table class="table table-sm d-none" data-bind="css: { 'd-none': !(viewer.tableData() && viewer.xdf()) }"></div>
+    <thead>
+      <tr>
+          <th></th>
+          <!-- ko foreach: viewer.colHeaders.headers -->
+          <th data-bind="text: $data"></th>
+          <!-- /ko -->
+      </tr>
+    </thead>
+    <tbody data-bind="foreach: { data: viewer.tableData, as: 'row' }">
+      <tr>
+          <td class="fw-bold" data-bind="text: $root.viewer.rowHeaders.headers()[$index()]"></td>
+          <!-- ko foreach: row -->
+          <td class="data-cell" data-bind="text: $data, style: { background: $root.viewer.getBgColour($parentContext.$index(), $index()) }"></td>
+          <!-- /ko -->
+      </tr>
+    </tbody>
+  </table>
+</div>
+
+{% include snippets/section_title.html title="Map Chart" %}
+<div class="container">
+  <div class="w-100" id="map-canvas"></div>
+</div>
