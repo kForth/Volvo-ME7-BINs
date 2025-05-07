@@ -27,9 +27,9 @@
       title: Firmware Info Tool
     - href: /tools/injectors
       title: Injector Tuning Tool
-    - href: /tools/checksum
-      title: Checksum Tool
-    - href: /tools/maf-housing
-      title: MAF Housing Tool
     - href: /tools/maf-map
       title: MAF Curve Tool
+    - href: /tools/maf-housing
+      title: MAF Housing Tool
+    - href: /tools/checksum
+      title: ME7 Checksum Tool
