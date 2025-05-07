@@ -89,7 +89,7 @@ class XdfViewerModel {
                 units: (axis.getElementsByTagName("units")[0] || {}).textContent,
                 decimalPlaces: parseInt((axis.getElementsByTagName("decimalpl")[0] || {}).textContent) || 2,
                 equation: eq ? eq.getAttribute("equation") : "X",
-                vars: [... eq.getElementsByTagName("VAR")].map(v => v.getAttribute("id")),
+                vars: eq ? [... eq.getElementsByTagName("VAR")].map(v => v.getAttribute("id")) : [],
                 labels: [... axis.getElementsByTagName("LABEL")].map(v => ({
                   index: v.getAttribute("index"),
                   value: v.getAttribute("value"),
