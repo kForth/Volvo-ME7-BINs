@@ -83,26 +83,26 @@ js:
       <div class="mb-3 row">
         <label class="col-md-3 col-form-label">Start Address:</label>
         <div class="col-md-9">
-          <input type="text" class="form-control" data-bind="value: viewer.rowValAddr" />
+          <input type="text" class="form-control" data-bind="value: viewer.rowHeaders.address" />
         </div>
       </div>
       <div class="mb-3 row">
         <label class="col-md-3 col-form-label">Equation:</label>
         <div class="col-md-9">
-          <input type="text" class="form-control" data-bind="value: viewer.rowValScale" />
+          <input type="text" class="form-control" data-bind="value: viewer.rowHeaders.equation" />
         </div>
       </div>
       <div class="mb-3 row">
         <div class="mb-3 col-md-6 row">
           <label class="col-md-5 col-form-label">Bytes:</label>
           <div class="col-md-7">
-            <input type="number" class="form-control" data-bind="value: viewer.rowValBytes" />
+            <input type="number" class="form-control" data-bind="value: viewer.rowHeaders.nBytes" />
           </div>
         </div>
         <div class="mb-3 col-md-6 row">
           <label class="col-md-5 col-form-label">Decimals:</label>
           <div class="col-md-7">
-            <input type="number" class="form-control" data-bind="value: viewer.rowDecimalPlaces" />
+            <input type="number" class="form-control" data-bind="value: viewer.rowHeaders.decimalPlaces" />
           </div>
         </div>
       </div>
@@ -116,26 +116,26 @@ js:
       <div class="mb-3 row">
         <label class="col-md-3 col-form-label">Start Address:</label>
         <div class="col-md-9">
-          <input type="text" class="form-control" data-bind="value: viewer.colValAddr" />
+          <input type="text" class="form-control" data-bind="value: viewer.colHeaders.address" />
         </div>
       </div>
       <div class="mb-3 row">
         <label class="col-md-3 col-form-label">Equation:</label>
         <div class="col-md-9">
-          <input type="text" class="form-control" data-bind="value: viewer.colValScale" />
+          <input type="text" class="form-control" data-bind="value: viewer.colHeaders.equation" />
         </div>
       </div>
       <div class="mb-3 row">
         <div class="mb-3 col-md-6 row">
           <label class="col-md-5 col-form-label">Bytes:</label>
           <div class="col-md-7">
-            <input type="number" class="form-control" data-bind="value: viewer.colValBytes" />
+            <input type="number" class="form-control" data-bind="value: viewer.colHeaders.nBytes" />
           </div>
         </div>
         <div class="mb-3 col-md-6 row">
           <label class="col-md-5 col-form-label">Decimals:</label>
           <div class="col-md-7">
-            <input type="number" class="form-control" data-bind="value: viewer.colDecimalPlaces" />
+            <input type="number" class="form-control" data-bind="value: viewer.colHeaders.decimalPlaces" />
           </div>
         </div>
       </div>
@@ -163,14 +163,14 @@ js:
     <thead>
       <tr>
           <th></th>
-          <!-- ko foreach: viewer.tableColData -->
+          <!-- ko foreach: viewer.colHeaders.headers -->
           <th data-bind="text: $data"></th>
           <!-- /ko -->
       </tr>
     </thead>
     <tbody data-bind="foreach: { data: viewer.tableData, as: 'row' }">
       <tr>
-          <td class="fw-bold" data-bind="text: $root.viewer.tableRowData()[$index()]"></td>
+          <td class="fw-bold" data-bind="text: $root.viewer.rowHeaders.headers()[$index()]"></td>
           <!-- ko foreach: row -->
           <td class="data-cell" data-bind="text: $data, style: { background: $root.viewer.getBgColour($parentContext.$index(), $index()) }"></td>
           <!-- /ko -->

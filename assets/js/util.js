@@ -239,3 +239,7 @@ function reinterpolateData(data, newLength, fitDegree) {
   }
   return vals;
 }
+
+function sumBytes (bytes, lsb) {
+  return bytes.reduce((s, v, i) => s + (v << (8 * (lsb ? i : (bytes.length - i - 1)))), 0);
+}

@@ -1,9 +1,48 @@
+class MapAxis {
+  constructor(settings, address, nBytes, equation, decimalPlaces) {
+    var self = this;
+
+    self.data = settings.data;
+    self.length = settings.length
+    self.lsb = settings.lsb;
+    self.headersFromData = settings.fromData;
+    self.showRawHex = settings.showHex;
+
+    self.address = ko.observable(address || "0x0");
+    self.nBytes = ko.observable(nBytes || 1);
+    self.equation = ko.observable(equation || "X");
+    self.decimalPlaces = ko.observable(decimalPlaces || 2);
+
+    self._addr = ko.computed(() => self.address().startsWith("0x") ? parseInt(self.address(), 16) : parseInt(self.address()));
+    self.valBytes = ko.computed(() => {
+      var data = self.data();
+      var nBytes = parseInt(self.nBytes());
+      var addr = self._addr();
+      return Array.from({length: self.length()}).map((_, i) => {
+        var _addr = addr + (i * nBytes);
+        return data.slice(_addr, _addr + nBytes);
+      });
+    });
+    self.valHex = ko.computed(() => self.valBytes().map(e => e.reduce((s, v) => v.toString(16).padStart(2, '0') + s, '').toUpperCase()));
+    self.valInts = ko.computed(() => self.valBytes().map(e => sumBytes(e, self.lsb())));
+    self.values = ko.computed(() =>
+      self.headersFromData() && self.data()
+        ? self.valInts().map((X, i) => eval(self.equation()))
+        : Array.from({length: self.length()}).map((_, i) => i + 1)
+      );
+
+    self.strValues = ko.computed(() => self.values().map(e => e.toFixed(parseInt(self.decimalPlaces()))));
+    self.headers = ko.computed(() => {
+      return self.headersFromData() && self.data()
+        ? (self.showRawHex() ? self.valHex() : self.strValues())
+        : Array.from({length: self.length()}).map((_, i) => i + 1);
+    });
+  }
+}
+
 class MapViewerModel {
   constructor() {
     var self = this;
-    self._sumBytes = function (bytes) {
-      return bytes.reduce((s, v, i) => s + (v << (8 * (self.lsbOrder() ? i : (bytes.length - i - 1)))), 0);
-    }
 
     // Config
     self.file = ko.observable();
@@ -40,7 +79,7 @@ class MapViewerModel {
       });
     });
     self.mapHexStr = ko.computed(() => self.mapHex().map(row => row.map(e => e.reduce((s, v) => v.toString(16).padStart(2, '0') + s, '').toUpperCase())));
-    self.mapInts = ko.computed(() => self.mapHex().map(row => row.map(e => self._sumBytes(e))));
+    self.mapInts = ko.computed(() => self.mapHex().map(row => row.map(e => sumBytes(e, self.lsbOrder()))));
     self.mapData = ko.computed(() => self.mapInts().map(row => row.map(X => eval(self.scaleEquation()))));
     self.mapVals = ko.computed(() =>self.mapData().map(row => row.map(e => e.toFixed(parseInt(self.decimalPlaces())))));
     self.tableData = ko.computed(() => {
@@ -50,61 +89,20 @@ class MapViewerModel {
     });
 
     // Row & Column Headers
-    self.rowValAddr = ko.observable("0x14670");
-    self._rowValAddr = ko.computed(() => self.rowValAddr().startsWith("0x") ? parseInt(self.rowValAddr(), 16) : parseInt(self.rowValAddr()));
-    self.rowValBytes = ko.observable(2);
-    self.rowValScale = ko.observable("X*0.0015259");
-    self.rowDecimalPlaces = ko.observable(2);
-    self.rowHex = ko.computed(() => {
-      var data = self.fileData();
-      var nBytes = parseInt(self.rowValBytes());
-      var addr = self._rowValAddr();
-      return Array.from({length: self._rows()}).map((_, i) => {
-        var _addr = addr + (i * nBytes);
-        return data.slice(_addr, _addr + nBytes);
-      });
-    });
-    self.rowHexStr = ko.computed(() => self.rowHex().map(e => e.reduce((s, v) => v.toString(16).padStart(2, '0') + s, '').toUpperCase()));
-    self.rowInts = ko.computed(() => self.rowHex().map(e => self._sumBytes(e)));
-    self.rowData = ko.computed(() =>
-      self.headersFromData()
-      ? self.rowInts().map(X => eval(self.rowValScale()))
-      : Array.from({length: self._rows()}).map((_, i) => i + 1)
-    );
-    self.rowVals = ko.computed(() => self.rowData().map(e => e.toFixed(parseInt(self.rowDecimalPlaces()))));
-    self.tableRowData = ko.computed(() => {
-      return self.headersFromData() && self.fileData()
-        ? (self.showRawHex() ? self.rowHexStr() : self.rowVals())
-        : Array.from({length: self._rows()}).map((_, i) => i + 1);
-    });
-
-    self.colValAddr = ko.observable("0x14650");
-    self._colValAddr = ko.computed(() => self.colValAddr().startsWith("0x") ? parseInt(self.colValAddr(), 16) : parseInt(self.colValAddr()));
-    self.colValBytes = ko.observable(2);
-    self.colValScale = ko.observable("X*0.25");
-    self.colDecimalPlaces = ko.observable(2);
-    self.colHex = ko.computed(() => {
-      var data = self.fileData();
-      var nBytes = parseInt(self.colValBytes());
-      var addr = self._colValAddr();
-      return Array.from({length: self._cols()}).map((_, i) => {
-        var _addr = addr + (i * nBytes);
-        return data.slice(_addr, _addr + nBytes);
-      });
-    });
-    self.colHexStr = ko.computed(() => self.colHex().map(e => e.reduce((s, v) => v.toString(16).padStart(2, '0') + s, '').toUpperCase()));
-    self.colInts = ko.computed(() => self.colHex().map(e => self._sumBytes(e)));
-    self.colData = ko.computed(() =>
-      self.headersFromData()
-      ? self.colInts().map(X => eval(self.colValScale()))
-      : Array.from({length: self._cols()}).map((_, i) => i + 1)
-    );
-    self.colVals = ko.computed(() =>self.colData().map(e => e.toFixed(parseInt(self.colDecimalPlaces()))));
-    self.tableColData = ko.computed(() => {
-      return self.headersFromData() && self.fileData()
-        ? (self.showRawHex() ? self.colHexStr() : self.colVals())
-        : Array.from({length: self._cols()}).map((_, i) => i + 1);
-    });
+    self.rowHeaders = new MapAxis({
+      data: self.fileData,
+      length: self.numRows,
+      lsb: self.lsbOrder,
+      fromData: self.headersFromData,
+      showHex: self.showRawHex,
+    }, "0x14670", 2, "X*0.0015259", 2);
+    self.colHeaders = new MapAxis({
+      data: self.fileData,
+      length: self.numCols,
+      lsb: self.lsbOrder,
+      fromData: self.headersFromData,
+      showHex: self.showRawHex,
+    }, "0x14650", 2, "X*0.25", 2);
 
     self.file.subscribe(function () {
       var reader = new FileReader();
@@ -114,10 +112,19 @@ class MapViewerModel {
       reader.readAsArrayBuffer(self.file());
     });
 
-    [self.mapData, self.rowData, self.colData].map(e => e.subscribe(() => {
+    [
+      self.mapData,
+      self.startAddr,
+      self.numRows,
+      self.numCols,
+      self.numBytes,
+      self.scaleEquation,
+      self.lsbOrder,
+      self.headersFromData,
+    ].map(e => e.subscribe(() => {
       // Update chart
-      self.chart.data[0].x = self.colData();
-      self.chart.data[0].y = self.rowData();
+      self.chart.data[0].x = self.colHeaders.values();
+      self.chart.data[0].y = self.rowHeaders.values();
       self.chart.data[0].z = self.mapData();
       Plotly.redraw(self.chart.elemId);
     }));
@@ -126,7 +133,7 @@ class MapViewerModel {
     self.chart = {
       elemId: "map-canvas",
       data: [{
-          x: self.colData(), y: self.rowData(), z: self.mapData(),
+          x: self.colHeaders.data(), y: self.rowHeaders.data(), z: self.mapData(),
           type: "surface", showscale: false, opacity:0.9,
       }],
       layout: {
