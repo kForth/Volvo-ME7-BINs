@@ -10,7 +10,7 @@ class MafMapToolModel {
 
     self.originalMap.subscribe(() => {
       var mapStr = self.originalMap().trim();
-      var vals = mapStr.split(/\s/);
+      var vals = mapStr.split(/\s+/);
       var delims = [
         ["\t", (mapStr.match(/\t/g) || []).length],
         [" ", (mapStr.match(/ /g) || []).length],
