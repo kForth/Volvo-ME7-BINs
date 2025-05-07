@@ -11,9 +11,12 @@
 
     {% include favicons.html %}
 
-    <link href="{{ site.baseurl }}/assets/css/style.css" rel="stylesheet" />
     <link href="{{ site.baseurl }}/assets/vendor/bootstrap.min.css" rel="stylesheet" />
     <link href="{{ site.baseurl }}/assets/vendor/bootstrap-icons.min.css" rel="stylesheet" />
+    {%- for style in page.css %}
+    <link href="{{ site.baseurl }}{{ style }}" rel="stylesheet" />
+    {%- endfor %}
+    <link href="{{ site.baseurl }}/assets/css/style.css" rel="stylesheet" />
   </head>
   <body class="d-flex flex-column vh-100 mx-auto">
     {% include color_mode.html %}
