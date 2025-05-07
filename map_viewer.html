@@ -1,0 +1,185 @@
+---
+layout: default
+title: Map Viewer
+permalink: /tools/map-viewer
+js:
+  - /assets/vendor/knockout-latest.js
+  - /assets/vendor/plotly.js
+  - /assets/vendor/math.js
+  - /assets/js/polyfit.js
+  - /assets/js/util.js
+  - /assets/js/map-viewer.js
+---
+{% include snippets/section_title.html title=page.title %}
+<form class="row" onsubmit="return false;">
+  <div class="mb-3 col-md-6">
+    <div class="mb-3 row">
+      <label class="col-md-3 col-form-label">Source File:</label>
+      <div class="col-md-9">
+        <input class="form-control" type="file" data-bind="fileUpload: viewer.file" accept=".bin" />
+      </div>
+    </div>
+    <div class="mb-3 row">
+      <label class="col-md-3 col-form-label">Start Address:</label>
+      <div class="col-md-9">
+        <input type="text" class="form-control" data-bind="value: viewer.startAddr" />
+      </div>
+    </div>
+    <div class="mb-3 row">
+      <label class="col-md-3 col-form-label">Equation:</label>
+      <div class="col-md-9">
+        <input type="text" class="form-control" data-bind="value: viewer.scaleEquation" />
+      </div>
+    </div>
+  </div>
+  <div class="mb-3 col-md-6 row">
+    <div class="mb-3 col-md-6 row">
+      <label class="col-md-5 col-form-label">Rows:</label>
+      <div class="col-md-7">
+        <input type="number" class="form-control" data-bind="value: viewer.numRows" />
+      </div>
+    </div>
+    <div class="mb-3 col-md-6 row">
+      <label class="col-md-5 col-form-label">Columns:</label>
+      <div class="col-md-7">
+        <input type="number" class="form-control" data-bind="value: viewer.numCols" />
+      </div>
+    </div>
+    <div class="mb-3 col-md-6 row">
+      <label class="col-md-5 col-form-label">Bytes:</label>
+      <div class="col-md-7">
+        <input type="number" class="form-control" data-bind="value: viewer.numBytes" />
+      </div>
+    </div>
+    <div class="mb-3 col-md-6 row">
+      <label class="col-md-5 col-form-label">Decimals:</label>
+      <div class="col-md-7">
+        <input type="number" class="form-control" data-bind="value: viewer.decimalPlaces" />
+      </div>
+    </div>
+    <div class="mb-3 col-md-4 row">
+      <div class="col-md-12">
+        <div class="form-check">
+          <input class="form-check-input" type="checkbox" data-bind="checked: viewer.lsbOrder" />
+          <label class="form-check-label">LSB First</label>
+        </div>
+      </div>
+    </div>
+    <div class="mb-3 col-md-8 row">
+      <div class="col-md-12">
+        <div class="form-check">
+          <input class="form-check-input" type="checkbox" data-bind="checked: viewer.headersFromData" />
+          <label class="form-check-label">Get Row & Column Headers From Data</label>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="mb-3 col-md-6 row d-none" data-bind="css: { 'd-none': !viewer.headersFromData() }">
+    <div class="mb-3 col-12">
+      <h4>Row Header Data</h4>
+    </div>
+    <div class="mb-3 col-md-12">
+      <div class="mb-3 row">
+        <label class="col-md-3 col-form-label">Start Address:</label>
+        <div class="col-md-9">
+          <input type="text" class="form-control" data-bind="value: viewer.rowValAddr" />
+        </div>
+      </div>
+      <div class="mb-3 row">
+        <label class="col-md-3 col-form-label">Equation:</label>
+        <div class="col-md-9">
+          <input type="text" class="form-control" data-bind="value: viewer.rowValScale" />
+        </div>
+      </div>
+      <div class="mb-3 row">
+        <div class="mb-3 col-md-6 row">
+          <label class="col-md-5 col-form-label">Bytes:</label>
+          <div class="col-md-7">
+            <input type="number" class="form-control" data-bind="value: viewer.rowValBytes" />
+          </div>
+        </div>
+        <div class="mb-3 col-md-6 row">
+          <label class="col-md-5 col-form-label">Decimals:</label>
+          <div class="col-md-7">
+            <input type="number" class="form-control" data-bind="value: viewer.rowDecimalPlaces" />
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="mb-3 col-md-6 row d-none" data-bind="css: { 'd-none': !viewer.headersFromData() }">
+    <div class="mb-3 col-12">
+      <h4>Column Header Data</h4>
+    </div>
+    <div class="mb-3 col-md-12">
+      <div class="mb-3 row">
+        <label class="col-md-3 col-form-label">Start Address:</label>
+        <div class="col-md-9">
+          <input type="text" class="form-control" data-bind="value: viewer.colValAddr" />
+        </div>
+      </div>
+      <div class="mb-3 row">
+        <label class="col-md-3 col-form-label">Equation:</label>
+        <div class="col-md-9">
+          <input type="text" class="form-control" data-bind="value: viewer.colValScale" />
+        </div>
+      </div>
+      <div class="mb-3 row">
+        <div class="mb-3 col-md-6 row">
+          <label class="col-md-5 col-form-label">Bytes:</label>
+          <div class="col-md-7">
+            <input type="number" class="form-control" data-bind="value: viewer.colValBytes" />
+          </div>
+        </div>
+        <div class="mb-3 col-md-6 row">
+          <label class="col-md-5 col-form-label">Decimals:</label>
+          <div class="col-md-7">
+            <input type="number" class="form-control" data-bind="value: viewer.colDecimalPlaces" />
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</form>
+
+{% include snippets/section_title.html title="Map Data" %}
+<div class="row mb-3">
+  <div class="col-md-4">
+    <div class="form-check">
+      <input class="form-check-input" type="checkbox" data-bind="checked: viewer.colourScaleBg" />
+      <label class="form-check-label">Background Colour Scale</label>
+    </div>
+  </div>
+  <div class="col-md-4">
+    <div class="form-check">
+      <input class="form-check-input" type="checkbox" data-bind="checked: viewer.showRawHex" />
+      <label class="form-check-label">Show Raw Hex Values</label>
+    </div>
+  </div>
+</div>
+<div class="w-100 overflow-auto p-3 m-0">
+  <table class="table table-sm d-none" data-bind="css: { 'd-none': !viewer.tableData() }"></div>
+    <thead>
+      <tr>
+          <th></th>
+          <!-- ko foreach: viewer.tableColData -->
+          <th data-bind="text: $data"></th>
+          <!-- /ko -->
+      </tr>
+    </thead>
+    <tbody data-bind="foreach: { data: viewer.tableData, as: 'row' }">
+      <tr>
+          <td class="fw-bold" data-bind="text: $root.viewer.tableRowData()[$index()]"></td>
+          <!-- ko foreach: row -->
+          <td class="data-cell" data-bind="text: $data, style: { background: $root.viewer.getBgColour($parentContext.$index(), $index()) }"></td>
+          <!-- /ko -->
+      </tr>
+    </tbody>
+  </table>
+</div>
+
+{% include snippets/section_title.html title="Map Chart" %}
+<div class="container">
+  <div class="w-100" id="map-canvas"></div>
+</div>

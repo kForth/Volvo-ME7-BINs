@@ -23,6 +23,8 @@
       title: Fuel Injectors
 - title: Tools
   dropdown:
+    - href: /tools/map-viewer
+      title: BIN Map Viewer
     - href: /tools/info
       title: Firmware Info Tool
     - href: /tools/injectors
