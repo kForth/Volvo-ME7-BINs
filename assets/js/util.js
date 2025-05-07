@@ -243,3 +243,7 @@ function reinterpolateData(data, newLength, fitDegree) {
 function sumBytes (bytes, lsb) {
   return bytes.reduce((s, v, i) => s + (v << (8 * (lsb ? i : (bytes.length - i - 1)))), 0);
 }
+
+function parseAddrString (val) {
+  return val.startsWith("0x") ? parseInt(val.slice(2), 16) : parseInt(val.slice(2))
+}
