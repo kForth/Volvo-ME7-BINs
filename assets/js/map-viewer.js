@@ -175,7 +175,7 @@ class MapViewerModel {
     self.getBgColour = (i, j) => self.colourScaleBg() && self.mapInts() && self.mapInts()[0] ? getColorScaleHex(
       self.mapInts, self.mapInts()[i][j],
       115, 0, 0.8,
-      0.8, //document.documentElement.getAttribute("data-bs-theme") == "dark" ? 0.5 : 0.8,
+      document.documentElement.getAttribute("data-bs-theme") == "dark" ? 0.5 : 0.8,
     ) : undefined;
   }
 }
