@@ -36,25 +36,25 @@ js:
     <div class="mb-3 col-md-6 row">
       <label class="col-md-5 col-form-label">Rows:</label>
       <div class="col-md-7">
-        <input type="number" class="form-control" data-bind="value: viewer.numRows" />
+        <input type="number" min="1" step="1" class="form-control" data-bind="value: viewer.numRows" />
       </div>
     </div>
     <div class="mb-3 col-md-6 row">
       <label class="col-md-5 col-form-label">Columns:</label>
       <div class="col-md-7">
-        <input type="number" class="form-control" data-bind="value: viewer.numCols" />
+        <input type="number" min="1" step="1" class="form-control" data-bind="value: viewer.numCols" />
       </div>
     </div>
     <div class="mb-3 col-md-6 row">
       <label class="col-md-5 col-form-label">Bytes:</label>
       <div class="col-md-7">
-        <input type="number" class="form-control" data-bind="value: viewer.numBytes" />
+        <input type="number" min="1" step="1" class="form-control" data-bind="value: viewer.numBytes" />
       </div>
     </div>
     <div class="mb-3 col-md-6 row">
       <label class="col-md-5 col-form-label">Decimals:</label>
       <div class="col-md-7">
-        <input type="number" class="form-control" data-bind="value: viewer.decimalPlaces" />
+        <input type="number" min="0" step="1" class="form-control" data-bind="value: viewer.decimalPlaces" />
       </div>
     </div>
     <div class="mb-3 col-md-4 row">
@@ -96,13 +96,13 @@ js:
         <div class="mb-3 col-md-6 row">
           <label class="col-md-5 col-form-label">Bytes:</label>
           <div class="col-md-7">
-            <input type="number" class="form-control" data-bind="value: viewer.rowHeaders.nBytes" />
+            <input type="number" min="1" step="1" class="form-control" data-bind="value: viewer.rowHeaders.nBytes" />
           </div>
         </div>
         <div class="mb-3 col-md-6 row">
           <label class="col-md-5 col-form-label">Decimals:</label>
           <div class="col-md-7">
-            <input type="number" class="form-control" data-bind="value: viewer.rowHeaders.decimalPlaces" />
+            <input type="number" min="0" step="1" class="form-control" data-bind="value: viewer.rowHeaders.decimalPlaces" />
           </div>
         </div>
       </div>
@@ -129,13 +129,13 @@ js:
         <div class="mb-3 col-md-6 row">
           <label class="col-md-5 col-form-label">Bytes:</label>
           <div class="col-md-7">
-            <input type="number" class="form-control" data-bind="value: viewer.colHeaders.nBytes" />
+            <input type="number" min="1" step="1" class="form-control" data-bind="value: viewer.colHeaders.nBytes" />
           </div>
         </div>
         <div class="mb-3 col-md-6 row">
           <label class="col-md-5 col-form-label">Decimals:</label>
           <div class="col-md-7">
-            <input type="number" class="form-control" data-bind="value: viewer.colHeaders.decimalPlaces" />
+            <input type="number" min="0" step="1" class="form-control" data-bind="value: viewer.colHeaders.decimalPlaces" />
           </div>
         </div>
       </div>
