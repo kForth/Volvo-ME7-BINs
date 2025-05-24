@@ -38,6 +38,26 @@
   sub_variant: ''
   transmission: AUT
   variant: 00EPFP
+00EVHJ-00EV0000.bin:
+  build_date: 2006-01-21 19:08
+  chassis_group: P23
+  drivetrain: ''
+  ecu_variant: ''
+  engine_group: ''
+  engine_model: ''
+  epk_version: ''
+  file_checksum: fc31728004efa21bf600ee9b42ca30b4192c0eda56d70c8df29aa8ee00bd6c18
+  file_name: 00EVHJ-00EV0000.bin
+  file_size: 1048576
+  header_position: 99289
+  header_version: '1.0'
+  is_valid: true
+  me_version: '7.0'
+  region: ''
+  software_version: ''
+  sub_variant: 00EV0000
+  transmission: ''
+  variant: 00EVHJ
 00NHHJ-T0NHBVD0-AUT-FWD-EU.bin:
   build_date: 2004-08-12 08:04
   chassis_group: P2X
@@ -797,6 +817,26 @@
   software_version: ''
   sub_variant: 81FWOVD0
   transmission: MAN
+  variant: 20FWHJ
+20FWHJ-8AFWOVD0-AUT-AWD-EU.bin:
+  build_date: 2006-01-25 21:46
+  chassis_group: P2X
+  drivetrain: AWD
+  ecu_variant: ''
+  engine_group: B52X4XT
+  engine_model: B5244LT
+  epk_version: ''
+  file_checksum: ce9f817430ee75a98bf13566d3e9406433b783a4a8c99971367f7a50c389a5f4
+  file_name: 20FWHJ-8AFWOVD0-AUT-AWD-EU.bin
+  file_size: 1048576
+  header_position: 99263
+  header_version: '1.0'
+  is_valid: true
+  me_version: '7.0'
+  region: EU
+  software_version: 30785754AA
+  sub_variant: 8AFWOVD0
+  transmission: AUT
   variant: 20FWHJ
 20FWHJ-8CFWOVD0-AUT-AWD-US.bin:
   build_date: 2006-01-25 21:46
@@ -2136,6 +2176,26 @@
   region: ''
   software_version: 30684626A
   sub_variant: 72WRA
+  transmission: ''
+  variant: 50WRHJ
+50WRHJ-86WRA.bin:
+  build_date: 2004-10-22 15:03
+  chassis_group: P2X
+  drivetrain: ''
+  ecu_variant: 30743290AA
+  engine_group: B52X4XT
+  engine_model: ''
+  epk_version: 47/1/ME701/19///70195H9Z/70195H9Z/191205195236/
+  file_checksum: d51d711f085a0243f81974a657bd33e1e0040245d398b5f368cd6c12898a81a8
+  file_name: 50WRHJ-86WRA.bin
+  file_size: 1048576
+  header_position: 100177
+  header_version: '1.0'
+  is_valid: true
+  me_version: '7.5'
+  region: ''
+  software_version: 30684626A
+  sub_variant: 86WRA
   transmission: ''
   variant: 50WRHJ
 60LPHJ-TRLPDVD0-AUT-AWD-EU 1.bin:
