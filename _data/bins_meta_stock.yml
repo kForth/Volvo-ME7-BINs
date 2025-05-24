@@ -138,6 +138,26 @@
   sub_variant: ''
   transmission: AUT
   variant: 10EPFP
+10ERHJ-10ER0000.bin:
+  build_date: 2006-01-24 21:14
+  chassis_group: P80
+  drivetrain: ''
+  ecu_variant: ''
+  engine_group: B52X4XT
+  engine_model: ''
+  epk_version: ''
+  file_checksum: 5bbbcd8bcb9693050c0c2dadaff8cfc960beec60c55a2b290966089b4079080f
+  file_name: 10ERHJ-10ER0000.bin
+  file_size: 1048576
+  header_position: 99276
+  header_version: '1.0'
+  is_valid: true
+  me_version: '7.0'
+  region: ''
+  software_version: ''
+  sub_variant: 10ER0000
+  transmission: ''
+  variant: 10ERHJ
 10EUHJ-10EU0000.bin:
   build_date: 2006-02-01 09:22
   chassis_group: P80
@@ -218,6 +238,26 @@
   sub_variant: ''
   transmission: ''
   variant: 10N0MHDE
+10R1HJ-10R10000 1.bin:
+  build_date: 2006-02-14 07:55
+  chassis_group: P80
+  drivetrain: ''
+  ecu_variant: ''
+  engine_group: ''
+  engine_model: ''
+  epk_version: ''
+  file_checksum: 67220bff69b4ba9e81cd32c6cfcd76f0c2d2e480bc03e33f64605110f3d0dbcc
+  file_name: 10R1HJ-10R10000 1.bin
+  file_size: 524288
+  header_position: 127417
+  header_version: '1.0'
+  is_valid: false
+  me_version: '7.0'
+  region: ''
+  software_version: ''
+  sub_variant: 10R10000
+  transmission: ''
+  variant: 10R1HJ
 10R1HJ-10R10000.bin:
   build_date: 2006-02-14 07:55
   chassis_group: P80
@@ -1398,6 +1438,26 @@
   sub_variant: ECLNGVD0
   transmission: AUT
   variant: 40LNHJ
+40LPHJ-EALPBVD0-AUT-AWD-EU-BLDC.bin:
+  build_date: 2004-08-09 13:11
+  chassis_group: P2X
+  drivetrain: AWD
+  ecu_variant: 30641539 B
+  engine_group: B52X4XT
+  engine_model: B5254T2
+  epk_version: 47/1/ME701/19///70194L11/70194L11/060704165125/
+  file_checksum: 58c2fb988cce268558edb2bf43b9724fd8b54dff45668652b153dfffb2d285c1
+  file_name: 40LPHJ-EALPBVD0-AUT-AWD-EU-BLDC.bin
+  file_size: 1048576
+  header_position: 100412
+  header_version: '1.0'
+  is_valid: true
+  me_version: 7.0.1
+  region: EU-BLDC
+  software_version: 30729109A
+  sub_variant: EALPBVD0
+  transmission: AUT
+  variant: 40LPHJ
 40LPHJ-ERLPDVD0-AUT-AWD-EU 1.bin:
   build_date: 2004-08-09 13:11
   chassis_group: P2X
@@ -1717,6 +1777,26 @@
   software_version: ''
   sub_variant: 23GSI
   transmission: MAN
+  variant: 50GSHJ
+50GSHJ-52GSI-AUT-FWD-US 1.bin:
+  build_date: 2007-01-18 10:34
+  chassis_group: P2X
+  drivetrain: FWD
+  ecu_variant: 31219132AA
+  engine_group: B52X4XT
+  engine_model: B5244HT
+  epk_version: 47/1/ME701/19///70195G10/70195G10/120107143316/
+  file_checksum: 9063c083bc8ddc46c049fd49a065787d01fa5e2e5e40086b8a35e95e778afc62
+  file_name: 50GSHJ-52GSI-AUT-FWD-US 1.bin
+  file_size: 1048576
+  header_position: 100172
+  header_version: '1.0'
+  is_valid: true
+  me_version: '7.5'
+  region: US
+  software_version: ''
+  sub_variant: 52GSI
+  transmission: AUT
   variant: 50GSHJ
 50GSHJ-52GSI-AUT-FWD-US.bin:
   build_date: 2007-01-18 10:34
